@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsSubstack } from "react-icons/bs";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaTelegram, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
@@ -29,6 +30,20 @@ const Footer = () => {
             className="text-xl"
           >
             <BsSubstack />
+          </a>
+          <a
+            href="https://www.youtube.com/@secretodefi"
+            target="_blank"
+            className="text-xl"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://www.instagram.com/secretodefi/"
+            target="_blank"
+            className="text-xl"
+          >
+            <FaInstagram />
           </a>
         </div>
       </nav>

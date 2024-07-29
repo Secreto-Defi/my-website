@@ -40,7 +40,7 @@ const Description = () => {
             </h2>
           </div>
           <p className="text-justify leading-relaxed font-light text-sm small:text-base">
-            SOy una persona enfocada al 100% en las
+            Soy una persona enfocada al 100% en las
             oportunidades dentro del ecosistema DeFi dónde vamos rotando entre
             las diferentes narrativas para sacarle el máximo rendimiento, por
             ejemplo, con el farming/liquidez concentrada, con estrategias de

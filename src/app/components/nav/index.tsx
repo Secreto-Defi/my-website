@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { BsSubstack } from "react-icons/bs";
 import { FaTelegram, FaXTwitter } from "react-icons/fa6";
 import Spiral from "../common/spiral";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -87,6 +88,22 @@ const NavBar = () => {
               >
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <BsSubstack />
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/@secretodefi"
+                target="_blank"
+              >
+                <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
+                  <FaYoutube />
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/secretodefi/"
+                target="_blank"
+              >
+                <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
+                <FaInstagram />
                 </div>
               </a>
               <div>
@@ -201,6 +218,20 @@ const NavBar = () => {
             className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
           >
             Substack
+          </a>
+          <a
+            href="https://www.instagram.com/secretodefi/"
+            target="_blank"
+            className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.instagram.com/secretodefi/"
+            target="_blank"
+            className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
+          >
+            Youtube
           </a>
           <a
             href="mailto:info@secretodefi.com"
