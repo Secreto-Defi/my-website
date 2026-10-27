@@ -90,10 +90,10 @@ export const LegalAdvice = () => {
       </p>
 
       <p>
-        8. Los datos personales que el cliente facilita a Marc serán
-        utilizados únicamente para la elaboración de presupuestos y estos, se
-        eliminarán a los 15 días. En ningún caso estos datos son incorporados a
-        base de datos alguna ni cedidos a terceras empresas.
+        8. El tratamiento de los datos personales que facilites a través de
+        esta web se rige por la Política de Privacidad, donde se explica qué
+        datos se recogen, con qué finalidad, durante cuánto tiempo se conservan
+        y cómo ejercer tus derechos.
       </p>
 
       <p>

@@ -7,7 +7,7 @@ const FAQ = [
     number: 1,
     question: "Información Exclusiva",
     response:
-      "Mantente al tanto de las últimas noticias, análisis y narrativas del sector. Mi contenido exclusivo te proporcionará información privilegiada para tomar decisiones.",
+      "Mantente al tanto de las últimas noticias, análisis y narrativas del sector. Mi contenido exclusivo te dará información de primera mano para que tomes tus propias decisiones.",
   },
   {
     number: 2,
@@ -31,7 +31,7 @@ const FAQ = [
     number: 5,
     question: "Precio",
     response:
-      "Tienes dos opciones: una gratuita enfocada a oportunidades sin capital y otra más avanzada, de pago. Esta última más enfocada en obtener rentabilidad con yield farming. (15€/mes)",
+      "Tienes dos opciones: una gratuita enfocada a oportunidades sin capital y otra más avanzada, de pago. Esta última más enfocada en obtener rentabilidad con yield farming. (22 €/mes o 250 €/año)",
   },
 ];
 
@@ -52,7 +52,7 @@ const About = () => {
                 ¿Por qué deberías suscribirte?
               </h3>
               <p className="flex flex-col gap-2 text-sm small:text-base">
-                <span>La suscripción en Substack consta de dos opciones: una gratuita y otra de pago.</span>
+                <span>La suscripción a La Agenda de SecretoDefi, en Substack, consta de dos opciones: una gratuita y otra de pago.</span>
                 <span>Estos son los motivos principales por los que
                 deberías leer mi contenido y que seguro van a responder a muchas
                 de tus preguntas.</span>

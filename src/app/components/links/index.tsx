@@ -62,14 +62,14 @@ const Links = () => {
         <LinkCard
           href="https://x.com/SecretoDefi"
           title="Encuéntrame en la red"
-          description="34k+ seguidores"
+          description="43k+ seguidores"
           platform="X.com"
           IconComponent={FaXTwitter}
         />
         <LinkCard
           href="https://t.me/secretodefi"
           title="Únete a la comunidad"
-          description="5k+ miembros"
+          description="4k+ miembros"
           platform="Telegram"
           IconComponent={FaTelegram}
         />
