@@ -7,20 +7,20 @@ const Advisory = () => {
   return (
     <div className="flex flex-col py-14 small:py-24 gap-10 small:gap-24 items-center w-full">
       <div className="flex flex-col gap-4 text-center">
-        <h2 className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
+        <p className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
           Asesorías
-        </h2>
-        <h1 className="text-4xl small:text-5xl font-bold">Todo lo que necesitas</h1>
+        </p>
+        <h2 className="text-4xl small:text-5xl font-bold">Todo lo que necesitas</h2>
       </div>
 
       <div className="flex w-full items-start gap-20">
         <div className="flex flex-col small:flex-row w-full items-center small:items-start gap-10">
           <div className="flex flex-col place-items-center gap-8 small:w-[500px]">
             <div className="flex items-center justify-center h-28 bg-base-100 w-full">
-              <h2 className="text-xl font-semibold text-center rounded-2x tracking-wider">
+              <h3 className="text-xl font-semibold text-center rounded-2x tracking-wider">
                 ¿Qué temas <br />
                 <span className="font-bold uppercase">podemos tratar</span>?
-              </h2>
+              </h3>
             </div>
 
             <div className="flex flex-col gap-2">
@@ -76,7 +76,7 @@ const Advisory = () => {
                 <div className="chat-bubble chat-bubble-primary flex gap-5 items-center p-4">
                   <Image src="/dudas.png" alt="dudas" width={50} height={50} />
                   <p className="font-semibold">
-                    Aún así, si durante la sesión te surgen dudas, yo estaré
+                    Aun así, si durante la sesión te surgen dudas, yo estaré
                     compartiendo mi pantalla para resolverlo al momento.
                   </p>
                 </div>
@@ -86,13 +86,13 @@ const Advisory = () => {
           <div className="rotate-90 small:rotate-45 small:mt-12"><ArrowRight width={18} /></div>
           <div className="flex flex-col place-items-center gap-8 small:w-[500px]">
             <div className="flex items-center justify-center h-28 bg-base-100 w-full">
-              <h2 className="text-xl font-semibold text-center tracking-wider">
+              <h3 className="text-xl font-semibold text-center tracking-wider">
                 ¿Cómo pedir <br />
                 <span className="font-bold uppercase">
                   asesoría personalizada
                 </span>
                 ?
-              </h2>
+              </h3>
             </div>
 
             <div className="flex flex-col gap-2">

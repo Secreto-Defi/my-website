@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import LegalAdvice from "../components/legaladvice";
 import Privacity from "../components/privacity";
 
@@ -9,6 +9,14 @@ import Footer from "../components/footer";
 
 const Legal = () => {
   const [selected, setSelected] = useState(0);
+
+  useEffect(() => {
+    const fromHash = () =>
+      setSelected(window.location.hash === "#privacidad" ? 1 : 0);
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    return () => window.removeEventListener("hashchange", fromHash);
+  }, []);
 
   const tabs = [
     {
@@ -23,6 +31,11 @@ const Legal = () => {
 
   const handleTabChange = (index: number) => {
     setSelected(index);
+    window.history.replaceState(
+      null,
+      "",
+      index === 1 ? "#privacidad" : "#aviso-legal"
+    );
   };
 
   return (

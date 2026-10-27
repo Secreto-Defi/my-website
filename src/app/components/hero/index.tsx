@@ -30,18 +30,6 @@ const Hero = () => {
               </div>
             </button>
           </a>
-          <a
-            href="https://v0-paydece-widget-iframe-rzkdsm.vercel.app/"
-            target="_blank"
-            className="group"
-          >
-            <button className="btn btn-primary btn-outline font-bold tracking-wider text-xl px-6 uppercase flex items-center gap-2">
-              <span>P2P</span>
-              <div className="transform transition-transform duration-300 group-hover:rotate-45">
-                <ArrowRight width={14} />
-              </div>
-            </button>
-          </a>
         </div>
       </div>
       <div className="relative items-center justify-center hidden small:flex">
@@ -52,6 +40,7 @@ const Hero = () => {
           height={370}
           className="object-contain"
           quality={100}
+          priority
         />
         <div className="absolute">
           <Spiral />

@@ -1,80 +1,159 @@
-import React from "react"
+import React from "react";
+
+// Datos del responsable. Rellena nombre completo, NIF y domicilio para que
+// aparezcan en la política (las líneas vacías no se muestran).
+const TITULAR = {
+  nombre: "Marc",
+  marca: "Secreto Defi",
+  nif: "",
+  domicilio: "",
+  email: "info@secretodefi.com",
+};
+
+const Section = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => (
+  <section className="flex flex-col gap-3">
+    <h3 className="font-semibold uppercase">{title}</h3>
+    {children}
+  </section>
+);
 
 export const Privacity = () => {
   return (
     <div className="flex flex-col gap-6">
       <p className="font-light">
-        Marc informa a los usuarios del sitio web sobre su política respecto
-        del tratamiento y protección de los datos de carácter personal de los
-        usuarios y clientes que puedan serrecabados por la navegación o
-        contratación de servicios a través de su sitio web. En este sentido
-        Marc, garantiza el cumplimiento de la normativa vigente en materia
-        deprotección de datos personales, reflejada en la Ley Orgánica 15/1999
-        de 13 de diciembre, de Protección de Datos de Carácter Personal y en el
-        Real Decreto 1720/2007, de 21 diciembre, por el que se aprueba el
-        Reglamento de Desarrollo de la LOPD. El uso de esta web implica la
-        aceptación de esta política de privacidad.
+        Esta política explica cómo se tratan los datos personales de las
+        personas que usan el sitio web www.secretodefi.com, de acuerdo con el
+        Reglamento (UE) 2016/679 (RGPD), la Ley Orgánica 3/2018, de 5 de
+        diciembre, de Protección de Datos Personales y garantía de los derechos
+        digitales (LOPDGDD) y la Ley 34/2002, de servicios de la sociedad de la
+        información. El uso de esta web implica que has leído esta política.
       </p>
 
-      <h3 className="font-semibold">RECOGIDA, FINALIDAD Y TRATAMIENTO DE DATOS</h3>
+      <Section title="1. Responsable del tratamiento">
+        <ul className="font-light flex flex-col gap-1">
+          <li>Responsable: {TITULAR.nombre}</li>
+          <li>Marca comercial: {TITULAR.marca}</li>
+          {TITULAR.nif && <li>NIF: {TITULAR.nif}</li>}
+          {TITULAR.domicilio && <li>Domicilio: {TITULAR.domicilio}</li>}
+          <li>
+            Correo electrónico de contacto:{" "}
+            <a className="link link-primary" href={`mailto:${TITULAR.email}`}>
+              {TITULAR.email}
+            </a>
+          </li>
+        </ul>
+      </Section>
+
+      <Section title="2. Qué datos tratamos, para qué y con qué base legal">
+        <ul className="font-light flex flex-col gap-3 list-disc pl-5">
+          <li>
+            <span className="font-semibold">Formulario de asesoría.</span> Datos:
+            nombre o nick, usuario de Telegram y el texto con tus dudas y
+            necesidades. Finalidad: atender tu solicitud, preparar la sesión y
+            ponernos en contacto contigo. Base legal: tu consentimiento
+            (art. 6.1.a RGPD) y, si contratas el servicio, la ejecución del
+            contrato (art. 6.1.b RGPD).
+          </li>
+          <li>
+            <span className="font-semibold">Correo electrónico.</span> Si nos
+            escribes, usaremos tu dirección y el contenido del mensaje solo
+            para responderte. Base legal: tu consentimiento (art. 6.1.a RGPD).
+          </li>
+          <li>
+            <span className="font-semibold">Estadísticas de visitas.</span> La
+            web usa Vercel Web Analytics, que mide páginas vistas de forma
+            agregada y anónima, sin cookies de terceros y sin identificarte
+            personalmente. Base legal: interés legítimo en conocer el uso de la
+            web y mejorarla (art. 6.1.f RGPD).
+          </li>
+        </ul>
+        <p className="font-light">
+          No tomamos decisiones automatizadas ni elaboramos perfiles con tus
+          datos.
+        </p>
+      </Section>
+
+      <Section title="3. Destinatarios y proveedores">
+        <p className="font-light">
+          No cedemos tus datos a terceros, salvo obligación legal. Para prestar
+          el servicio recurrimos a proveedores que actúan como encargados del
+          tratamiento: el servicio de formularios (Formspree) y el alojamiento
+          y estadísticas de la web (Vercel). Estos proveedores pueden tratar
+          datos fuera del Espacio Económico Europeo, por ejemplo en Estados
+          Unidos, con las garantías que prevé el RGPD para las transferencias
+          internacionales.
+        </p>
+        <p className="font-light">
+          Si te suscribes a La Agenda de SecretoDefi, la suscripción se
+          gestiona en Substack, que trata tus datos conforme a su propia
+          política de privacidad.
+        </p>
+      </Section>
+
+      <Section title="4. Cuánto tiempo conservamos tus datos">
+        <p className="font-light">
+          Si no llegas a contratar ningún servicio, eliminamos los datos de tu
+          solicitud a los 15 días de responderte. Si contratas, los
+          conservaremos mientras dure la relación y después, bloqueados, durante
+          los plazos exigidos por la normativa fiscal, mercantil y contable.
+          Puedes pedir que se supriman antes en cualquier momento.
+        </p>
+      </Section>
+
+      <Section title="5. Tus derechos">
+        <p className="font-light">
+          Puedes ejercer tus derechos de acceso, rectificación, supresión,
+          oposición, limitación del tratamiento y portabilidad, y retirar tu
+          consentimiento cuando quieras sin que afecte a lo ya tratado,
+          escribiendo a{" "}
+          <a className="link link-primary" href={`mailto:${TITULAR.email}`}>
+            {TITULAR.email}
+          </a>{" "}
+          e indicando el derecho que quieres ejercer. Podemos pedirte que
+          acredites tu identidad. Si consideras que no hemos tratado tus datos
+          correctamente, puedes presentar una reclamación ante la Agencia
+          Española de Protección de Datos (
+          <a
+            className="link link-primary"
+            href="https://www.aepd.es"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.aepd.es
+          </a>
+          ).
+        </p>
+      </Section>
+
+      <Section title="6. Cookies y enlaces a terceros">
+        <p className="font-light">
+          Esta web no utiliza cookies propias ni de terceros con fines
+          publicitarios o de seguimiento. Contiene enlaces a X, Telegram,
+          Substack, YouTube e Instagram, que son sitios de terceros con sus
+          propias políticas de privacidad y cookies.
+        </p>
+      </Section>
+
+      <Section title="7. Menores y seguridad">
+        <p className="font-light">
+          Los menores de 14 años no deben facilitar datos personales sin el
+          consentimiento de sus padres o tutores. Aplicamos medidas técnicas y
+          organizativas razonables para proteger los datos que nos facilitas.
+        </p>
+      </Section>
 
       <p className="font-light">
-        Marc tiene el deber de informar a los usuarios de su sitio web acerca
-        de la recogida dedatos de carácter personal que pueden llevarse a cabo,
-        bien sea mediante el envío de correo electrónico o al cumplimentar los
-        formularios incluidos en el sitio web. En este sentido, Marc será
-        considerado como responsable de los datos recabados mediante los medios
-        anteriormente descritos. A su vez Marc informa a los
-        usuarios de que la finalidad del tratamiento de los datos recabados
-        contempla: La atención de solicitudes realizadas por los usuarios, la
-        inclusión en la agenda de contactos, la prestación de servicios, la
-        gestión de la relación comercial y otras finalidades. Las operaciones,
-        gestiones y procedimientos técnicos que se realicen de forma
-        automatizada o no automatizada y que posibiliten la recogida, el
-        almacenamiento, la modificación, la transferencia y otras acciones sobre
-        datos de carácter personal, tienen la consideración de tratamiento de
-        datos personales. Todos los datos personales, que sean recogidos a
-        través del sitio web, y por tanto tenga la consideración de
-        tratamiento de datos de carácter personal, serán incorporados en los
-        ficheros.
-      </p>
-
-      <p className="font-light">
-        Marc informa a los usuarios de que sus datos personales no serán
-        cedidos a terceras organizaciones, con la salvedad de que dicha cesión
-        de datos este amparada en una obligación legal o cuando la prestación de
-        un servicio implique la necesidad de una relación contractual con un
-        encargado de tratamiento. En este último caso, solo se llevará a cabo la
-        cesión de datos al tercero cuando Marc disponga del consentimiento
-        expreso del usuario.
-      </p>
-
-      <h3 className="font-semibold">DERECHOS DE LOS USUARIOS</h3>
-
-      <p className="font-light">
-        El usuario puede ejercer su derecho de acceso a los datos personales,
-        así como solicitar la rectificación de los datos inexactos o, en su
-        caso, solicitar su supresión cuando los datos ya no sean necesarios para
-        los fines que fueron recogidos. También podrá solicitar la limitación,
-        portabilidad y oposición del tratamiento de sus datos, en determinadas
-        circunstancias y por motivos relacionados con su situación particular.
-        Igualmente, podrá tener derecho a revocar su consentimiento en cualquier
-        momento sin que ello afecte de manera retroactiva al tratamiento de
-        datos realizado hasta el momento. El proveedor podrá ejercitar los
-        derechos referidos anteriormente, en los términos y condiciones
-        previstos en la legislación vigente, a
-      </p>
-
-      <ul>
-        <li>Responsable:</li>
-        <li>Identidad: Marc, Secreto Defi</li>
-      </ul>
-
-      <p className="font-light">
-        Copyright © Secreto Defi | RESERVADOS TODOS LOS DERECHOS
+        Última actualización: octubre de 2026. Copyright © Secreto Defi |
+        RESERVADOS TODOS LOS DERECHOS
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Privacity
+export default Privacity;

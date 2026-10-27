@@ -7,7 +7,7 @@ const FAQ = [
     number: 1,
     question: "Información Exclusiva",
     response:
-      "Mantente al tanto de las últimas noticias, análisis y narrativas del sector. Mi contenido exclusivo te proporcionará información privilegiada para tomar decisiones.",
+      "Mantente al tanto de las últimas noticias, análisis y narrativas del sector. Mi contenido exclusivo te dará información de primera mano para que tomes tus propias decisiones.",
   },
   {
     number: 2,
@@ -31,7 +31,7 @@ const FAQ = [
     number: 5,
     question: "Precio",
     response:
-      "Tienes dos opciones: una gratuíta enfocada a oportunidades sin capital y otra más avanzada, de pago. Ésta última más enfocada en obtener rentabilidad con yield farming. (15€/mes)",
+      "Tienes dos opciones: una gratuita enfocada a oportunidades sin capital y otra más avanzada, de pago. Esta última más enfocada en obtener rentabilidad con yield farming. (22 €/mes o 250 €/año)",
   },
 ];
 
@@ -41,19 +41,19 @@ const About = () => {
       <div className="flex flex-col small:flex-row w-full justify-between gap-10 small:min-h-[500px]">
         <div className="flex flex-col items-start small:justify-between gap-10 small:gap-0 w-full">
           <div className="flex flex-col gap-4 text-center small:text-start">
-            <h2 className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
+            <p className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
               Suscripción
-            </h2>
-            <h1 className="text-4xl small:text-5xl font-bold">Preguntas frecuentes</h1>
+            </p>
+            <h2 className="text-4xl small:text-5xl font-bold">Preguntas frecuentes</h2>
           </div>
           <div className="flex flex-col bg-base-100 p-4 small:p-10 w-full justify-between small:h-64">
             <div className="flex flex-col gap-5">
-              <h2 className="text-2xl font-bold">
+              <h3 className="text-2xl font-bold">
                 ¿Por qué deberías suscribirte?
-              </h2>
+              </h3>
               <p className="flex flex-col gap-2 text-sm small:text-base">
-                <span>La suscripción en Substack consta de dos opciones: una gratuita y otra de pago.</span>
-                <span>Éstos son los motivos principales por lo que
+                <span>La suscripción a La Agenda de SecretoDefi, en Substack, consta de dos opciones: una gratuita y otra de pago.</span>
+                <span>Estos son los motivos principales por los que
                 deberías leer mi contenido y que seguro van a responder a muchas
                 de tus preguntas.</span>
               </p>

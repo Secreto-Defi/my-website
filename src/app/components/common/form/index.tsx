@@ -6,6 +6,7 @@ interface FormElements extends HTMLFormControlsCollection {
   name: HTMLInputElement;
   contact: HTMLInputElement;
   description: HTMLTextAreaElement;
+  consent: HTMLInputElement;
 }
 
 interface ContactForm extends HTMLFormElement {
@@ -19,9 +20,10 @@ export const ContactForm = () => {
 
   const handleSubmit = async (event: FormEvent<ContactForm>) => {
     event.preventDefault();
-    const { name, contact, description } = event.currentTarget.elements;
+    const { name, contact, description, consent } =
+      event.currentTarget.elements;
 
-    if (!name.value || !contact.value || !description.value) {
+    if (!name.value || !contact.value || !description.value || !consent.checked) {
       return;
     }
 
@@ -29,13 +31,15 @@ export const ContactForm = () => {
     try {
       const response = await axios.post("https://formspree.io/f/xpwaqlpd", {
         name: name.value,
-        phone: contact.value,
+        telegram: contact.value,
         description: description.value,
+        consent: "Acepta la política de privacidad",
       });
       console.log("Formulario enviado", response.data);
       name.value = "";
       contact.value = "";
       description.value = "";
+      consent.checked = false;
       setToastMessage("Se ha enviado correctamente");
     } catch (error) {
       console.error("Error al enviar formulario", error);
@@ -50,10 +54,10 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-8 w-full small:w-[400px]">
       <div className="flex items-center justify-center h-28 bg-base-100 w-full">
-        <h2 className="text-xl font-semibold text-center tracking-wider">
+        <h3 className="text-xl font-semibold text-center tracking-wider">
           Rellena el <br />
           <span className="font-bold uppercase">formulario</span>
-        </h2>
+        </h3>
       </div>
       <div className="flex flex-col gap-4">
         <input
@@ -79,6 +83,26 @@ export const ContactForm = () => {
           className="textarea w-full text-base rounded-none"
           placeholder="Listado de dudas y necesidades..."
         ></textarea>
+        <label className="flex items-start gap-3 text-sm font-light cursor-pointer">
+          <input
+            type="checkbox"
+            id="consent"
+            name="consent"
+            required
+            className="checkbox checkbox-primary checkbox-sm mt-0.5 rounded-none"
+          />
+          <span>
+            He leído y acepto la{" "}
+            <a
+              href="/legal#privacidad"
+              target="_blank"
+              className="link link-primary"
+            >
+              política de privacidad
+            </a>
+            . Usaremos tus datos solo para responder a tu solicitud.
+          </span>
+        </label>
         <button
           disabled={isSubmitting}
           className="btn btn-primary font-bold text-lg rounded-none"

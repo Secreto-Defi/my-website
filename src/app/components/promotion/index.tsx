@@ -7,10 +7,10 @@ const Promotion = () => {
       <div className="flex flex-col small:flex-row w-full small:justify-between justify-center items-center small:items-end gap-10 bg-base-100 p-6 small:p-10 border border-zinc-800">
         <div className="flex flex-col gap-14 small:items-start small:justify-between w-full max-w-xl">
           <div className="flex flex-col gap-4 text-center small:text-start">
-            <h2 className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
+            <p className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
               Promociones
-            </h2>
-            <h1 className="text-4xl small:text-5xl font-bold">Impulsa tu proyecto</h1>
+            </p>
+            <h2 className="text-4xl small:text-5xl font-bold">Impulsa tu proyecto</h2>
           </div>
           <p className="text-base small:text-lg text-center small:text-start">
             Si necesitas promocionar tu proyecto, no dudes en ponerte en contacto conmigo y discutiremos las mejores opciones.
