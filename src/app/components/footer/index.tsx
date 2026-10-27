@@ -13,6 +13,7 @@ const Footer = () => {
           <a
             href="https://x.com/SecretoDefi"
             target="_blank"
+            aria-label="X (Twitter)"
             className="text-xl"
           >
             <FaXTwitter />
@@ -20,6 +21,7 @@ const Footer = () => {
           <a
             href="https://t.me/secretodefi"
             target="_blank"
+            aria-label="Telegram"
             className="text-xl"
           >
             <FaTelegram />
@@ -27,6 +29,7 @@ const Footer = () => {
           <a
             href="https://secretodefi.substack.com/subscribe"
             target="_blank"
+            aria-label="Substack"
             className="text-xl"
           >
             <BsSubstack />
@@ -34,6 +37,7 @@ const Footer = () => {
           <a
             href="https://www.youtube.com/@secretodefi"
             target="_blank"
+            aria-label="YouTube"
             className="text-xl"
           >
             <FaYoutube />
@@ -41,6 +45,7 @@ const Footer = () => {
           <a
             href="https://www.instagram.com/secretodefi/"
             target="_blank"
+            aria-label="Instagram"
             className="text-xl"
           >
             <FaInstagram />
@@ -52,8 +57,9 @@ const Footer = () => {
       </nav>
       <aside>
         <p>
-          Secreto Defi © ${new Date().getFullYear()} - Todos los derechos
-          reservados
+          Secreto Defi ©{" "}
+          <span suppressHydrationWarning>{new Date().getFullYear()}</span> - Todos
+          los derechos reservados
         </p>
       </aside>
       <nav className="grid grid-flow-col">

@@ -52,6 +52,7 @@ const Hero = () => {
           height={370}
           className="object-contain"
           quality={100}
+          priority
         />
         <div className="absolute">
           <Spiral />

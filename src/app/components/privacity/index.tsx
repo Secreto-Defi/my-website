@@ -6,10 +6,10 @@ export const Privacity = () => {
       <p className="font-light">
         Marc informa a los usuarios del sitio web sobre su política respecto
         del tratamiento y protección de los datos de carácter personal de los
-        usuarios y clientes que puedan serrecabados por la navegación o
+        usuarios y clientes que puedan ser recabados por la navegación o
         contratación de servicios a través de su sitio web. En este sentido
         Marc, garantiza el cumplimiento de la normativa vigente en materia
-        deprotección de datos personales, reflejada en la Ley Orgánica 15/1999
+        de protección de datos personales, reflejada en la Ley Orgánica 15/1999
         de 13 de diciembre, de Protección de Datos de Carácter Personal y en el
         Real Decreto 1720/2007, de 21 diciembre, por el que se aprueba el
         Reglamento de Desarrollo de la LOPD. El uso de esta web implica la
@@ -20,7 +20,7 @@ export const Privacity = () => {
 
       <p className="font-light">
         Marc tiene el deber de informar a los usuarios de su sitio web acerca
-        de la recogida dedatos de carácter personal que pueden llevarse a cabo,
+        de la recogida de datos de carácter personal que pueden llevarse a cabo,
         bien sea mediante el envío de correo electrónico o al cumplimentar los
         formularios incluidos en el sitio web. En este sentido, Marc será
         considerado como responsable de los datos recabados mediante los medios

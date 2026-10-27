@@ -72,12 +72,12 @@ const NavBar = () => {
           <div className="hidden flex-none lg:block">
             <div className="menu menu-horizontal flex items-center gap-5 text-3xl">
               {/* Navbar menu content here */}
-              <a href="https://x.com/SecretoDefi" target="_blank">
+              <a href="https://x.com/SecretoDefi" target="_blank" aria-label="X (Twitter)">
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <FaXTwitter />
                 </div>
               </a>
-              <a href="https://t.me/secretodefi" target="_blank">
+              <a href="https://t.me/secretodefi" target="_blank" aria-label="Telegram">
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <FaTelegram />
                 </div>
@@ -85,6 +85,7 @@ const NavBar = () => {
               <a
                 href="https://secretodefi.substack.com/subscribe"
                 target="_blank"
+                aria-label="Substack"
               >
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <BsSubstack />
@@ -93,6 +94,7 @@ const NavBar = () => {
               <a
                 href="https://www.youtube.com/@secretodefi"
                 target="_blank"
+                aria-label="YouTube"
               >
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <FaYoutube />
@@ -101,6 +103,7 @@ const NavBar = () => {
               <a
                 href="https://www.instagram.com/secretodefi/"
                 target="_blank"
+                aria-label="Instagram"
               >
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                 <FaInstagram />
@@ -227,7 +230,7 @@ const NavBar = () => {
             Instagram
           </a>
           <a
-            href="https://www.instagram.com/secretodefi/"
+            href="https://www.youtube.com/@secretodefi"
             target="_blank"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
           >

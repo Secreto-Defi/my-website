@@ -33,12 +33,12 @@ const LinkCard: React.FC<LinkCardProps> = ({
       className="flex flex-col p-10 bg-base-100 w-full h-[350px] small:h-[400px] justify-between border border-zinc-800 cursor-pointer hover:bg-primary hover:text-base-300 transition duration-300 ease-in-out"
     >
       <div className="flex flex-col gap-2">
-        <h2 className="text-lg small:text-xl font-bold uppercase">{title}</h2>
+        <h3 className="text-lg small:text-xl font-bold uppercase">{title}</h3>
         <p className="text-base small:text-lg">{description}</p>
       </div>
       <div className="flex w-full justify-between items-end">
         <div className="flex flex-col-reverse gap-10 items-start justify-between text-5xl font-bold">
-          <h2>{platform}</h2>
+          <h3>{platform}</h3>
           <div className="text-6xl">
             <IconComponent />
           </div>
@@ -53,10 +53,10 @@ const Links = () => {
   return (
     <div className="flex flex-col py-14 small:py-24 gap-10 small:gap-24 items-center w-full">
       <div className="flex flex-col gap-4 text-center">
-        <h2 className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
+        <p className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
           Social
-        </h2>
-        <h1 className="text-4xl small:text-5xl font-bold">Encuéntrame aquí</h1>
+        </p>
+        <h2 className="text-4xl small:text-5xl font-bold">Encuéntrame aquí</h2>
       </div>
       <div className="w-full flex flex-col small:flex-row">
         <LinkCard

@@ -32,10 +32,10 @@ const Carousel = () => {
   return (
     <div className="flex flex-col py-14 small:py-24 gap-10 small:gap-24 items-center w-full">
       <div className="flex flex-col gap-4 text-center">
-        <h2 className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
+        <p className="uppercase text-primary font-semibold text-xl small:text-2xl tracking-widest">
           X.com
-        </h2>
-        <h1 className="text-4xl small:text-5xl font-bold">Algunos de mis post</h1>
+        </p>
+        <h2 className="text-4xl small:text-5xl font-bold">Algunos de mis post</h2>
       </div>
       <div className="grid grid-cols-1 small:grid-cols-2 large:grid-cols-4 gap-6">
         {cardsData.map((card, index) => (
@@ -53,7 +53,7 @@ const Carousel = () => {
               />
             </div>
             <div className="card-body">
-              <h2 className="card-title">{card.title}</h2>
+              <h3 className="card-title">{card.title}</h3>
               <p>{card.subtitle}</p>
               <div className="card-actions justify-end">
                 <a

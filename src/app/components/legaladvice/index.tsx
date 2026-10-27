@@ -77,7 +77,7 @@ export const LegalAdvice = () => {
         implicando su sola mención o aparición en el web la existencia de
         derechos o responsabilidad alguna de Marc sobre los mismos, como
         tampoco respaldo, patrocinio, recomendación por parte de Marc
-        Igualmente, todos las Marcas comerciales o signos distintivos
+        Igualmente, todas las marcas comerciales o signos distintivos
         de cualquier clase contenidos en la página web de Marc están
         protegidos por Ley.
       </p>
@@ -91,7 +91,7 @@ export const LegalAdvice = () => {
 
       <p>
         8. Los datos personales que el cliente facilita a Marc serán
-        utillizados únicamente para la elaboración de presupuestos y estos, se
+        utilizados únicamente para la elaboración de presupuestos y estos, se
         eliminarán a los 15 días. En ningún caso estos datos son incorporados a
         base de datos alguna ni cedidos a terceras empresas.
       </p>

@@ -50,10 +50,10 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-8 w-full small:w-[400px]">
       <div className="flex items-center justify-center h-28 bg-base-100 w-full">
-        <h2 className="text-xl font-semibold text-center tracking-wider">
+        <h3 className="text-xl font-semibold text-center tracking-wider">
           Rellena el <br />
           <span className="font-bold uppercase">formulario</span>
-        </h2>
+        </h3>
       </div>
       <div className="flex flex-col gap-4">
         <input
