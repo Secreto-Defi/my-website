@@ -1,6 +1,7 @@
 // Selección curada de guías de La Agenda de SecretoDefi (Substack).
 // Para añadir una: copia el "slug" de la URL del post (lo que va tras /p/).
 // "subscribersOnly" marca los posts de la edición de pago.
+// Las descripciones están escritas tras leer cada post completo.
 
 export type Guide = {
   title: string;
@@ -22,36 +23,29 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     id: "airdrops-y-farming",
     title: "Airdrops y farming",
     description:
-      "Cómo cazar airdrops con cabeza, qué herramientas usar y dónde hacerlo.",
+      "Cómo posicionarte pronto en redes y perp DEX nuevos, con la verdad por delante sobre lo que está y no está confirmado.",
     guides: [
       {
         title: "Tier list de Perp DEXs: dónde farmeo airdrops antes que el resto",
         slug: "tier-list-de-perp-dexs-donde-farmeo",
         description:
-          "Mi ranking personal: dónde tradeo hoy, dónde farmeo sin token todavía y qué vigilo de cerca.",
+          "Mi ranking de perp DEX en tres niveles, con los cinco criterios que uso para puntuarlos: dónde tradeo hoy, dónde farmeo sin token todavía y qué vigilo de cerca.",
         date: "2026-07-17",
       },
       {
-        title: "Los Airdrops no están muertos y hoy es más fácil que nunca farmearlos",
-        slug: "los-airdrops-no-estan-muertos-y-hoy",
+        title: "Posiciónate en la L1 de Circle antes de que sea más difícil",
+        slug: "como-farmear-arc-testnet-paso-a-paso",
         description:
-          "Si tienes liquidez a largo plazo, aprovecha la eficiencia de capital que te dan estas oportunidades.",
-        date: "2024-10-20",
+          "Paso a paso para farmear la testnet de Arc, la L1 de Circle, sin capital: faucet, swaps, liquidez, lending y una rutina semanal. No hay airdrop confirmado.",
+        date: "2026-07-31",
+        subscribersOnly: true,
       },
       {
-        title:
-          "Utiliza las testnets para aprender a usar una red y todo su ecosistema mientras calificamos para el airdrop de su token",
-        slug: "utiliza-las-testnets-para-aprender",
+        title: "Las trincheras de Robinhood están muy calientes",
+        slug: "primeros-pasos-en-robinhood-chain",
         description:
-          "Farmear testnets incentivadas es una forma de aprender una red desde dentro y optar al airdrop de su token.",
-        date: "2024-06-28",
-      },
-      {
-        title: "10 herramientas necesaria para tu día a día",
-        slug: "10-herramientas-necesaria-para-tu",
-        description:
-          "Tenerlo todo en la cabeza no es buena idea: las herramientas que uso para organizarme en el día a día.",
-        date: "2024-08-08",
+          "Guía paso a paso para entrar en Robinhood Chain: añadir la red, puentear fondos y qué hacer dentro, y por qué el «airdrop de Robinhood» no está confirmado.",
+        date: "2026-07-28",
       },
     ],
   },
@@ -59,13 +53,13 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     id: "liquidez-y-yield",
     title: "Liquidez y yield",
     description:
-      "Cómo funcionan las pools, los incentivos y las estrategias para generar rendimiento, y los riesgos que hay detrás.",
+      "Cómo funcionan las pools, los incentivos y las estrategias de rendimiento, y los riesgos que hay detrás.",
     guides: [
       {
         title: "Guía definitiva para usar Meteora en Solana (primera parte)",
         slug: "guia-definitiva-para-usar-meteora",
         description:
-          "Todos los conceptos necesarios para montar pools de liquidez concentrada y ganar comisiones mientras farmeas su airdrop. Primera parte de una serie.",
+          "Los conceptos básicos del DLMM de Meteora: cómo funcionan los bins de liquidez y por qué mejoran la eficiencia del capital, con un ejemplo práctico. Primera parte de una serie.",
         date: "2024-08-24",
         subscribersOnly: true,
       },
@@ -73,29 +67,37 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         title: "Estrategia Anti-Sawtooth en Meteora",
         slug: "estrategia-anti-sawtooth-en-meteora",
         description:
-          "Qué es la estrategia anti-sawtooth y cómo funciona, explicada en unos 10 minutos.",
+          "Cómo rellenar con una posición Curve el hueco de liquidez que dejan dos posiciones bid-ask seguidas, para cobrar fees en todo el rango.",
         date: "2025-03-04",
       },
       {
         title: "Entiende los hooks de las v4 de Uniswap para generar más APR",
         slug: "uniswap-v4-y-los-hooks-el-super-poder",
         description:
-          "Qué es esa casilla nueva al crear una pool, para qué sirve de verdad y por qué un hook malicioso puede subir las fees al 100% o bloquear tus retiradas.",
+          "Qué es un hook, qué permite (comisiones dinámicas, órdenes límite, TWAMM), un ejemplo de «impuesto de creador» y cómo protegerte de un hook malicioso.",
         date: "2026-10-02",
       },
       {
         title: "Entiende el flywheel de los DEX ve(3,3)",
         slug: "como-funcionan-los-dex-ve33-y-por",
         description:
-          "El modelo que reparte las fees a quien bloquea el token, no a los LPs, explicado con Nest como ejemplo.",
+          "Por qué los LPs cobran emisiones mientras quien bloquea el token cobra las fees, cómo funciona el voto por epoch y dónde está el riesgo de inflación, con Nest en HyperEVM como ejemplo.",
         date: "2026-08-28",
       },
       {
-        title: "Entiendo cómo funcionan los loops de Pendle",
+        title: "Entiende cómo funcionan los loops de Pendle",
         slug: "pt-looping-en-pendle-de-donde-sale",
         description:
-          "Qué es, cómo se monta paso a paso y los dos riesgos que conviene conocer: carry negativo y liquidación.",
+          "Qué es un PT, cómo el looping multiplica el APY y de dónde sale de verdad un «72%», cómo se monta paso a paso y los dos riesgos clave: carry negativo y liquidación.",
         date: "2026-08-22",
+        subscribersOnly: true,
+      },
+      {
+        title: "Analiza tus pools y conoce si estás siendo rentable o no",
+        slug: "como-monitorizo-mis-pools-de-hyperevm",
+        description:
+          "Las seis métricas para saber si una posición de liquidez concentrada bate a holdear, cómo leerlas y reglas para decidir cuándo tocarla, con Krystal en HyperEVM.",
+        date: "2026-08-13",
         subscribersOnly: true,
       },
     ],
@@ -104,69 +106,46 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     id: "mercados-y-narrativas",
     title: "Mercados y narrativas",
     description:
-      "Qué está pasando en perpetuos, activos del mundo real, mercados de predicción y nuevas cadenas.",
+      "Qué se mueve en activos del mundo real y en nuevas cadenas pensadas para el trading.",
     guides: [
       {
         title:
           "RWA onchain: cómo se trada oro, acciones y petróleo en cripto (y por qué es LA narrativa de 2026)",
         slug: "rwa-onchain-como-se-trada-oro-acciones",
         description:
-          "Qué es operable de los activos del mundo real en cadena, dónde y cómo posicionarte.",
+          "Qué es un RWA, cómo se operan oro, acciones y petróleo en cadena (tokenizados o con perpetuos) y los riesgos: custodio, liquidez, regulación y apalancamiento.",
         date: "2026-10-19",
       },
       {
-        title: "HIP-3 DE HYPERLIQUID > Creación de mercados sin permiso",
-        slug: "hip-3-de-hyperliquid-creacion-de",
+        title:
+          "TxFlow: la L1 que no quiere que construyas liquidez (y por qué eso lo cambia todo)",
+        slug: "txflow-la-l1-que-no-quiere-que-construyas",
         description:
-          "¿Caminamos hacia una creación de mercados descentralizada y sin permisos o es solo apariencia?",
-        date: "2025-09-22",
-      },
-      {
-        title: "Polymarket > Las Finanzas de la Información",
-        slug: "polymarket-las-finanzas-de-la-informacion",
-        description:
-          "Cómo los mercados de predicción han evolucionado más allá de la especulación.",
-        date: "2025-11-12",
-      },
-      {
-        title: "Las trincheras de Robinhood están muy calientes",
-        slug: "primeros-pasos-en-robinhood-chain",
-        description:
-          "Guía paso a paso para entrar en la L2 de Robinhood: añadir la red, puentear fondos y qué hacer dentro.",
-        date: "2026-07-28",
+          "La tesis de TxFlow, una L1 donde las aplicaciones se conectan a una liquidez compartida, cómo funciona y los riesgos de posicionarse antes de que haya token.",
+        date: "2026-08-17",
       },
     ],
   },
   {
-    id: "estrategia-y-mercados",
-    title: "Estrategia y gestión del riesgo",
+    id: "herramientas-y-riesgo",
+    title: "Herramientas y gestión del riesgo",
     description:
-      "Cómo leer el mercado y reducir la exposición cuando hace falta.",
+      "Herramientas para investigar y protegerte, y cómo reconocer las trampas más comunes antes de pagar o firmar nada.",
     guides: [
       {
-        title: "Estrategia Antifrágil (Parte 1/3)",
-        slug: "estrategia-antifragil-parte-13",
-        description: "Cómo reducir nuestra exposición al mercado y ganar más.",
-        date: "2025-02-25",
-      },
-      {
-        title: "Estrategia AntiFrágil (2/3)",
-        slug: "estrategia-antifragil-23",
-        description: "Cómo detectar euforias y crisis financieras.",
-        date: "2025-03-11",
-      },
-      {
-        title: "Estrategia Antifrágil (3/3)",
-        slug: "estrategia-antifragil-33",
-        description: "Indicadores y herramientas.",
-        date: "2025-04-01",
-      },
-      {
-        title: "¿Cómo funcionan los mercados financieros?",
-        slug: "como-funcionan-los-mercados-financieros",
+        title: "10 herramientas necesarias para tu día a día",
+        slug: "10-herramientas-necesaria-para-tu",
         description:
-          "Stan Weinstein y Richard Wyckoff para entender cómo se mueven los mercados financieros.",
-        date: "2024-11-05",
+          "Diez herramientas y hábitos: seguimiento de airdrops y de rondas de financiación, datos onchain, calculadora de impermanent loss, comprobación de contratos y enlaces, y un agregador para mover fondos entre redes.",
+        date: "2024-08-08",
+      },
+      {
+        title: "Si no tienes capital propio, usa las Prop Firms para capitalizarte",
+        slug: "cuentas-de-fondeo-en-cripto-como",
+        description:
+          "Cómo funciona de verdad una cuenta de fondeo, qué exige la evaluación, por qué solo una minoría llega a cobrar y un checklist de señales de alerta antes de pagar.",
+        date: "2026-10-11",
+        subscribersOnly: true,
       },
     ],
   },
