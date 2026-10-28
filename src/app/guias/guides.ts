@@ -106,7 +106,7 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     id: "mercados-y-narrativas",
     title: "Mercados y narrativas",
     description:
-      "Qué se mueve en activos del mundo real y en nuevas cadenas pensadas para el trading.",
+      "Qué se mueve en activos del mundo real, mercados de predicción y la infraestructura de trading onchain.",
     guides: [
       {
         title:
@@ -123,6 +123,20 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "La tesis de TxFlow, una L1 donde las aplicaciones se conectan a una liquidez compartida, cómo funciona y los riesgos de posicionarse antes de que haya token.",
         date: "2026-08-17",
+      },
+      {
+        title: "Polymarket > Las Finanzas de la Información",
+        slug: "polymarket-las-finanzas-de-la-informacion",
+        description:
+          "Cómo funciona Polymarket (libro de órdenes híbrido, oráculo de UMA, tipos de mercado), el papel de ICE y X, y los escenarios del posible token $POLY. Análisis de noviembre de 2025.",
+        date: "2025-11-12",
+      },
+      {
+        title: "HIP-3 DE HYPERLIQUID > Creación de mercados sin permiso",
+        slug: "hip-3-de-hyperliquid-creacion-de",
+        description:
+          "Cómo permite HIP-3 que cualquier equipo despliegue su propio mercado perpetuo en Hyperliquid: stake, subasta de despliegue, oráculo e incentivos para creadores y traders. Análisis de septiembre de 2025, con nota de actualización.",
+        date: "2025-09-22",
       },
     ],
   },
