@@ -74,7 +74,7 @@ const Links = () => {
           IconComponent={FaTelegram}
         />
         <LinkCard
-          href="https://secretodefi.substack.com/subscribe"
+          href="https://substack.secretodefi.com/subscribe"
           title="Consigue la membresía"
           description="Entérate primero"
           platform="Substack"

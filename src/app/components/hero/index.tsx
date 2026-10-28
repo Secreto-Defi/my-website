@@ -19,7 +19,7 @@ const Hero = () => {
         </ul>
         <div className="flex gap-4 items-center">
           <a
-            href="https://secretodefi.substack.com/subscribe"
+            href="https://substack.secretodefi.com/subscribe"
             target="_blank"
             className="group"
           >
