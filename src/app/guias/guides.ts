@@ -47,6 +47,31 @@ export const GUIDE_GROUPS: GuideGroup[] = [
           "Guía paso a paso para entrar en Robinhood Chain: añadir la red, puentear fondos y qué hacer dentro, y por qué el «airdrop de Robinhood» no está confirmado.",
         date: "2026-07-28",
       },
+      {
+        title:
+          "Cómo generé 1,4 millones de dólares de volumen farmeando RiseX (con un bot y sin saber tradear)",
+        slug: "como-genere-14-millones-de-dolares",
+        description:
+          "Cómo farmear volumen en RiseX con un bot de market making de TreadFi: la configuración, la regla del spread según la volatilidad y los resultados reales de todos los ciclos, pérdidas incluidas.",
+        date: "2026-07-21",
+        subscribersOnly: true,
+      },
+      {
+        title:
+          "Los Agents de TreadFi: cómo elegir el mejor par y proteger tu PNL sin ser trader",
+        slug: "los-agents-de-treadfi-como-elegir",
+        description:
+          "Cómo usar los agentes de IA de TreadFi para elegir el mejor par donde farmear, vigilar el coste y proteger el PNL, con acceso de solo lectura, un ejemplo real y los límites del sistema.",
+        date: "2026-07-24",
+        subscribersOnly: true,
+      },
+      {
+        title: "Generé $1,6M de volumen en RiseX para solo 195 puntos...",
+        slug: "genere-16m-de-volumen-en-risex-para",
+        description:
+          "Qué puntúa de verdad el programa Ignite de RiseX, con números reales: el volumen de un bot de market making dio pocos puntos. El giro a delta neutral, los errores cometidos y los riesgos.",
+        date: "2026-08-10",
+      },
     ],
   },
   {
@@ -61,6 +86,30 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "Los conceptos básicos del DLMM de Meteora: cómo funcionan los bins de liquidez y por qué mejoran la eficiencia del capital, con un ejemplo práctico. Primera parte de una serie.",
         date: "2024-08-24",
+        subscribersOnly: true,
+      },
+      {
+        title: "Guía definitiva para usar Meteora en Solana (segunda parte)",
+        slug: "guia-definitiva-para-usar-meteora-370",
+        description:
+          "El bin-step explicado: qué es un bin, cómo el porcentaje entre bins define el rango que genera comisiones, por qué un bin-step pequeño rinde más pero arriesga más pérdida impermanente, y la estrategia bid-ask.",
+        date: "2024-08-27",
+        subscribersOnly: true,
+      },
+      {
+        title: "La guía definitiva para usar Meteora (Parte 4)",
+        slug: "la-guia-definitiva-para-usar-meteora",
+        description:
+          "Las tres estrategias de liquidez de los DLMM de Meteora: Spot (concentrado, spread y wide), Curve y Bid-Ask. Para qué mercado sirve cada una y cuándo toca reequilibrar.",
+        date: "2024-09-02",
+        subscribersOnly: true,
+      },
+      {
+        title: "Masterclass AMMs vs CLMMs vs DLMMs",
+        slug: "masterclass-amms-vs-clmms-vs-dlmms",
+        description:
+          "En qué se diferencian un AMM, un CLMM y un DLMM, y qué parámetros revisar antes de abrir una posición en Meteora (bin step, comisiones base, máxima y dinámica), con sus riesgos.",
+        date: "2024-09-05",
         subscribersOnly: true,
       },
       {
@@ -83,6 +132,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "Por qué los LPs cobran emisiones mientras quien bloquea el token cobra las fees, cómo funciona el voto por epoch y dónde está el riesgo de inflación, con Nest en HyperEVM como ejemplo.",
         date: "2026-08-28",
+      },
+      {
+        title: "PT/YT > El rendimiento tokenizado",
+        slug: "ptyt-el-rendimiento-tokenizado",
+        description:
+          "Qué son los tokens PT y YT de Pendle y cómo separan principal y rendimiento, con un ejemplo paso a paso, su uso para cobertura y especulación, el impacto en los LPs y un caso práctico con stHYPE en HyperEVM y Valantis.",
+        date: "2025-09-05",
+        subscribersOnly: true,
       },
       {
         title: "Entiende cómo funcionan los loops de Pendle",
@@ -152,6 +209,13 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "Diez herramientas y hábitos: seguimiento de airdrops y de rondas de financiación, datos onchain, calculadora de impermanent loss, comprobación de contratos y enlaces, y un agregador para mover fondos entre redes.",
         date: "2024-08-08",
+      },
+      {
+        title: "Sé un detective onchain",
+        slug: "se-un-detective-onchain",
+        description:
+          "Cómo usar InsightX para ver cómo se reparte un token entre sus holders, agrupar wallets en clusters y detectar wallets proxy, con un ejemplo práctico paso a paso.",
+        date: "2025-01-26",
       },
       {
         title: "Si no tienes capital propio, usa las Prop Firms para capitalizarte",
