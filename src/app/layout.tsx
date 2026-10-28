@@ -57,7 +57,7 @@ const structuredData = {
     "https://t.me/secretodefi",
     "https://www.youtube.com/@secretodefi",
     "https://www.instagram.com/secretodefi/",
-    "https://secretodefi.substack.com",
+    "https://substack.secretodefi.com",
   ],
 };
 

@@ -4,6 +4,7 @@ import Carousel from "./components/carousel";
 import Description from "./components/description";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
+import LatestPosts from "./components/latestposts";
 import Links from "./components/links";
 import NavBar from "./components/nav";
 import Promotion from "./components/promotion";
@@ -18,6 +19,7 @@ export default function Home() {
         <About />
         <Advisory />
         <Links />
+        <LatestPosts />
         <Carousel />
         <Promotion />
       </main>

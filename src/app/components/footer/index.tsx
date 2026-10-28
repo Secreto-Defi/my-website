@@ -27,7 +27,7 @@ const Footer = () => {
             <FaTelegram />
           </a>
           <a
-            href="https://secretodefi.substack.com/subscribe"
+            href="https://substack.secretodefi.com/subscribe"
             target="_blank"
             aria-label="Substack"
             className="text-xl"
@@ -52,7 +52,8 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <nav className="grid grid-flow-col">
+      <nav className="grid grid-flow-col gap-6">
+        <Link href="/guias" className="link link-hover">Guías de DeFi y airdrops</Link>
         <Link href="/legal" className="link link-hover">Aviso legal y Política de privacidad</Link>
       </nav>
       <aside>

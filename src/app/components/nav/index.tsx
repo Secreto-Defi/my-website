@@ -72,6 +72,12 @@ const NavBar = () => {
           <div className="hidden flex-none lg:block">
             <div className="menu menu-horizontal flex items-center gap-5 text-3xl">
               {/* Navbar menu content here */}
+              <a
+                href="/guias"
+                className="text-base font-semibold uppercase tracking-wider px-2 hover:text-primary"
+              >
+                Guías
+              </a>
               <a href="https://x.com/SecretoDefi" target="_blank" aria-label="X (Twitter)">
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
                   <FaXTwitter />
@@ -83,7 +89,7 @@ const NavBar = () => {
                 </div>
               </a>
               <a
-                href="https://secretodefi.substack.com/subscribe"
+                href="https://substack.secretodefi.com/subscribe"
                 target="_blank"
                 aria-label="Substack"
               >
@@ -202,6 +208,12 @@ const NavBar = () => {
             Inicio
           </a>
           <a
+            href="/guias"
+            className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
+          >
+            Guías
+          </a>
+          <a
             href="https://t.me/secretodefi"
             target="_blank"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
@@ -216,7 +228,7 @@ const NavBar = () => {
             X.com
           </a>
           <a
-            href="https://secretodefi.substack.com/subscribe"
+            href="https://substack.secretodefi.com/subscribe"
             target="_blank"
             className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
           >
