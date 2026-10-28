@@ -38,14 +38,21 @@ function decodeEntities(text: string): string {
   );
 }
 
-function readTag(block: string, tag: string): string {
+// Devuelve el contenido de la etiqueta sin el envoltorio CDATA, sin decodificar.
+function readRaw(block: string, tag: string): string {
   const match = block.match(
     new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)</${tag}>`)
   );
   if (!match) return "";
   const raw = match[1].trim();
   const cdata = raw.match(/^<!\[CDATA\[([\s\S]*?)\]\]>$/);
-  return (cdata ? cdata[1] : decodeEntities(raw)).trim();
+  return (cdata ? cdata[1] : raw).trim();
+}
+
+// Substack escapa las tildes con entidades (&#233;) incluso dentro del CDATA,
+// así que siempre se decodifica.
+function readTag(block: string, tag: string): string {
+  return decodeEntities(readRaw(block, tag)).trim();
 }
 
 // Solo aceptamos enlaces a artículos de nuestro propio Substack.
@@ -77,7 +84,11 @@ export function parseFeed(xml: string, limit: number): SubstackPost[] {
     posts.push({
       title,
       url,
-      description: readTag(item, "description").replace(/<[^>]*>/g, "").trim(),
+      // Primero se quitan etiquetas y después se decodifica, para no perder
+      // texto legítimo como "<v4>" que llegue escapado.
+      description: decodeEntities(
+        readRaw(item, "description").replace(/<[^>]*>/g, "")
+      ).trim(),
       publishedAt: published.toISOString(),
     });
   }
