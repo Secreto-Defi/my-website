@@ -38,9 +38,9 @@ const NavBar = () => {
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
-              aria-label="open sidebar"
               className="btn btn-square btn-ghost"
             >
+              <span className="sr-only">Abrir menú</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -196,9 +196,10 @@ const NavBar = () => {
       <div className="drawer-side z-50">
         <label
           htmlFor="my-drawer-3"
-          aria-label="close sidebar"
           className="drawer-overlay"
-        ></label>
+        >
+          <span className="sr-only">Cerrar menú</span>
+        </label>
         <div className="menu bg-base-200 min-h-full w-80 py-10 gap-2">
           {/* Sidebar content here */}
           <a

@@ -64,7 +64,7 @@ const Footer = () => {
         </p>
       </aside>
       <nav className="grid grid-flow-col">
-        <a href="https://t.me/chukinice" target="_blank" >Design by: <img src="/logo-sin.png" alt="web developer" className="w-32" /></a>
+        <a href="https://t.me/chukinice" target="_blank" rel="noopener noreferrer">Design by: <img src="/logo-sin.png" alt="web developer" width={300} height={150} loading="lazy" className="w-32" /></a>
       </nav>
     </footer>
   );
