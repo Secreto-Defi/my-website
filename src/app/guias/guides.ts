@@ -121,6 +121,28 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         subscribersOnly: true,
       },
       {
+        title: "Sé un experto en la liquidez concentrada",
+        slug: "se-un-experto-en-la-liquidez-concentrada",
+        description:
+          "Cómo usar Hawksight, un agregador de liquidez para Solana, con un ejemplo práctico: rebalanceo automático de rangos, reinversión de fees, stop loss y take profit. Escrita con el producto en beta: comprueba sus condiciones actuales.",
+        date: "2024-09-09",
+        subscribersOnly: true,
+      },
+      {
+        title: "¡Actualizaciones importantes en Meteora! (Parte 1)",
+        slug: "actualizaciones-importantes-en-meteora",
+        description:
+          "Cómo usar las franjas horarias del Fee/TVL de Meteora para ver el APR real de una pool y descartar tokens sin volumen, con un ejemplo en el que un 654 % de APR a 24 horas se queda en un 7 % en las últimas 4.",
+        date: "2025-02-12",
+      },
+      {
+        title: "¡Actualizaciones importantes en Meteora! (Parte 2)",
+        slug: "actualizaciones-importantes-en-meteora-69e",
+        description:
+          "Las novedades de seguridad y gestión de Meteora: el aviso de Freeze Authority, reclamar todas las fees o cerrar todas las posiciones de una vez, y mejoras en Portfolio, al añadir y retirar liquidez y en las comisiones de apertura.",
+        date: "2025-02-17",
+      },
+      {
         title: "Estrategia Anti-Sawtooth en Meteora",
         slug: "estrategia-anti-sawtooth-en-meteora",
         description:
