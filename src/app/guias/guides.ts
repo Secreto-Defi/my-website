@@ -12,11 +12,20 @@ export type Guide = {
 };
 
 export type GuideGroup = {
-  id: string;
+  id: string; // también es la URL de la página del tema: /guias/<id>
   title: string;
   description: string;
+  // Página propia del tema (/guias/<id>)
+  heading: string; // H1
+  seoTitle: string; // <title>, idealmente 60 caracteres o menos
+  seoDescription: string; // meta descripción, idealmente 155 caracteres o menos
+  intro: string[]; // párrafos de introducción originales
   guides: Guide[];
 };
+
+// Aviso común a /guias y a las páginas de tema.
+export const DISCLAIMER =
+  "Todo el contenido es educativo y refleja mi experiencia personal. No es asesoramiento financiero ni una recomendación de inversión: haz tu propia investigación. Operar con criptoactivos conlleva riesgo, incluida la pérdida total del capital.";
 
 export const GUIDE_GROUPS: GuideGroup[] = [
   {
@@ -24,6 +33,15 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     title: "Airdrops y farming",
     description:
       "Cómo posicionarte pronto en redes y perp DEX nuevos, con la verdad por delante sobre lo que está y no está confirmado.",
+    heading: "Airdrops y farming: guías en español",
+    seoTitle: "Guías de airdrops y farming en español | Secreto Defi",
+    seoDescription:
+      "Guías en español para posicionarte pronto en perp DEX y redes nuevas: tier list, Arc, Robinhood Chain, RiseX y TreadFi, con lo confirmado y lo que no.",
+    intro: [
+      "Un airdrop es un reparto de tokens entre quienes usaron un protocolo antes de que tuviera token. Farmear es posicionarte pronto: operar, aportar liquidez o completar tareas en una red o un perp DEX para acumular puntos, sin ninguna garantía de recompensa.",
+      "Estas guías cubren cómo priorizar perp DEX con una tier list, cómo entrar en redes nuevas como la testnet de Arc o Robinhood Chain, cómo ganar el doble de puntos de $LIT operando desde la Robinhood Wallet y cómo se mide de verdad el farmeo de volumen en RiseX con bots y agentes de TreadFi, con resultados reales, pérdidas incluidas.",
+      "Ningún programa de puntos garantiza un airdrop. En las guías que lo requieren se indica qué está confirmado y qué no.",
+    ],
     guides: [
       {
         title: "Tier list de Perp DEXs: dónde farmeo airdrops antes que el resto",
@@ -87,6 +105,15 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     title: "Liquidez y yield",
     description:
       "Cómo funcionan las pools, los incentivos y las estrategias de rendimiento, y los riesgos que hay detrás.",
+    heading: "Liquidez y yield: guías en español",
+    seoTitle: "Guías de liquidez y yield en DeFi | Secreto Defi",
+    seoDescription:
+      "Guías en español sobre liquidez concentrada y yield: Meteora, hooks de Uniswap v4, ve(3,3), Pendle y cómo cubrir el impermanent loss, con sus riesgos.",
+    intro: [
+      "Proveer liquidez en un exchange descentralizado te permite cobrar comisiones, pero te expone al impermanent loss: la diferencia entre lo que ganas y lo que habrías tenido simplemente manteniendo los activos. Con liquidez concentrada, el rango que elijas cambia tanto el rendimiento como el riesgo.",
+      "Aquí está la serie de Meteora y los DLMM (bins, bin-step y las estrategias Spot, Curve y Bid-Ask), la comparación entre AMM, CLMM y DLMM, los hooks de Uniswap v4, el modelo ve(3,3), los tokens PT/YT y los loops de Pendle, las métricas para saber si tu posición bate a holdear y cómo cubrir el impermanent loss con un corto en perps.",
+      "Un APY alto no es lo mismo que rentabilidad real: cada guía explica de dónde sale el rendimiento y qué puede salir mal, como el carry negativo, la liquidación o la inflación de emisiones.",
+    ],
     guides: [
       {
         title: "Guía definitiva para usar Meteora en Solana (primera parte)",
@@ -210,6 +237,15 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     title: "Mercados y narrativas",
     description:
       "Qué se mueve en activos del mundo real, mercados de predicción y la infraestructura de trading onchain.",
+    heading: "Mercados y narrativas: análisis en español",
+    seoTitle: "RWA, Polymarket, HIP-3 y TxFlow: análisis | Secreto Defi",
+    seoDescription:
+      "Análisis en español de RWA onchain, TxFlow, Polymarket y HIP-3 de Hyperliquid: cómo funcionan, qué hay detrás y los riesgos de posicionarte.",
+    intro: [
+      "Una narrativa es la historia que concentra la atención y el capital del sector durante un tiempo. Estos análisis intentan separar la tesis de lo que hay de verdad detrás: cómo funciona cada pieza, quién participa y qué puede fallar.",
+      "Encontrarás cómo se operan oro, acciones y petróleo en cadena (RWA, con tokens o con perpetuos), la tesis de TxFlow y su liquidez compartida, cómo funciona Polymarket y los escenarios de un posible token, y cómo permite HIP-3 crear mercados perpetuos en Hyperliquid sin permiso.",
+      "Algunos análisis son de 2025 y llevan su fecha en la tarjeta: compruébala antes de tomar cualquier decisión, porque el mercado cambia rápido.",
+    ],
     guides: [
       {
         title:
@@ -248,6 +284,15 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     title: "Herramientas y gestión del riesgo",
     description:
       "Herramientas para investigar y protegerte, y cómo reconocer las trampas más comunes antes de pagar o firmar nada.",
+    heading: "Herramientas y gestión del riesgo en DeFi",
+    seoTitle: "Herramientas DeFi y gestión del riesgo | Secreto Defi",
+    seoDescription:
+      "Herramientas y hábitos para investigar y protegerte en DeFi: seguimiento de airdrops, análisis onchain con InsightX, prop firms y tarjeta Visa con cripto.",
+    intro: [
+      "Antes de buscar rendimiento conviene tener las herramientas para investigar un token, comprobar un contrato o un enlace y mover fondos entre redes sin cometer errores caros.",
+      "Aquí hay diez herramientas y hábitos para el día a día, cómo usar InsightX para ver cómo se reparte un token entre sus holders y detectar wallets proxy, cómo funciona de verdad una cuenta de fondeo (prop firm) y una guía sobre una tarjeta Visa prepago que se recarga con cripto.",
+      "La seguridad empieza por no fiarse: verifica siempre direcciones, contratos y enlaces antes de firmar o pagar nada.",
+    ],
     guides: [
       {
         title: "10 herramientas necesarias para tu día a día",
