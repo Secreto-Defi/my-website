@@ -264,7 +264,7 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         date: "2025-01-26",
       },
       {
-        title: "¡Recarga con cripto y gastalo donde acepten Visa!",
+        title: "¡Recarga con cripto y gástalo donde acepten Visa!",
         slug: "atencion-a-todos-los-que-valorais",
         description:
           "Qué es Freedomia, una tarjeta Visa prepago que se recarga con cripto sin verificación de identidad, según el post: cómo se usa con Google Wallet, sus planes, límites y comisiones, y la verificación por SMS. El emisor está en Hong Kong.",
