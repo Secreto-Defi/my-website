@@ -5,6 +5,7 @@ import {
   SUBSTACK_ARCHIVE_URL,
   SUBSTACK_SUBSCRIBE_URL,
   SUBSTACK_URL,
+  withUtm,
 } from "../lib/links";
 import { GUIDE_GROUPS } from "./guides";
 
@@ -132,7 +133,7 @@ export default function GuiasPage() {
                     </div>
                     <h3 className="card-title">
                       <a
-                        href={postUrl(guide.slug)}
+                        href={withUtm(postUrl(guide.slug), "guias", guide.slug)}
                         target="_blank"
                         rel="noopener"
                         className="after:absolute after:inset-0"
@@ -164,7 +165,7 @@ export default function GuiasPage() {
           </p>
           <div className="flex flex-col small:flex-row gap-4 items-center">
             <a
-              href={SUBSTACK_SUBSCRIBE_URL}
+              href={withUtm(SUBSTACK_SUBSCRIBE_URL, "guias", "suscribete")}
               target="_blank"
               rel="noopener"
               className="btn btn-primary rounded-none font-bold tracking-wider uppercase"
@@ -172,7 +173,7 @@ export default function GuiasPage() {
               Suscríbete
             </a>
             <a
-              href={SUBSTACK_ARCHIVE_URL}
+              href={withUtm(SUBSTACK_ARCHIVE_URL, "guias", "archivo")}
               target="_blank"
               rel="noopener"
               className="btn btn-outline rounded-none font-bold"
