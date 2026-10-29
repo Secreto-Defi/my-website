@@ -28,20 +28,20 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/logo-secreto.png",
-        width: 500,
-        height: 500,
-        alt: "Logo de Secreto Defi",
+        url: "/og-guias.png",
+        width: 1200,
+        height: 630,
+        alt: "Guías de DeFi, airdrops y yield farming en español | La Agenda de SecretoDefi",
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@SecretoDefi",
     creator: "@SecretoDefi",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/logo-secreto.png"],
+    images: ["/og-guias.png"],
   },
 };
 
