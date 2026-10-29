@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Footer from "../components/footer";
 import NavBar from "../components/nav";
 import {
   SUBSTACK_ARCHIVE_URL,
   SUBSTACK_SUBSCRIBE_URL,
-  SUBSTACK_URL,
   withUtm,
 } from "../lib/links";
-import { GUIDE_GROUPS } from "./guides";
+import GuideCard, { postUrl } from "./guide-card";
+import { DISCLAIMER, GUIDE_GROUPS } from "./guides";
 
 const SITE_URL = "https://www.secretodefi.com";
 const PAGE_URL = `${SITE_URL}/guias`;
@@ -44,14 +45,6 @@ export const metadata: Metadata = {
     images: ["/og-guias.png"],
   },
 };
-
-const dateFormatter = new Intl.DateTimeFormat("es-ES", {
-  month: "short",
-  year: "numeric",
-  timeZone: "UTC",
-});
-
-const postUrl = (slug: string) => `${SUBSTACK_URL}/p/${slug}`;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -94,12 +87,7 @@ export default function GuiasPage() {
             marcadas como «Suscriptores» forman parte de la edición de pago; el
             resto se puede leer gratis.
           </p>
-          <p className="text-sm opacity-70">
-            Todo el contenido es educativo y refleja mi experiencia personal. No
-            es asesoramiento financiero ni una recomendación de inversión: haz
-            tu propia investigación. Operar con criptoactivos conlleva riesgo,
-            incluida la pérdida total del capital.
-          </p>
+          <p className="text-sm opacity-70">{DISCLAIMER}</p>
         </header>
 
         {GUIDE_GROUPS.map((group) => (
@@ -113,43 +101,16 @@ export default function GuiasPage() {
                 {group.title}
               </h2>
               <p className="text-lg font-light">{group.description}</p>
+              <Link
+                href={`/guias/${group.id}`}
+                className="link link-primary font-semibold w-fit"
+              >
+                Ver todo sobre {group.title.toLowerCase()} →
+              </Link>
             </div>
             <ul className="grid grid-cols-1 small:grid-cols-2 gap-6">
               {group.guides.map((guide) => (
-                <li
-                  key={guide.slug}
-                  className="card relative bg-base-100 shadow-xl rounded-none hover:bg-primary hover:text-base-300 transition duration-300 ease-in-out"
-                >
-                  <div className="card-body">
-                    <div className="flex items-center justify-between gap-2 text-sm">
-                      <time className="opacity-70" dateTime={guide.date}>
-                        {dateFormatter.format(new Date(guide.date))}
-                      </time>
-                      {guide.subscribersOnly && (
-                        <span className="badge badge-outline font-semibold">
-                          Suscriptores
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="card-title">
-                      <a
-                        href={withUtm(postUrl(guide.slug), "guias", guide.slug)}
-                        target="_blank"
-                        rel="noopener"
-                        className="after:absolute after:inset-0"
-                      >
-                        {guide.title}
-                      </a>
-                    </h3>
-                    <p>{guide.description}</p>
-                    <span
-                      aria-hidden="true"
-                      className="mt-auto pt-4 font-bold uppercase tracking-wider"
-                    >
-                      Leer guía →
-                    </span>
-                  </div>
-                </li>
+                <GuideCard key={guide.slug} guide={guide} campaign="guias" />
               ))}
             </ul>
           </section>

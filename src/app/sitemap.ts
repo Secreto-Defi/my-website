@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { GUIDE_GROUPS } from "./guias/guides";
+
 const SITE_URL = "https://www.secretodefi.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    ...GUIDE_GROUPS.map((group) => ({
+      url: `${SITE_URL}/guias/${group.id}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
     {
       url: `${SITE_URL}/legal`,
       lastModified,
