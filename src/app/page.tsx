@@ -8,6 +8,7 @@ import LatestPosts from "./components/latestposts";
 import Links from "./components/links";
 import NavBar from "./components/nav";
 import Promotion from "./components/promotion";
+import Topics from "./components/topics";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Advisory />
         <Links />
         <LatestPosts />
+        <Topics />
         <Carousel />
         <Promotion />
       </main>

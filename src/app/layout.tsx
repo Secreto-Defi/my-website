@@ -24,25 +24,34 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/logo-secreto.png",
-        width: 500,
-        height: 500,
-        alt: "Logo de Secreto Defi",
+        url: "/og-home.png",
+        width: 1200,
+        height: 630,
+        alt: "Secreto Defi: airdrops, DeFi y yield farming en español",
       },
     ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@SecretoDefi",
     creator: "@SecretoDefi",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/logo-secreto.png"],
+    images: ["/og-home.png"],
   },
   icons: {
     icon: "/favicon.ico",
     apple: "/logo-secreto.png",
   },
+};
+
+const websiteData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Secreto Defi",
+  alternateName: ["SecretoDefi", "Secreto DeFi"],
+  url: SITE_URL,
+  inLanguage: "es",
 };
 
 const structuredData = {
@@ -73,6 +82,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
         />
         <Analytics />
       </body>
