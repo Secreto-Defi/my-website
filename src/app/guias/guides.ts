@@ -49,6 +49,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
       },
       {
         title:
+          "Robinhood te paga $LIT por operar: así se activa el 2x que casi nadie usa",
+        slug: "robinhood-te-paga-lit-por-operar",
+        description:
+          "Cómo ganar el doble de puntos de $LIT operando los perpetuos de Lighter desde la Robinhood Wallet y no desde su web, con los pasos para posicionarte y los riesgos: no hay airdrop de Robinhood confirmado, la liquidez es baja y los incentivos se acaban.",
+        date: "2026-08-05",
+      },
+      {
+        title:
           "Cómo generé 1,4 millones de dólares de volumen farmeando RiseX (con un bot y sin saber tradear)",
         slug: "como-genere-14-millones-de-dolares",
         description:
@@ -185,6 +193,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "Las seis métricas para saber si una posición de liquidez concentrada bate a holdear, cómo leerlas y reglas para decidir cuándo tocarla, con Krystal en HyperEVM.",
         date: "2026-08-13",
+        subscribersOnly: true,
+      },
+      {
+        title: "Cómo hedgear el Impermanent Loss de tus LPs (con perps y lending)",
+        slug: "como-hedgear-el-impermanent-loss",
+        description:
+          "Qué es el Impermanent Loss y cómo neutralizarlo con una posición corta en un perp (delta-neutral): cómo se monta, el funding que a veces cobras por estar corto y los riesgos reales: liquidación, rebalanceo y cuándo no compensa.",
+        date: "2026-10-28",
         subscribersOnly: true,
       },
     ],
