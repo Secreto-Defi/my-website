@@ -97,6 +97,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         subscribersOnly: true,
       },
       {
+        title: "Guía definitiva para usar Meteora (parte 3)",
+        slug: "guia-definitiva-para-usar-meteora-6c6",
+        description:
+          "Las novedades de la dApp de Meteora: retirar liquidez de una sola moneda, el aviso cuando el precio de la pool se desvía del mercado, la alerta por depósitos grandes (20 % del TVL o más) y cómo seguir tus posiciones desde Portfolio.",
+        date: "2024-08-30",
+        subscribersOnly: true,
+      },
+      {
         title: "La guía definitiva para usar Meteora (Parte 4)",
         slug: "la-guia-definitiva-para-usar-meteora",
         description:
