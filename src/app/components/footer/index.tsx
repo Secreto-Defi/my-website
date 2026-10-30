@@ -54,6 +54,7 @@ const Footer = () => {
       </nav>
       <nav className="grid grid-flow-col gap-6">
         <Link href="/guias" className="link link-hover">Guías de DeFi y airdrops</Link>
+        <Link href="/glosario" className="link link-hover">Glosario DeFi</Link>
         <Link href="/legal" className="link link-hover">Aviso legal y Política de privacidad</Link>
       </nav>
       <aside>
