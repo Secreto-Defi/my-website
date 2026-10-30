@@ -87,6 +87,13 @@ export default function GuiasPage() {
             marcadas como «Suscriptores» forman parte de la edición de pago; el
             resto se puede leer gratis.
           </p>
+          <p className="text-lg font-light">
+            ¿Te suena raro algún término? Consulta el{" "}
+            <Link href="/glosario" className="link link-primary">
+              glosario de DeFi
+            </Link>
+            .
+          </p>
           <p className="text-sm opacity-70">{DISCLAIMER}</p>
         </header>
 
