@@ -20,6 +20,8 @@ export type GuideGroup = {
   seoTitle: string; // <title>, idealmente 60 caracteres o menos
   seoDescription: string; // meta descripción, idealmente 155 caracteres o menos
   intro: string[]; // párrafos de introducción originales
+  // Página de contenido propio que se destaca en el tema (opcional)
+  featured?: { href: string; label: string };
   guides: Guide[];
 };
 
@@ -30,6 +32,10 @@ export const DISCLAIMER =
 export const GUIDE_GROUPS: GuideGroup[] = [
   {
     id: "airdrops-y-farming",
+    featured: {
+      href: "/guias/que-es-un-airdrop",
+      label: "Empieza por aquí: qué es un airdrop y cómo farmearlo",
+    },
     title: "Airdrops y farming",
     description:
       "Cómo posicionarte pronto en redes y perp DEX nuevos, con la verdad por delante sobre lo que está y no está confirmado.",

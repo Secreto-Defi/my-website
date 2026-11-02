@@ -7,12 +7,17 @@ export type Term = {
   name: string;
   definition: string;
   guides: string[]; // slugs de guides.ts
+  more?: { href: string; label: string }; // página propia con la explicación completa
 };
 
 export const TERMS: Term[] = [
   {
     id: "airdrop",
     name: "Airdrop",
+    more: {
+      href: "/guias/que-es-un-airdrop",
+      label: "Guía completa: qué es un airdrop y cómo farmearlo",
+    },
     definition:
       "Reparto gratuito de tokens que un proyecto hace a los usuarios que han usado su producto antes de lanzar el token, normalmente según criterios como la actividad, el volumen o la antigüedad. «Farmear un airdrop» es interactuar de forma sostenida con un protocolo para optar a ese reparto; que llegue a haberlo no está garantizado.",
     guides: [

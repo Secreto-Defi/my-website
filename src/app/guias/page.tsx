@@ -88,7 +88,11 @@ export default function GuiasPage() {
             resto se puede leer gratis.
           </p>
           <p className="text-lg font-light">
-            ¿Te suena raro algún término? Consulta el{" "}
+            ¿Empiezas con los airdrops? Lee primero{" "}
+            <Link href="/guias/que-es-un-airdrop" className="link link-primary">
+              qué es un airdrop y cómo farmearlo
+            </Link>
+            . ¿Te suena raro algún término? Consulta el{" "}
             <Link href="/glosario" className="link link-primary">
               glosario de DeFi
             </Link>

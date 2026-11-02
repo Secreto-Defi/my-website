@@ -125,6 +125,13 @@ export default function TemaPage({ params }: { params: { grupo: string } }) {
               </p>
             ))}
           </div>
+          {group.featured && (
+            <p className="text-lg font-semibold">
+              <Link href={group.featured.href} className="link link-primary">
+                {group.featured.label} →
+              </Link>
+            </p>
+          )}
           <p className="text-sm opacity-70">{DISCLAIMER}</p>
         </header>
 
