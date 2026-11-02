@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../../components/footer";
 import NavBar from "../../components/nav";
-import { SUBSTACK_SUBSCRIBE_URL, withUtm } from "../../lib/links";
+import SubscribeBlock from "../../components/subscribe";
 import {
   AIRDROP_GUIDE_PUBLISHED,
   AIRDROP_GUIDE_UPDATED,
@@ -414,23 +414,11 @@ export default function QueEsUnAirdropPage() {
           </p>
         </section>
 
-        <section className="flex flex-col items-center gap-6 text-center bg-base-100 p-10 small:p-16">
-          <h2 className="text-3xl small:text-4xl font-bold">
-            Recibe las próximas guías en tu correo
-          </h2>
-          <p className="text-lg font-light max-w-2xl">
-            En La Agenda comparto lo que estoy farmeando, lo que aprendo y los
-            riesgos que vigilo.
-          </p>
-          <a
-            href={withUtm(SUBSTACK_SUBSCRIBE_URL, CAMPAIGN, "suscribete")}
-            target="_blank"
-            rel="noopener"
-            className="btn btn-primary rounded-none font-bold tracking-wider uppercase"
-          >
-            Suscríbete
-          </a>
-        </section>
+        <SubscribeBlock
+          id="suscripcion"
+          campaign={CAMPAIGN}
+          path="/guias/que-es-un-airdrop"
+        />
       </main>
 
       <Footer />

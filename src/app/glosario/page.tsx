@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../components/footer";
 import NavBar from "../components/nav";
+import SubscribeBlock from "../components/subscribe";
 import { postUrl } from "../guias/guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "../guias/guides";
-import { SUBSTACK_SUBSCRIBE_URL, withUtm } from "../lib/links";
+import { withUtm } from "../lib/links";
 import { TERMS as TERMS_DATA } from "./terms";
 
 // Orden alfabético (en español) para que el índice sea fácil de recorrer.
@@ -176,23 +177,13 @@ export default function GlosarioPage() {
           ))}
         </section>
 
-        <section className="flex flex-col items-center gap-6 text-center bg-base-100 p-10 small:p-16">
-          <h2 className="text-3xl small:text-4xl font-bold">
-            ¿Echas en falta algún término?
-          </h2>
-          <p className="text-lg font-light max-w-2xl">
-            Cuéntamelo desde La Agenda y lo añado. Allí también recibes las
-            próximas guías en tu correo.
-          </p>
-          <a
-            href={withUtm(SUBSTACK_SUBSCRIBE_URL, "glosario", "suscribete")}
-            target="_blank"
-            rel="noopener"
-            className="btn btn-primary rounded-none font-bold tracking-wider uppercase"
-          >
-            Suscríbete
-          </a>
-        </section>
+        <SubscribeBlock
+          id="suscripcion"
+          campaign="glosario"
+          path="/glosario"
+          title="¿Echas en falta algún término?"
+          description="Cuéntamelo desde La Agenda y lo añado. Suscríbete y recibe también las próximas guías en tu correo."
+        />
       </main>
 
       <Footer />

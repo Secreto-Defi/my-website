@@ -2,11 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../components/footer";
 import NavBar from "../components/nav";
-import {
-  SUBSTACK_ARCHIVE_URL,
-  SUBSTACK_SUBSCRIBE_URL,
-  withUtm,
-} from "../lib/links";
+import SubscribeBlock from "../components/subscribe";
+import { SUBSTACK_ARCHIVE_URL, withUtm } from "../lib/links";
 import GuideCard, { postUrl } from "./guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "./guides";
 import PillarCard from "./pillar-card";
@@ -142,33 +139,16 @@ export default function GuiasPage() {
           </section>
         ))}
 
-        <section className="flex flex-col items-center gap-6 text-center bg-base-100 p-10 small:p-16">
-          <h2 className="text-3xl small:text-4xl font-bold">
-            Recibe las próximas guías en tu correo
-          </h2>
-          <p className="text-lg font-light max-w-2xl">
-            En La Agenda comparto lo que estoy farmeando, lo que aprendo y los
-            riesgos que vigilo.
-          </p>
-          <div className="flex flex-col small:flex-row gap-4 items-center">
-            <a
-              href={withUtm(SUBSTACK_SUBSCRIBE_URL, "guias", "suscribete")}
-              target="_blank"
-              rel="noopener"
-              className="btn btn-primary rounded-none font-bold tracking-wider uppercase"
-            >
-              Suscríbete
-            </a>
-            <a
-              href={withUtm(SUBSTACK_ARCHIVE_URL, "guias", "archivo")}
-              target="_blank"
-              rel="noopener"
-              className="btn btn-outline rounded-none font-bold"
-            >
-              Ver todo el archivo
-            </a>
-          </div>
-        </section>
+        <SubscribeBlock id="suscripcion" campaign="guias" path="/guias">
+          <a
+            href={withUtm(SUBSTACK_ARCHIVE_URL, "guias", "archivo")}
+            target="_blank"
+            rel="noopener"
+            className="btn btn-outline rounded-none font-bold"
+          >
+            Ver todo el archivo
+          </a>
+        </SubscribeBlock>
       </main>
 
       <Footer />

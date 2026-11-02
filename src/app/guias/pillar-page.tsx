@@ -7,7 +7,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import Footer from "../components/footer";
 import NavBar from "../components/nav";
-import { SUBSTACK_SUBSCRIBE_URL, withUtm } from "../lib/links";
+import SubscribeBlock from "../components/subscribe";
 import GuideCard from "./guide-card";
 import { DISCLAIMER, findGuide } from "./guides";
 import PillarCard from "./pillar-card";
@@ -271,23 +271,7 @@ export default function PillarPage({
           </p>
         </section>
 
-        <section className="flex flex-col items-center gap-6 text-center bg-base-100 p-10 small:p-16">
-          <h2 className="text-3xl small:text-4xl font-bold">
-            Recibe las próximas guías en tu correo
-          </h2>
-          <p className="text-lg font-light max-w-2xl">
-            En La Agenda comparto lo que estoy farmeando, lo que aprendo y los
-            riesgos que vigilo.
-          </p>
-          <a
-            href={withUtm(SUBSTACK_SUBSCRIBE_URL, campaign, "suscribete")}
-            target="_blank"
-            rel="noopener"
-            className="btn btn-primary rounded-none font-bold tracking-wider uppercase"
-          >
-            Suscríbete
-          </a>
-        </section>
+        <SubscribeBlock id="suscripcion" campaign={campaign} path={pillar.href} />
       </main>
 
       <Footer />
