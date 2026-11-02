@@ -180,12 +180,10 @@ const NavBar = () => {
           </div>
           <div className="relative items-center justify-center flex small:hidden pr-4">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="logo secreto defi"
               width={30}
               height={30}
-              objectFit="cover"
-              quality={100}
             />
             <div className="absolute">
               <Spiral />

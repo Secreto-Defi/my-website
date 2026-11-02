@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+// Figtree se descarga al compilar y se sirve desde nuestro propio dominio: así
+// no hay una petición bloqueante a Google Fonts antes de pintar la página y
+// Next ajusta la tipografía de reserva para que el texto no "salte" al cargar.
+const figtree = Figtree({
+  subsets: ["latin"],
+  variable: "--font-figtree",
+  display: "swap",
+  fallback: ["system-ui", "sans-serif"],
+});
 
 const SITE_URL = "https://www.secretodefi.com";
 const TITLE = "Secreto Defi | Airdrops, DeFi y yield farming en español";
@@ -76,8 +84,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-theme="forest" lang="es">
-      <body className={inter.className}>
+    <html data-theme="forest" lang="es" className={figtree.variable}>
+      <body className={figtree.className}>
         {children}
         <script
           type="application/ld+json"
