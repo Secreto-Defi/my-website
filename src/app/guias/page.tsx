@@ -9,6 +9,8 @@ import {
 } from "../lib/links";
 import GuideCard, { postUrl } from "./guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "./guides";
+import PillarCard from "./pillar-card";
+import { PILLARS } from "./pilares";
 
 const SITE_URL = "https://www.secretodefi.com";
 const PAGE_URL = `${SITE_URL}/guias`;
@@ -88,11 +90,7 @@ export default function GuiasPage() {
             resto se puede leer gratis.
           </p>
           <p className="text-lg font-light">
-            ¿Empiezas con los airdrops? Lee primero{" "}
-            <Link href="/guias/que-es-un-airdrop" className="link link-primary">
-              qué es un airdrop y cómo farmearlo
-            </Link>
-            . ¿Te suena raro algún término? Consulta el{" "}
+            ¿Te suena raro algún término? Consulta el{" "}
             <Link href="/glosario" className="link link-primary">
               glosario de DeFi
             </Link>
@@ -100,6 +98,23 @@ export default function GuiasPage() {
           </p>
           <p className="text-sm opacity-70">{DISCLAIMER}</p>
         </header>
+
+        <section aria-labelledby="empieza-aqui" className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            <h2 id="empieza-aqui" className="text-3xl small:text-4xl font-bold">
+              Empieza por aquí
+            </h2>
+            <p className="text-lg font-light">
+              Páginas que explican cada tema completo, de cero y con ejemplos.
+              Después puedes pasar a las guías de cada tema.
+            </p>
+          </div>
+          <ul className="grid grid-cols-1 small:grid-cols-2 gap-6">
+            {PILLARS.map((pillar) => (
+              <PillarCard key={pillar.href} pillar={pillar} />
+            ))}
+          </ul>
+        </section>
 
         {GUIDE_GROUPS.map((group) => (
           <section

@@ -75,6 +75,10 @@ export const TERMS: Term[] = [
     definition:
       "Diferencia entre el valor de los tokens depositados en un pool de liquidez y el que tendrían si simplemente los hubieras mantenido en tu cartera, cuando cambia el precio relativo entre ellos. Se llama «impermanente» porque se reduce si el precio vuelve al punto de entrada, pero se hace real al retirar la liquidez. Las comisiones pueden compensarlo o no.",
     guides: ["como-hedgear-el-impermanent-loss"],
+    more: {
+      href: "/guias/que-es-la-perdida-impermanente",
+      label: "Guía completa: qué es la pérdida impermanente y cómo se calcula",
+    },
   },
   {
     id: "apr-y-apy",
