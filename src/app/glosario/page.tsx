@@ -5,7 +5,10 @@ import NavBar from "../components/nav";
 import { postUrl } from "../guias/guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "../guias/guides";
 import { SUBSTACK_SUBSCRIBE_URL, withUtm } from "../lib/links";
-import { TERMS } from "./terms";
+import { TERMS as TERMS_DATA } from "./terms";
+
+// Orden alfabético (en español) para que el índice sea fácil de recorrer.
+const TERMS = [...TERMS_DATA].sort((a, b) => a.name.localeCompare(b.name, "es"));
 
 const SITE_URL = "https://www.secretodefi.com";
 const PAGE_URL = `${SITE_URL}/glosario`;
@@ -97,7 +100,7 @@ export default function GlosarioPage() {
           </h1>
           <p className="text-lg font-light">
             Los términos que más aparecen cuando hablo de airdrops, liquidez y
-            yield farming, explicados en pocas líneas. Cada uno enlaza a las
+            yield farming, explicados en pocas líneas. Muchos enlazan a las
             guías de{" "}
             <Link href="/guias" className="link link-primary">
               La Agenda de SecretoDefi
@@ -139,33 +142,35 @@ export default function GlosarioPage() {
                     </Link>
                   </p>
                 )}
-                <div className="mt-2">
-                  <p className="text-sm font-semibold uppercase tracking-wider opacity-70">
-                    Para profundizar
-                  </p>
-                  <ul className="flex flex-col gap-1 mt-1">
-                    {term.guides.map((slug) => {
-                      const guide = findGuide(slug);
-                      return (
-                        <li key={slug}>
-                          <a
-                            href={withUtm(postUrl(slug), "glosario", term.id)}
-                            target="_blank"
-                            rel="noopener"
-                            className="link link-primary"
-                          >
-                            {guide.title}
-                          </a>
-                          {guide.subscribersOnly && (
-                            <span className="badge badge-outline badge-sm ml-2 font-semibold">
-                              Suscriptores
-                            </span>
+                {term.guides.length > 0 && (
+                  <div className="mt-2">
+                    <p className="text-sm font-semibold uppercase tracking-wider opacity-70">
+                      Para profundizar
+                    </p>
+                    <ul className="flex flex-col gap-1 mt-1">
+                      {term.guides.map((slug) => {
+                        const guide = findGuide(slug);
+                        return (
+                          <li key={slug}>
+                            <a
+                              href={withUtm(postUrl(slug), "glosario", term.id)}
+                              target="_blank"
+                              rel="noopener"
+                              className="link link-primary"
+                            >
+                              {guide.title}
+                            </a>
+                            {guide.subscribersOnly && (
+                              <span className="badge badge-outline badge-sm ml-2 font-semibold">
+                                Suscriptores
+                              </span>
                           )}
                         </li>
                       );
                     })}
                   </ul>
                 </div>
+                )}
               </div>
             </article>
           ))}

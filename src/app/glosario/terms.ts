@@ -156,4 +156,106 @@ export const TERMS: Term[] = [
       "Servicio en el que una empresa te da acceso a capital para operar después de superar una evaluación, y a cambio te paga un porcentaje de los beneficios. Suele implicar una cuota de entrada y reglas estrictas de gestión del riesgo, así que conviene leerlas con calma antes de empezar.",
     guides: ["cuentas-de-fondeo-en-cripto-como"],
   },
+  {
+    id: "tvl",
+    name: "TVL (Total Value Locked)",
+    definition:
+      "Valor total de los activos depositados en un protocolo DeFi, normalmente expresado en dólares. Sirve para medir el tamaño y la adopción de un protocolo, pero puede inflarse con incentivos temporales y cambia con el precio de los tokens depositados.",
+    guides: [],
+  },
+  {
+    id: "funding-rate",
+    name: "Funding rate (tasa de financiación)",
+    definition:
+      "Pago periódico entre traders largos y cortos en un mercado de perpetuos que mantiene el precio del contrato cerca del precio spot. Con una tasa positiva pagan los largos a los cortos; con una negativa, al revés. Hay que tenerlo en cuenta como coste o ingreso al mantener una posición.",
+    guides: [
+      "tier-list-de-perp-dexs-donde-farmeo",
+      "como-hedgear-el-impermanent-loss",
+    ],
+  },
+  {
+    id: "staking",
+    name: "Staking",
+    definition:
+      "Bloquear tokens para participar en la validación y la seguridad de una red proof of stake a cambio de recompensas. En el staking líquido recibes un token que representa tu depósito y que puedes seguir usando en DeFi, a costa de añadir el riesgo del contrato que lo emite.",
+    guides: [],
+  },
+  {
+    id: "restaking",
+    name: "Restaking",
+    definition:
+      "Reutilizar activos que ya están en staking para asegurar además otros protocolos o servicios, a cambio de rendimiento adicional. Cada capa añade riesgo, por ejemplo penalizaciones (slashing) si uno de esos servicios falla.",
+    guides: [],
+  },
+  {
+    id: "bridge",
+    name: "Bridge (puente)",
+    definition:
+      "Protocolo que permite mover activos de una blockchain a otra. Suele bloquear o quemar el activo en la red de origen y emitir o liberar su equivalente en la de destino. Es una de las piezas con más riesgo técnico de DeFi, así que conviene usar los puentes oficiales de cada red y probar antes con una cantidad pequeña.",
+    guides: [],
+  },
+  {
+    id: "slippage",
+    name: "Slippage (deslizamiento)",
+    definition:
+      "Diferencia entre el precio que esperas en una operación y el precio al que realmente se ejecuta, por el movimiento del mercado o por falta de liquidez. En un AMM crece con el tamaño de la operación en relación con la pool, y casi todos los DEX permiten fijar el máximo que toleras.",
+    guides: ["masterclass-amms-vs-clmms-vs-dlmms"],
+  },
+  {
+    id: "stablecoin",
+    name: "Stablecoin",
+    definition:
+      "Criptomoneda diseñada para mantener un valor estable, normalmente un dólar. Puede estar respaldada por reservas, como USDC; por criptoactivos sobrecolateralizados; o por mecanismos algorítmicos. No todas mantienen la paridad en todo momento, así que conviene conocer cómo está respaldada la que usas.",
+    guides: [],
+  },
+  {
+    id: "wallet-autocustodia",
+    name: "Wallet de autocustodia",
+    definition:
+      "Aplicación o dispositivo donde guardas tus claves privadas y desde el que firmas las transacciones. En autocustodia eres tú quien controla los fondos, sin intermediarios, y por eso proteger la frase semilla es crítico: quien la tenga controla la cartera.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-un-airdrop#seguridad",
+      label: "Normas básicas de seguridad al farmear airdrops",
+    },
+  },
+  {
+    id: "liquidacion",
+    name: "Liquidación",
+    definition:
+      "Cierre forzoso de una posición apalancada o de un préstamo cuando el valor de la garantía cae por debajo de un umbral. Puede ocurrir en perpetuos y en protocolos de préstamos, y suele suponer perder parte o toda la garantía.",
+    guides: [
+      "pt-looping-en-pendle-de-donde-sale",
+      "como-hedgear-el-impermanent-loss",
+    ],
+  },
+  {
+    id: "apalancamiento",
+    name: "Apalancamiento",
+    definition:
+      "Operar con fondos prestados para ampliar la exposición más allá del capital propio. Multiplica tanto las ganancias como las pérdidas y expone a la liquidación si el mercado va en contra.",
+    guides: ["pt-looping-en-pendle-de-donde-sale"],
+  },
+  {
+    id: "snapshot",
+    name: "Snapshot",
+    definition:
+      "Foto del estado de una blockchain en un momento concreto, con saldos y posiciones, que un proyecto usa para decidir quién recibe un reparto de tokens y cuánto. Suele hacerse en un bloque o fecha que no se avisa con antelación.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-un-airdrop#tipos",
+      label: "Tipos de airdrop y cómo se reparten",
+    },
+  },
+  {
+    id: "sybil",
+    name: "Sybil (filtro anti-sybil)",
+    definition:
+      "Práctica de crear muchas cuentas o carteras para multiplicar la recompensa de un reparto. Los proyectos aplican filtros anti-sybil para descartarlas y, a veces, dejan fuera a usuarios legítimos con patrones que parecen sospechosos.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-un-airdrop#como-farmear",
+      label: "Cómo farmear un airdrop, paso a paso",
+    },
+  },
 ];
