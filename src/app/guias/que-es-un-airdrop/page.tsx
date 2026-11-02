@@ -9,6 +9,8 @@ import {
 } from "../../lib/updated";
 import GuideCard from "../guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "../guides";
+import PillarCard from "../pillar-card";
+import { PILLARS } from "../pilares";
 
 const SITE_URL = "https://www.secretodefi.com";
 const PAGE_URL = `${SITE_URL}/guias/que-es-un-airdrop`;
@@ -70,6 +72,11 @@ const relatedGuides = RELATED_SLUGS.map((slug) => {
   if (!guide) throw new Error(`Guía "${slug}" no existe en guides.ts`);
   return guide;
 });
+
+// Las demás páginas guía con contenido propio (pilares.ts)
+const otherPillars = PILLARS.filter(
+  (pillar) => pillar.href !== "/guias/que-es-un-airdrop"
+);
 
 const structuredData = [
   {
@@ -198,7 +205,15 @@ export default function QueEsUnAirdropPage() {
                   perp DEX
                 </Link>
                 . Los puntos no son un compromiso: el proyecto decide cómo se
-                canjean y si se canjean.
+                canjean y si se canjean. Cómo se puntúa y cuánto cuesta
+                conseguirlos lo explico en la guía de{" "}
+                <Link
+                  href="/guias/perp-dex-y-farmeo-de-puntos"
+                  className="link link-primary"
+                >
+                  perp DEX y farmeo de puntos
+                </Link>
+                .
               </li>
               <li className={p}>
                 <strong className="font-bold">Testnet incentivada.</strong> Haces
@@ -376,6 +391,27 @@ export default function QueEsUnAirdropPage() {
           <Link href="/guias" className="link link-primary font-semibold w-fit">
             Ver todas las guías →
           </Link>
+        </section>
+
+        <section
+          aria-labelledby="sigue-aprendiendo"
+          className="flex flex-col gap-6"
+        >
+          <h2 id="sigue-aprendiendo" className={h2}>
+            Sigue aprendiendo
+          </h2>
+          <ul className="grid grid-cols-1 small:grid-cols-3 gap-6">
+            {otherPillars.map((pillar) => (
+              <PillarCard key={pillar.href} pillar={pillar} />
+            ))}
+          </ul>
+          <p className={p}>
+            ¿Te suena raro algún término? Consulta el{" "}
+            <Link href="/glosario" className="link link-primary">
+              glosario de DeFi
+            </Link>
+            .
+          </p>
         </section>
 
         <section className="flex flex-col items-center gap-6 text-center bg-base-100 p-10 small:p-16">

@@ -166,6 +166,16 @@ export default function YieldFarmingPage() {
                 . La diferencia entre APR y APY la tienes en el{" "}
                 <GlossaryLink id="apr-y-apy">glosario</GlossaryLink>.
               </P>
+              <P>
+                Los pagos de funding de los perpetuos son otra fuente de
+                rendimiento: lo que cobra uno de los dos lados (largos o cortos)
+                lo paga el otro, y la tasa puede cambiar de signo. Cómo funcionan
+                lo explico en la guía de{" "}
+                <InternalLink href="/guias/perp-dex-y-farmeo-de-puntos#que-es">
+                  perp DEX y farmeo de puntos
+                </InternalLink>
+                .
+              </P>
             </>
           ),
         },

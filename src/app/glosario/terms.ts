@@ -134,6 +134,10 @@ export const TERMS: Term[] = [
   {
     id: "perp-dex",
     name: "Perp DEX",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos",
+      label: "Guía completa: qué es un perp DEX y cómo farmear sus puntos",
+    },
     definition:
       "Exchange descentralizado de futuros perpetuos: contratos que replican el precio de un activo sin fecha de vencimiento, con apalancamiento y una tasa de financiación (funding) que mantiene su precio cerca del precio spot. Hyperliquid es el ejemplo más conocido.",
     guides: [
@@ -186,6 +190,10 @@ export const TERMS: Term[] = [
   {
     id: "funding-rate",
     name: "Funding rate (tasa de financiación)",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Cómo funciona el funding en un perp DEX",
+    },
     definition:
       "Pago periódico entre traders largos y cortos en un mercado de perpetuos que mantiene el precio del contrato cerca del precio spot. Con una tasa positiva pagan los largos a los cortos; con una negativa, al revés. Hay que tenerlo en cuenta como coste o ingreso al mantener una posición.",
     guides: [
@@ -242,6 +250,10 @@ export const TERMS: Term[] = [
   {
     id: "liquidacion",
     name: "Liquidación",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Cómo se liquida una posición en un perp DEX",
+    },
     definition:
       "Cierre forzoso de una posición apalancada o de un préstamo cuando el valor de la garantía cae por debajo de un umbral. Puede ocurrir en perpetuos y en protocolos de préstamos, y suele suponer perder parte o toda la garantía.",
     guides: [
@@ -252,6 +264,10 @@ export const TERMS: Term[] = [
   {
     id: "apalancamiento",
     name: "Apalancamiento",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Apalancamiento, margen y liquidación en un perp DEX",
+    },
     definition:
       "Operar con fondos prestados para ampliar la exposición más allá del capital propio. Multiplica tanto las ganancias como las pérdidas y expone a la liquidación si el mercado va en contra.",
     guides: ["pt-looping-en-pendle-de-donde-sale"],

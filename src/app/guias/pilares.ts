@@ -8,6 +8,8 @@ import {
   AIRDROP_GUIDE_UPDATED,
   IL_GUIDE_PUBLISHED,
   IL_GUIDE_UPDATED,
+  PERP_GUIDE_PUBLISHED,
+  PERP_GUIDE_UPDATED,
   YIELD_GUIDE_PUBLISHED,
   YIELD_GUIDE_UPDATED,
 } from "../lib/updated";
@@ -28,6 +30,14 @@ export const PILLARS: Pillar[] = [
       "Qué es un airdrop, qué tipos hay, cómo farmearlo paso a paso y cómo evitar las estafas más comunes.",
     published: AIRDROP_GUIDE_PUBLISHED,
     updated: AIRDROP_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/perp-dex-y-farmeo-de-puntos",
+    name: "Perp DEX y farmeo de puntos",
+    description:
+      "Qué es un perp DEX, cómo funcionan los programas de puntos, cuánto cuesta farmearlos y qué riesgos tienen, con un caso real.",
+    published: PERP_GUIDE_PUBLISHED,
+    updated: PERP_GUIDE_UPDATED,
   },
   {
     href: "/guias/yield-farming-y-liquidez-concentrada",

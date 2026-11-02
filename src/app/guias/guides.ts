@@ -37,6 +37,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-un-airdrop",
         label: "Empieza por aquí: qué es un airdrop y cómo farmearlo",
       },
+      {
+        href: "/guias/perp-dex-y-farmeo-de-puntos",
+        label: "Siguiente paso: perp DEX y farmeo de puntos, con un caso real",
+      },
     ],
     title: "Airdrops y farming",
     description:

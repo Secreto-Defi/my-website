@@ -353,7 +353,12 @@ export default function PerdidaImpermanentePage() {
                 <G slug="como-hedgear-el-impermanent-loss">
                   mi guía sobre cómo hedgear el impermanent loss
                 </G>{" "}
-                explico cómo se monta y cuándo no compensa.
+                explico cómo se monta y cuándo no compensa. Si los perpetuos son
+                nuevos para ti, empieza por{" "}
+                <InternalLink href="/guias/perp-dex-y-farmeo-de-puntos#que-es">
+                  qué es un perpetuo y cómo funciona el funding
+                </InternalLink>
+                .
               </Li>
               <Li>
                 <B>Simula antes de entrar.</B> Las calculadoras y el backtesting
