@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { GUIDE_GROUPS } from "../../guias/guides";
+import { PILLARS } from "../../guias/pilares";
 
 const rowClass =
   "flex flex-col small:flex-row flex-wrap gap-x-6 gap-y-2 items-center justify-center";
@@ -22,12 +23,15 @@ const Topics = () => {
       </nav>
       <nav aria-label="Para empezar" className={rowClass}>
         <span className="opacity-70">¿Empiezas en DeFi?</span>
-        <Link
-          href="/guias/que-es-un-airdrop"
-          className="link link-primary font-semibold"
-        >
-          Qué es un airdrop y cómo farmearlo
-        </Link>
+        {PILLARS.map((pillar) => (
+          <Link
+            key={pillar.href}
+            href={pillar.href}
+            className="link link-primary font-semibold"
+          >
+            {pillar.name}
+          </Link>
+        ))}
         <Link href="/glosario" className="link link-primary font-semibold">
           Glosario de DeFi en español
         </Link>

@@ -20,8 +20,8 @@ export type GuideGroup = {
   seoTitle: string; // <title>, idealmente 60 caracteres o menos
   seoDescription: string; // meta descripción, idealmente 155 caracteres o menos
   intro: string[]; // párrafos de introducción originales
-  // Página de contenido propio que se destaca en el tema (opcional)
-  featured?: { href: string; label: string };
+  // Páginas de contenido propio (pilares.ts) que se destacan en el tema
+  featured?: { href: string; label: string }[];
   guides: Guide[];
 };
 
@@ -32,10 +32,16 @@ export const DISCLAIMER =
 export const GUIDE_GROUPS: GuideGroup[] = [
   {
     id: "airdrops-y-farming",
-    featured: {
-      href: "/guias/que-es-un-airdrop",
-      label: "Empieza por aquí: qué es un airdrop y cómo farmearlo",
-    },
+    featured: [
+      {
+        href: "/guias/que-es-un-airdrop",
+        label: "Empieza por aquí: qué es un airdrop y cómo farmearlo",
+      },
+      {
+        href: "/guias/perp-dex-y-farmeo-de-puntos",
+        label: "Siguiente paso: perp DEX y farmeo de puntos, con un caso real",
+      },
+    ],
     title: "Airdrops y farming",
     description:
       "Cómo posicionarte pronto en redes y perp DEX nuevos, con la verdad por delante sobre lo que está y no está confirmado.",
@@ -108,6 +114,16 @@ export const GUIDE_GROUPS: GuideGroup[] = [
   },
   {
     id: "liquidez-y-yield",
+    featured: [
+      {
+        href: "/guias/yield-farming-y-liquidez-concentrada",
+        label: "Empieza por aquí: yield farming y liquidez concentrada",
+      },
+      {
+        href: "/guias/que-es-la-perdida-impermanente",
+        label: "Entiende el riesgo principal: qué es la pérdida impermanente y cómo se calcula",
+      },
+    ],
     title: "Liquidez y yield",
     description:
       "Cómo funcionan las pools, los incentivos y las estrategias de rendimiento, y los riesgos que hay detrás.",
@@ -332,3 +348,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     ],
   },
 ];
+
+const GUIDES_BY_SLUG = new Map(
+  GUIDE_GROUPS.flatMap((group) => group.guides).map((guide) => [guide.slug, guide])
+);
+
+// Devuelve la guía con ese slug; falla al compilar si no existe en la lista.
+export const findGuide = (slug: string): Guide => {
+  const guide = GUIDES_BY_SLUG.get(slug);
+  if (!guide) throw new Error(`Guía "${slug}" no existe en guides.ts`);
+  return guide;
+};

@@ -28,6 +28,10 @@ export const TERMS: Term[] = [
   {
     id: "yield-farming",
     name: "Yield farming",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada",
+      label: "Guía completa: yield farming y liquidez concentrada para empezar",
+    },
     definition:
       "Estrategia que consiste en depositar criptomonedas en protocolos DeFi (pools de liquidez, préstamos, vaults) para obtener un rendimiento en forma de comisiones, intereses o tokens de incentivo. El rendimiento cambia con el uso del protocolo y con los incentivos del momento, y no está asegurado.",
     guides: [
@@ -52,6 +56,10 @@ export const TERMS: Term[] = [
   {
     id: "liquidez-concentrada",
     name: "Liquidez concentrada (CLMM)",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada",
+      label: "Cómo funciona la liquidez concentrada, con ejemplos de rangos",
+    },
     definition:
       "Variante de AMM en la que el proveedor de liquidez elige el rango de precios en el que coloca su capital, en vez de repartirlo por todo el rango posible. Mientras el precio está dentro del rango, el capital trabaja con más eficiencia y genera más comisiones; si el precio se sale, hay que reposicionar la liquidez.",
     guides: [
@@ -62,6 +70,10 @@ export const TERMS: Term[] = [
   {
     id: "dlmm",
     name: "DLMM (Dynamic Liquidity Market Maker)",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada",
+      label: "Liquidez concentrada, bins y estrategias Spot, Curve y Bid-Ask",
+    },
     definition:
       "Modelo de liquidez concentrada de Meteora, en Solana. Divide el rango de precios en «bins» discretos, cada uno con un precio fijo, y permite elegir cómo distribuir la liquidez entre ellos. Las comisiones se ajustan de forma dinámica con la volatilidad.",
     guides: [
@@ -75,10 +87,18 @@ export const TERMS: Term[] = [
     definition:
       "Diferencia entre el valor de los tokens depositados en un pool de liquidez y el que tendrían si simplemente los hubieras mantenido en tu cartera, cuando cambia el precio relativo entre ellos. Se llama «impermanente» porque se reduce si el precio vuelve al punto de entrada, pero se hace real al retirar la liquidez. Las comisiones pueden compensarlo o no.",
     guides: ["como-hedgear-el-impermanent-loss"],
+    more: {
+      href: "/guias/que-es-la-perdida-impermanente",
+      label: "Guía completa: qué es la pérdida impermanente y cómo se calcula",
+    },
   },
   {
     id: "apr-y-apy",
     name: "APR y APY",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#de-donde-sale",
+      label: "De dónde sale el rendimiento en DeFi",
+    },
     definition:
       "El APR es la rentabilidad anual sin reinvertir los intereses; el APY incluye el efecto del interés compuesto. En DeFi son estimaciones basadas en el rendimiento reciente y pueden cambiar de un día para otro, sobre todo cuando parte del rendimiento viene de tokens de incentivo.",
     guides: ["como-monitorizo-mis-pools-de-hyperevm"],
@@ -114,6 +134,10 @@ export const TERMS: Term[] = [
   {
     id: "perp-dex",
     name: "Perp DEX",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos",
+      label: "Guía completa: qué es un perp DEX y cómo farmear sus puntos",
+    },
     definition:
       "Exchange descentralizado de futuros perpetuos: contratos que replican el precio de un activo sin fecha de vencimiento, con apalancamiento y una tasa de financiación (funding) que mantiene su precio cerca del precio spot. Hyperliquid es el ejemplo más conocido.",
     guides: [
@@ -166,6 +190,10 @@ export const TERMS: Term[] = [
   {
     id: "funding-rate",
     name: "Funding rate (tasa de financiación)",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Cómo funciona el funding en un perp DEX",
+    },
     definition:
       "Pago periódico entre traders largos y cortos en un mercado de perpetuos que mantiene el precio del contrato cerca del precio spot. Con una tasa positiva pagan los largos a los cortos; con una negativa, al revés. Hay que tenerlo en cuenta como coste o ingreso al mantener una posición.",
     guides: [
@@ -222,6 +250,10 @@ export const TERMS: Term[] = [
   {
     id: "liquidacion",
     name: "Liquidación",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Cómo se liquida una posición en un perp DEX",
+    },
     definition:
       "Cierre forzoso de una posición apalancada o de un préstamo cuando el valor de la garantía cae por debajo de un umbral. Puede ocurrir en perpetuos y en protocolos de préstamos, y suele suponer perder parte o toda la garantía.",
     guides: [
@@ -232,6 +264,10 @@ export const TERMS: Term[] = [
   {
     id: "apalancamiento",
     name: "Apalancamiento",
+    more: {
+      href: "/guias/perp-dex-y-farmeo-de-puntos#que-es",
+      label: "Apalancamiento, margen y liquidación en un perp DEX",
+    },
     definition:
       "Operar con fondos prestados para ampliar la exposición más allá del capital propio. Multiplica tanto las ganancias como las pérdidas y expone a la liquidación si el mercado va en contra.",
     guides: ["pt-looping-en-pendle-de-donde-sale"],
