@@ -28,6 +28,10 @@ export const TERMS: Term[] = [
   {
     id: "yield-farming",
     name: "Yield farming",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada",
+      label: "Guía completa: yield farming y liquidez concentrada para empezar",
+    },
     definition:
       "Estrategia que consiste en depositar criptomonedas en protocolos DeFi (pools de liquidez, préstamos, vaults) para obtener un rendimiento en forma de comisiones, intereses o tokens de incentivo. El rendimiento cambia con el uso del protocolo y con los incentivos del momento, y no está asegurado.",
     guides: [
@@ -52,6 +56,10 @@ export const TERMS: Term[] = [
   {
     id: "liquidez-concentrada",
     name: "Liquidez concentrada (CLMM)",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada",
+      label: "Cómo funciona la liquidez concentrada, con ejemplos de rangos",
+    },
     definition:
       "Variante de AMM en la que el proveedor de liquidez elige el rango de precios en el que coloca su capital, en vez de repartirlo por todo el rango posible. Mientras el precio está dentro del rango, el capital trabaja con más eficiencia y genera más comisiones; si el precio se sale, hay que reposicionar la liquidez.",
     guides: [
@@ -62,6 +70,10 @@ export const TERMS: Term[] = [
   {
     id: "dlmm",
     name: "DLMM (Dynamic Liquidity Market Maker)",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada",
+      label: "Liquidez concentrada, bins y estrategias Spot, Curve y Bid-Ask",
+    },
     definition:
       "Modelo de liquidez concentrada de Meteora, en Solana. Divide el rango de precios en «bins» discretos, cada uno con un precio fijo, y permite elegir cómo distribuir la liquidez entre ellos. Las comisiones se ajustan de forma dinámica con la volatilidad.",
     guides: [
@@ -83,6 +95,10 @@ export const TERMS: Term[] = [
   {
     id: "apr-y-apy",
     name: "APR y APY",
+    more: {
+      href: "/guias/yield-farming-y-liquidez-concentrada#de-donde-sale",
+      label: "De dónde sale el rendimiento en DeFi",
+    },
     definition:
       "El APR es la rentabilidad anual sin reinvertir los intereses; el APY incluye el efecto del interés compuesto. En DeFi son estimaciones basadas en el rendimiento reciente y pueden cambiar de un día para otro, sobre todo cuando parte del rendimiento viene de tokens de incentivo.",
     guides: ["como-monitorizo-mis-pools-de-hyperevm"],

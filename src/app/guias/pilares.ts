@@ -8,6 +8,8 @@ import {
   AIRDROP_GUIDE_UPDATED,
   IL_GUIDE_PUBLISHED,
   IL_GUIDE_UPDATED,
+  YIELD_GUIDE_PUBLISHED,
+  YIELD_GUIDE_UPDATED,
 } from "../lib/updated";
 
 export type Pillar = {
@@ -26,6 +28,14 @@ export const PILLARS: Pillar[] = [
       "Qué es un airdrop, qué tipos hay, cómo farmearlo paso a paso y cómo evitar las estafas más comunes.",
     published: AIRDROP_GUIDE_PUBLISHED,
     updated: AIRDROP_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/yield-farming-y-liquidez-concentrada",
+    name: "Yield farming y liquidez concentrada",
+    description:
+      "De dónde sale el rendimiento, cómo funciona la liquidez concentrada, qué riesgos tiene y cómo empezar con cabeza.",
+    published: YIELD_GUIDE_PUBLISHED,
+    updated: YIELD_GUIDE_UPDATED,
   },
   {
     href: "/guias/que-es-la-perdida-impermanente",

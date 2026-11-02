@@ -8,6 +8,7 @@ import {
   Formula,
   GlossaryLink,
   GuideLink,
+  InternalLink,
   Li,
   Note,
   Ol,
@@ -292,9 +293,13 @@ export default function PerdidaImpermanentePage() {
                 Un ejemplo: con un rango del ±10 % alrededor del precio de
                 entrada, si el precio sube un 10 % y llega al borde superior, la
                 pérdida frente a mantener es de alrededor del 2,3 %. En una pool
-                de rango completo, ese mismo movimiento supone un 0,1 %. Para ver
-                en qué se diferencian los modelos y cómo se gestionan posiciones
-                reales, tienes{" "}
+                de rango completo, ese mismo movimiento supone un 0,1 %. En la guía
+                de{" "}
+                <InternalLink href="/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada">
+                  yield farming y liquidez concentrada
+                </InternalLink>{" "}
+                tienes más rangos comparados y, para ver en qué se diferencian los
+                modelos y cómo se gestionan posiciones reales,{" "}
                 <G slug="masterclass-amms-vs-clmms-vs-dlmms">
                   la masterclass sobre AMMs, CLMMs y DLMMs
                 </G>

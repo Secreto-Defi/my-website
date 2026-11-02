@@ -112,8 +112,12 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     id: "liquidez-y-yield",
     featured: [
       {
+        href: "/guias/yield-farming-y-liquidez-concentrada",
+        label: "Empieza por aquí: yield farming y liquidez concentrada",
+      },
+      {
         href: "/guias/que-es-la-perdida-impermanente",
-        label: "Empieza por aquí: qué es la pérdida impermanente y cómo se calcula",
+        label: "Entiende el riesgo principal: qué es la pérdida impermanente y cómo se calcula",
       },
     ],
     title: "Liquidez y yield",

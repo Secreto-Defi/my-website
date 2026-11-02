@@ -129,35 +129,46 @@ export const DataTable = ({
   head: string[];
   rows: ReactNode[][];
 }) => (
-  <div className="overflow-x-auto">
-    <table className="table bg-base-100 text-base">
-      <caption className="caption-top text-left text-sm opacity-70 pb-2">
-        {caption}
-      </caption>
-      <thead>
-        <tr>
-          {head.map((cell, index) => (
-            <th key={index} scope="col">
-              {cell}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((row, rowIndex) => (
-          <tr key={rowIndex}>
-            {row.map((cell, cellIndex) =>
-              cellIndex === 0 ? (
-                <th key={cellIndex} scope="row" className="font-semibold">
-                  {cell}
-                </th>
-              ) : (
-                <td key={cellIndex}>{cell}</td>
-              )
-            )}
+  <div className="flex flex-col gap-2">
+    <div className="overflow-x-auto">
+      <table
+        className={`table bg-base-100 text-base ${
+          head.length > 3 ? "min-w-[40rem]" : ""
+        }`}
+      >
+        <caption className="caption-top text-left text-sm opacity-70 pb-2">
+          {caption}
+        </caption>
+        <thead>
+          <tr>
+            {head.map((cell, index) => (
+              <th key={index} scope="col">
+                {cell}
+              </th>
+            ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {rows.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {row.map((cell, cellIndex) =>
+                cellIndex === 0 ? (
+                  <th key={cellIndex} scope="row" className="font-semibold">
+                    {cell}
+                  </th>
+                ) : (
+                  <td key={cellIndex}>{cell}</td>
+                )
+              )}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    {head.length > 3 && (
+      <p className="small:hidden text-sm opacity-70">
+        Desliza hacia los lados para ver toda la tabla.
+      </p>
+    )}
   </div>
 );
