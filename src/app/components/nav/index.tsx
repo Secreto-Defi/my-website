@@ -70,13 +70,19 @@ const NavBar = () => {
             </p>
           </a>
           <div className="hidden flex-none lg:block">
-            <div className="menu menu-horizontal flex items-center gap-5 text-3xl">
+            <div className="menu menu-horizontal flex items-center gap-3 medium:gap-5 text-3xl">
               {/* Navbar menu content here */}
               <a
                 href="/guias"
                 className="text-base font-semibold uppercase tracking-wider px-2 hover:text-primary"
               >
                 Guías
+              </a>
+              <a
+                href="/glosario"
+                className="text-base font-semibold uppercase tracking-wider px-2 hover:text-primary"
+              >
+                Glosario
               </a>
               <a href="https://x.com/SecretoDefi" target="_blank" aria-label="X (Twitter)">
                 <div className="flex items-center justify-center p-3 bg-transparent hover:bg-primary cursor-pointer text-white hover:text-base-100">
@@ -180,12 +186,10 @@ const NavBar = () => {
           </div>
           <div className="relative items-center justify-center flex small:hidden pr-4">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="logo secreto defi"
               width={30}
               height={30}
-              objectFit="cover"
-              quality={100}
             />
             <div className="absolute">
               <Spiral />
@@ -213,6 +217,12 @@ const NavBar = () => {
             className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
           >
             Guías
+          </a>
+          <a
+            href="/glosario"
+            className="theme-controller btn btn-sm btn-block btn-ghost justify-center"
+          >
+            Glosario
           </a>
           <a
             href="https://t.me/secretodefi"

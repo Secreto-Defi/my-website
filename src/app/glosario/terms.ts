@@ -71,7 +71,7 @@ export const TERMS: Term[] = [
   },
   {
     id: "impermanent-loss",
-    name: "Impermanent loss",
+    name: "Impermanent loss (pérdida impermanente)",
     definition:
       "Diferencia entre el valor de los tokens depositados en un pool de liquidez y el que tendrían si simplemente los hubieras mantenido en tu cartera, cuando cambia el precio relativo entre ellos. Se llama «impermanente» porque se reduce si el precio vuelve al punto de entrada, pero se hace real al retirar la liquidez. Las comisiones pueden compensarlo o no.",
     guides: ["como-hedgear-el-impermanent-loss"],
@@ -158,7 +158,7 @@ export const TERMS: Term[] = [
   },
   {
     id: "tvl",
-    name: "TVL (Total Value Locked)",
+    name: "TVL (Total Value Locked, valor total bloqueado)",
     definition:
       "Valor total de los activos depositados en un protocolo DeFi, normalmente expresado en dólares. Sirve para medir el tamaño y la adopción de un protocolo, pero puede inflarse con incentivos temporales y cambia con el precio de los tokens depositados.",
     guides: [],
@@ -210,7 +210,7 @@ export const TERMS: Term[] = [
   },
   {
     id: "wallet-autocustodia",
-    name: "Wallet de autocustodia",
+    name: "Wallet de autocustodia (cartera o billetera)",
     definition:
       "Aplicación o dispositivo donde guardas tus claves privadas y desde el que firmas las transacciones. En autocustodia eres tú quien controla los fondos, sin intermediarios, y por eso proteger la frase semilla es crítico: quien la tenga controla la cartera.",
     guides: [],

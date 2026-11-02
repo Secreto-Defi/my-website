@@ -21,26 +21,23 @@ const Hero = () => {
           <a
             href="https://substack.secretodefi.com/subscribe"
             target="_blank"
-            className="group"
+            className="group btn btn-primary font-bold tracking-wider text-xl px-6 uppercase flex items-center gap-2"
           >
-            <button className="btn btn-primary font-bold tracking-wider text-xl px-6 uppercase flex items-center gap-2">
-              <span>Suscríbete</span>
-              <div className="transform transition-transform duration-300 group-hover:rotate-45">
-                <ArrowRight width={14} />
-              </div>
-            </button>
+            <span>Suscríbete</span>
+            <div className="transform transition-transform duration-300 group-hover:rotate-45">
+              <ArrowRight width={14} />
+            </div>
           </a>
         </div>
       </div>
       <div className="relative items-center justify-center hidden small:flex">
+        {/* Sin "priority": en móvil este bloque está oculto y no debe descargarse. */}
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="logo secreto defi"
           width={370}
           height={370}
           className="object-contain"
-          quality={100}
-          priority
         />
         <div className="absolute">
           <Spiral />

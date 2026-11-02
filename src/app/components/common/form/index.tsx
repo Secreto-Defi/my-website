@@ -1,5 +1,4 @@
 "use client";
-import axios from "axios";
 import React, { FormEvent, useState } from "react";
 
 interface FormElements extends HTMLFormControlsCollection {
@@ -29,13 +28,24 @@ export const ContactForm = () => {
 
     setIsSubmitting(true);
     try {
-      const response = await axios.post("https://formspree.io/f/xpwaqlpd", {
-        name: name.value,
-        telegram: contact.value,
-        description: description.value,
-        consent: "Acepta la política de privacidad",
+      const response = await fetch("https://formspree.io/f/xpwaqlpd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: name.value,
+          telegram: contact.value,
+          description: description.value,
+          consent: "Acepta la política de privacidad",
+        }),
       });
-      console.log("Formulario enviado", response.data);
+      // fetch no falla con un 4xx/5xx: hay que comprobarlo a mano.
+      if (!response.ok) {
+        throw new Error(`Formspree respondió con el estado ${response.status}`);
+      }
+      console.log("Formulario enviado", await response.json().catch(() => null));
       name.value = "";
       contact.value = "";
       description.value = "";

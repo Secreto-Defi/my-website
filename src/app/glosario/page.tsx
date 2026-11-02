@@ -14,7 +14,7 @@ const SITE_URL = "https://www.secretodefi.com";
 const PAGE_URL = `${SITE_URL}/glosario`;
 const TITLE = "Glosario DeFi en español: términos explicados | Secreto Defi";
 const DESCRIPTION =
-  "Qué es un airdrop, el impermanent loss, la liquidez concentrada o un perp DEX. Glosario de DeFi en español con guías para profundizar en cada término.";
+  "Qué es un airdrop, la pérdida impermanente (impermanent loss), la liquidez concentrada o un perp DEX. Glosario DeFi en español con guías para profundizar.";
 
 export const metadata: Metadata = {
   title: TITLE,
