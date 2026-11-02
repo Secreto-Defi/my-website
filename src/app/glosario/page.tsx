@@ -132,6 +132,13 @@ export default function GlosarioPage() {
               <div className="card-body">
                 <h2 className="card-title text-2xl">{term.name}</h2>
                 <p className="font-light">{term.definition}</p>
+                {term.more && (
+                  <p>
+                    <Link href={term.more.href} className="link link-primary font-semibold">
+                      {term.more.label} →
+                    </Link>
+                  </p>
+                )}
                 <div className="mt-2">
                   <p className="text-sm font-semibold uppercase tracking-wider opacity-70">
                     Para profundizar

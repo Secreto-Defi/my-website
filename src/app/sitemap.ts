@@ -14,6 +14,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/guias/que-es-un-airdrop`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
     ...GUIDE_GROUPS.map((group) => ({
       url: `${SITE_URL}/guias/${group.id}`,
       lastModified,
