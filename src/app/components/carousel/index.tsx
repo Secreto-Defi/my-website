@@ -3,18 +3,12 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const cardsData = [
   {
-    title: "Salida de fiat",
-    subtitle: "No mezcles caminos entre la entrada y salida.",
-    date: "2023-03-05",
-    dateLabel: "5 mar 2023",
-    twitterLink: "https://x.com/SecretoDefi/status/1632457063367319552",
-  },
-  {
-    title: "Seguridad",
-    subtitle: "Herramientas de seguridad para evitar perder tu liquidez.",
-    date: "2023-10-18",
-    dateLabel: "18 oct 2023",
-    twitterLink: "https://x.com/SecretoDefi/status/1714705695868670278",
+    title: "Revocar aprobaciones",
+    subtitle:
+      "En cinco años mi wallet acumuló más de 1.000 aprobaciones de contratos. Cómo las revoco en lote y por qué hay que repetirlo.",
+    date: "2026-01-12",
+    dateLabel: "12 ene 2026",
+    twitterLink: "https://x.com/SecretoDefi/status/2010734853390565869",
   },
   {
     title: "Tokens olvidados",
@@ -31,6 +25,14 @@ const cardsData = [
     date: "2026-10-08",
     dateLabel: "8 oct 2026",
     twitterLink: "https://x.com/SecretoDefi/status/2108197827868262892",
+  },
+  {
+    title: "Tarjetas crypto",
+    subtitle:
+      "Un panel gratuito de DefiLlama para comparar tarjetas crypto (todas con KYC): dónde funcionan, cashback y comisiones.",
+    date: "2026-10-12",
+    dateLabel: "12 oct 2026",
+    twitterLink: "https://x.com/SecretoDefi/status/2109764012594389414",
   },
 ];
 
