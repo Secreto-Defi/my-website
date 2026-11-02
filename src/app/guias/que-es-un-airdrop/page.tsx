@@ -3,6 +3,10 @@ import Link from "next/link";
 import Footer from "../../components/footer";
 import NavBar from "../../components/nav";
 import { SUBSTACK_SUBSCRIBE_URL, withUtm } from "../../lib/links";
+import {
+  AIRDROP_GUIDE_PUBLISHED,
+  AIRDROP_GUIDE_UPDATED,
+} from "../../lib/updated";
 import GuideCard from "../guide-card";
 import { DISCLAIMER, GUIDE_GROUPS } from "../guides";
 
@@ -12,7 +16,6 @@ const CAMPAIGN = "que-es-un-airdrop";
 const TITLE = "Qué es un airdrop y cómo farmearlo en español | Secreto Defi";
 const DESCRIPTION =
   "Qué es un airdrop, qué tipos hay, cómo farmearlo paso a paso y cómo evitar estafas. Guía en español con enlaces a mis guías para profundizar.";
-const PUBLISHED = "2026-11-02";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -25,7 +28,7 @@ export const metadata: Metadata = {
     locale: "es_ES",
     title: TITLE,
     description: DESCRIPTION,
-    publishedTime: PUBLISHED,
+    publishedTime: AIRDROP_GUIDE_PUBLISHED,
     images: [
       {
         url: "/og-guias.png",
@@ -77,8 +80,8 @@ const structuredData = [
     url: PAGE_URL,
     mainEntityOfPage: PAGE_URL,
     inLanguage: "es",
-    datePublished: PUBLISHED,
-    dateModified: PUBLISHED,
+    datePublished: AIRDROP_GUIDE_PUBLISHED,
+    dateModified: AIRDROP_GUIDE_UPDATED,
     image: `${SITE_URL}/og-guias.png`,
     author: { "@type": "Organization", name: "Secreto Defi", url: SITE_URL },
     publisher: {
