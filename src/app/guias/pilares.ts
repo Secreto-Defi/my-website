@@ -6,10 +6,14 @@
 import {
   AIRDROP_GUIDE_PUBLISHED,
   AIRDROP_GUIDE_UPDATED,
+  HYPERLIQUID_GUIDE_PUBLISHED,
+  HYPERLIQUID_GUIDE_UPDATED,
   IL_GUIDE_PUBLISHED,
   IL_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
+  SECURITY_GUIDE_PUBLISHED,
+  SECURITY_GUIDE_UPDATED,
   YIELD_GUIDE_PUBLISHED,
   YIELD_GUIDE_UPDATED,
 } from "../lib/updated";
@@ -32,12 +36,28 @@ export const PILLARS: Pillar[] = [
     updated: AIRDROP_GUIDE_UPDATED,
   },
   {
+    href: "/guias/seguridad-en-defi",
+    name: "Seguridad en DeFi: aprobaciones y estafas",
+    description:
+      "Qué son las aprobaciones y las firmas Permit, cómo revocarlas, qué estafas son las más comunes y qué hacer si te vacían la wallet.",
+    published: SECURITY_GUIDE_PUBLISHED,
+    updated: SECURITY_GUIDE_UPDATED,
+  },
+  {
     href: "/guias/perp-dex-y-farmeo-de-puntos",
     name: "Perp DEX y farmeo de puntos",
     description:
       "Qué es un perp DEX, cómo funcionan los programas de puntos, cuánto cuesta farmearlos y qué riesgos tienen, con un caso real.",
     published: PERP_GUIDE_PUBLISHED,
     updated: PERP_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-hyperliquid",
+    name: "Qué es Hyperliquid y cómo funciona",
+    description:
+      "Qué es Hyperliquid, cómo funcionan HyperCore, HyperEVM y el token HYPE, qué es HIP-3, cuánto cuesta operar y qué riesgos tiene.",
+    published: HYPERLIQUID_GUIDE_PUBLISHED,
+    updated: HYPERLIQUID_GUIDE_UPDATED,
   },
   {
     href: "/guias/yield-farming-y-liquidez-concentrada",

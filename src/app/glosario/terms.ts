@@ -158,6 +158,10 @@ export const TERMS: Term[] = [
     definition:
       "Propuesta de mejora de Hyperliquid que permite a terceros lanzar sus propios mercados de perpetuos en la red sin pedir permiso al equipo, cumpliendo ciertos requisitos de stake. Abre la puerta a mercados sobre activos muy variados.",
     guides: ["hip-3-de-hyperliquid-creacion-de"],
+    more: {
+      href: "/guias/que-es-hyperliquid#hips",
+      label: "Reglas de HIP-3 y qué riesgos tiene",
+    },
   },
   {
     id: "mercado-de-predicciones",
@@ -243,8 +247,8 @@ export const TERMS: Term[] = [
       "Aplicación o dispositivo donde guardas tus claves privadas y desde el que firmas las transacciones. En autocustodia eres tú quien controla los fondos, sin intermediarios, y por eso proteger la frase semilla es crítico: quien la tenga controla la cartera.",
     guides: [],
     more: {
-      href: "/guias/que-es-un-airdrop#seguridad",
-      label: "Normas básicas de seguridad al farmear airdrops",
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
     },
   },
   {
@@ -292,6 +296,174 @@ export const TERMS: Term[] = [
     more: {
       href: "/guias/que-es-un-airdrop#como-farmear",
       label: "Cómo farmear un airdrop, paso a paso",
+    },
+  },
+  {
+    id: "aprobacion-de-tokens",
+    name: "Aprobación de tokens (allowance)",
+    definition:
+      "Permiso que das a un contrato inteligente para que gaste, en tu nombre, una cantidad de uno de tus tokens. Hace falta para operar en muchos protocolos DeFi, no caduca por sí solo y desconectar la wallet de la web no lo elimina: hay que revocarlo. Una aprobación ilimitada expone todo el saldo de ese token, también el que deposites después.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#aprobaciones",
+      label: "Qué son las aprobaciones y cómo revocarlas",
+    },
+  },
+  {
+    id: "permit-y-permit2",
+    name: "Permit y Permit2",
+    definition:
+      "Formas de conceder una aprobación de tokens con una firma que no cuesta gas, en lugar de con una transacción. Permit (EIP-2612) solo lo soportan algunos tokens; Permit2, creado por Uniswap, funciona con cualquiera y añade subaprobaciones con caducidad. Son cómodos, pero algunas wallets no los avisan como una aprobación y los estafadores los usan para vaciar wallets.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Cómo funcionan las firmas Permit y cómo cortarlas",
+    },
+  },
+  {
+    id: "eip-7702",
+    name: "EIP-7702 (delegación de cuenta)",
+    definition:
+      "Mejora de Ethereum, activada con la actualización Pectra, que permite a una cuenta normal delegar su ejecución en un contrato, por ejemplo para agrupar varias operaciones en una sola transacción. Una delegación a un contrato malicioso es una vía nueva de robo: conviene revisar las delegaciones activas y revocarlas desde la propia wallet.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Permit, Permit2 y EIP-7702: las firmas que dan permisos",
+    },
+  },
+  {
+    id: "drainer",
+    name: "Drainer (wallet drainer)",
+    definition:
+      "Kit de phishing que usa una web falsa, a menudo un falso reclamo de airdrop o de mint, para que conectes tu wallet y firmes una aprobación, una firma Permit o una delegación. Con esa firma, un script mueve tus activos sin necesitar tu frase semilla. Se combate leyendo lo que firmas y revisando tus permisos con regularidad.",
+    guides: ["10-herramientas-necesaria-para-tu"],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Las estafas más comunes y cómo reconocerlas",
+    },
+  },
+  {
+    id: "phishing",
+    name: "Phishing (en cripto)",
+    definition:
+      "Engaño para que entregues tu frase semilla o firmes algo malicioso haciéndose pasar por una web, un soporte o una cuenta legítimos: enlaces en mensajes o anuncios, falsos reclamos de airdrop, cuentas de redes sociales hackeadas. Ningún servicio legítimo te pide la frase semilla. Entra siempre desde los enlaces oficiales y verifica el dominio.",
+    guides: ["10-herramientas-necesaria-para-tu"],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Las estafas más comunes y cómo reconocerlas",
+    },
+  },
+  {
+    id: "address-poisoning",
+    name: "Address poisoning (envenenamiento de direcciones)",
+    definition:
+      "Estafa en la que el atacante te envía una transacción de valor insignificante, a menudo de cero tokens, desde una dirección que empieza y termina igual que otra con la que has operado, para que aparezca en tu historial. Si la copias de ahí por error, le envías los fondos. Verifica siempre la dirección completa y guarda las habituales en tus contactos.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Cómo funciona el address poisoning y cómo evitarlo",
+    },
+  },
+  {
+    id: "frase-semilla",
+    name: "Frase semilla (seed phrase)",
+    definition:
+      "Lista de palabras, normalmente 12 o 24, con la que se recupera una wallet y todas sus claves. Quien la tenga controla los fondos, y ningún servicio legítimo te la pedirá. No la compartas, no la escribas en ninguna web y no le hagas capturas de pantalla; guárdala sin conexión.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
+    },
+  },
+  {
+    id: "hardware-wallet",
+    name: "Hardware wallet (cartera física)",
+    definition:
+      "Dispositivo que guarda tus claves privadas y firma las transacciones sin que la clave salga de él, así que te protege aunque tu ordenador esté comprometido. Te permite confirmar en su pantalla lo que firmas, pero no evita que firmes tú una aprobación maliciosa.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
+    },
+  },
+  {
+    id: "firma-a-ciegas",
+    name: "Firma a ciegas (blind signing) y Clear Signing",
+    definition:
+      "Firmar una transacción o un mensaje que la wallet muestra en datos técnicos que una persona no puede interpretar, sin saber qué autorizas. Clear Signing, basado en el estándar ERC-7730 y presentado en mayo de 2026, busca que las wallets describan en lenguaje claro lo que hará cada operación; depende de que cada wallet lo integre.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Por qué importa entender lo que firmas",
+    },
+  },
+  {
+    id: "hyperliquid",
+    name: "Hyperliquid",
+    definition:
+      "Blockchain de capa 1 centrada en un exchange descentralizado, con libros de órdenes de perpetuos y de spot totalmente en cadena y un token propio, HYPE. Su estado se divide en HyperCore, donde viven los libros, el margen y las liquidaciones, y HyperEVM, un entorno de contratos inteligentes compatible con Ethereum.",
+    guides: [
+      "hip-3-de-hyperliquid-creacion-de",
+      "tier-list-de-perp-dexs-donde-farmeo",
+    ],
+    more: {
+      href: "/guias/que-es-hyperliquid",
+      label: "Guía completa: qué es Hyperliquid y cómo funciona",
+    },
+  },
+  {
+    id: "hype",
+    name: "HYPE (token de Hyperliquid)",
+    definition:
+      "Token nativo de Hyperliquid. Se usa para pagar el gas en HyperEVM, para hacer staking y delegar en validadores, para reducir las comisiones de trading y como stake exigido a quien despliega mercados HIP-3. El 31 % de su oferta se repartió entre usuarios el 29 de noviembre de 2024.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#hype",
+      label: "Reparto, utilidad y staking de HYPE",
+    },
+  },
+  {
+    id: "hypercore-y-hyperevm",
+    name: "HyperCore y HyperEVM",
+    definition:
+      "Los dos componentes del estado de Hyperliquid, asegurados por el mismo consenso (HyperBFT). HyperCore incluye los libros de órdenes de perpetuos y de spot, el margen y las liquidaciones. HyperEVM es un entorno de contratos inteligentes de propósito general, con HYPE como token de gas, cuyos contratos pueden leer el estado de HyperCore y enviarle acciones.",
+    guides: ["como-monitorizo-mis-pools-de-hyperevm"],
+    more: {
+      href: "/guias/que-es-hyperliquid#que-es",
+      label: "Cómo está construido Hyperliquid",
+    },
+  },
+  {
+    id: "margen-cruzado-y-aislado",
+    name: "Margen cruzado y margen aislado",
+    definition:
+      "Dos modos de colateral en los mercados de perpetuos. En margen cruzado, todas tus posiciones comparten el colateral de la cuenta: aprovechas mejor el capital, pero una pérdida puede arrastrar al resto. En margen aislado, el colateral de cada posición queda limitado a ese activo y solo arriesgas ese margen.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#perps",
+      label: "Margen, funding y liquidaciones en Hyperliquid",
+    },
+  },
+  {
+    id: "auto-deleveraging",
+    name: "Auto-deleveraging (ADL)",
+    definition:
+      "Último recurso de un exchange de derivados para seguir siendo solvente. En Hyperliquid, si el valor de una cuenta (o de una posición aislada) se vuelve negativo, se cierran posiciones con beneficio del lado contrario, al precio mark anterior, ordenadas por beneficio no realizado y apalancamiento. Por eso una posición ganadora puede cerrarse sin que tú lo hayas decidido.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#perps",
+      label: "Cómo se liquida una posición en Hyperliquid",
+    },
+  },
+  {
+    id: "hlp",
+    name: "HLP (Hyperliquidity Provider)",
+    definition:
+      "Vault comunitario de Hyperliquid al que cualquiera puede aportar liquidez para compartir sus resultados. Hace market making con varias estrategias, ejecuta liquidaciones y recibe parte de las comisiones de trading; los depósitos se bloquean 4 días desde el último depósito. Comparte ganancias y pérdidas, así que no es un rendimiento garantizado.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#ecosistema",
+      label: "Qué es el HLP dentro de Hyperliquid",
     },
   },
 ];

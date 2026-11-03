@@ -306,7 +306,12 @@ export default function QueEsUnAirdropPage() {
               <li className={p}>
                 Lee lo que firmas. Si una transacción pide permisos que no
                 entiendes, no la firmes; y revisa de vez en cuando los permisos
-                que has dado a cada aplicación.
+                que has dado a cada aplicación. Cómo hacerlo paso a paso lo
+                explico en la guía de{" "}
+                <Link href="/guias/seguridad-en-defi" className="link link-primary">
+                  seguridad en DeFi
+                </Link>
+                .
               </li>
               <li className={p}>
                 Prueba primero con cantidades pequeñas y con la cartera dedicada.

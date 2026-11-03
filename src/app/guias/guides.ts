@@ -256,6 +256,12 @@ export const GUIDE_GROUPS: GuideGroup[] = [
   },
   {
     id: "mercados-y-narrativas",
+    featured: [
+      {
+        href: "/guias/que-es-hyperliquid",
+        label: "Empieza por aquí: qué es Hyperliquid, HYPE y HIP-3",
+      },
+    ],
     title: "Mercados y narrativas",
     description:
       "Qué se mueve en activos del mundo real, mercados de predicción y la infraestructura de trading onchain.",
@@ -303,6 +309,12 @@ export const GUIDE_GROUPS: GuideGroup[] = [
   },
   {
     id: "herramientas-y-riesgo",
+    featured: [
+      {
+        href: "/guias/seguridad-en-defi",
+        label: "Empieza por aquí: seguridad en DeFi, aprobaciones y estafas",
+      },
+    ],
     title: "Herramientas y gestión del riesgo",
     description:
       "Herramientas para investigar y protegerte, y cómo reconocer las trampas más comunes antes de pagar o firmar nada.",
