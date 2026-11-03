@@ -105,8 +105,11 @@ export default function PerpDexPage() {
                 </Li>
                 <Li>
                   <B>Libro de órdenes o fondo de liquidez.</B> Algunas
-                  plataformas casan órdenes en un libro, como Hyperliquid; otras
-                  usan un fondo de liquidez como contraparte. Cambian la
+                  plataformas casan órdenes en un libro, como{" "}
+                  <InternalLink href="/guias/que-es-hyperliquid">
+                    Hyperliquid
+                  </InternalLink>
+                  ; otras usan un fondo de liquidez como contraparte. Cambian la
                   profundidad, el slippage y quién asume el riesgo.
                 </Li>
               </Ul>
@@ -146,7 +149,11 @@ export default function PerpDexPage() {
                 el token.
               </P>
               <P>
-                Hay precedentes. Hyperliquid fue acumulando puntos durante meses
+                Hay precedentes.{" "}
+                <InternalLink href="/guias/que-es-hyperliquid#hype">
+                  Hyperliquid
+                </InternalLink>{" "}
+                fue acumulando puntos durante meses
                 y, el 29 de noviembre de 2024, repartió el 31 % de la oferta total
                 de HYPE entre usuarios de la comunidad. Lighter hizo varias
                 temporadas de puntos y, al lanzar su token LIT el 30 de diciembre

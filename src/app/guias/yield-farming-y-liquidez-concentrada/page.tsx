@@ -357,6 +357,17 @@ export default function YieldFarmingPage() {
                 riesgo, pero no lo elimina.
               </Li>
               <Li>
+                <B>Aprobaciones y firmas.</B> Para depositar en una pool das
+                permiso a un contrato para mover tus tokens. Si ese permiso queda
+                abierto y el contrato resulta malicioso o lo atacan, pueden
+                vaciarte esos tokens. Revisa lo que firmas y revoca lo que ya no
+                uses, como explico en la guía de{" "}
+                <InternalLink href="/guias/seguridad-en-defi#aprobaciones">
+                  seguridad en DeFi
+                </InternalLink>
+                .
+              </Li>
+              <Li>
                 <B>Contratos de terceros dentro de la pool.</B> En Uniswap v4, un{" "}
                 <GlossaryLink id="hook-uniswap-v4">hook</GlossaryLink> mal
                 diseñado o malicioso puede subir las comisiones o bloquear

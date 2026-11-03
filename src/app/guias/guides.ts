@@ -256,6 +256,12 @@ export const GUIDE_GROUPS: GuideGroup[] = [
   },
   {
     id: "mercados-y-narrativas",
+    featured: [
+      {
+        href: "/guias/que-es-hyperliquid",
+        label: "Empieza por aquí: qué es Hyperliquid, HYPE y HIP-3",
+      },
+    ],
     title: "Mercados y narrativas",
     description:
       "Qué se mueve en activos del mundo real, mercados de predicción y la infraestructura de trading onchain.",
