@@ -124,21 +124,25 @@ export const GuideLink = ({
 };
 
 // Tabla con la primera columna como cabecera de fila. Se desplaza en horizontal
-// dentro de su caja si no cabe, sin ensanchar la página.
+// dentro de su caja si no cabe, sin ensanchar la página. Con más de tres
+// columnas se le da un ancho mínimo (y un aviso en móvil); "wide" lo fuerza o,
+// con false, lo evita en tablas de celdas cortas que caben sin desplazarse.
 export const DataTable = ({
   caption,
   head,
   rows,
+  wide,
 }: {
   caption: string;
   head: string[];
   rows: ReactNode[][];
+  wide?: boolean;
 }) => (
   <div className="flex flex-col gap-2">
     <div className="overflow-x-auto">
       <table
         className={`table bg-base-100 text-base ${
-          head.length > 3 ? "min-w-[40rem]" : ""
+          (wide ?? head.length > 3) ? "min-w-[40rem]" : ""
         }`}
       >
         <caption className="caption-top text-left text-sm opacity-70 pb-2">
@@ -170,7 +174,7 @@ export const DataTable = ({
         </tbody>
       </table>
     </div>
-    {head.length > 3 && (
+    {(wide ?? head.length > 3) && (
       <p className="small:hidden text-sm opacity-70">
         Desliza hacia los lados para ver toda la tabla.
       </p>

@@ -158,6 +158,10 @@ export const TERMS: Term[] = [
     definition:
       "Propuesta de mejora de Hyperliquid que permite a terceros lanzar sus propios mercados de perpetuos en la red sin pedir permiso al equipo, cumpliendo ciertos requisitos de stake. Abre la puerta a mercados sobre activos muy variados.",
     guides: ["hip-3-de-hyperliquid-creacion-de"],
+    more: {
+      href: "/guias/que-es-hyperliquid#hips",
+      label: "Reglas de HIP-3 y qué riesgos tiene",
+    },
   },
   {
     id: "mercado-de-predicciones",
@@ -391,6 +395,75 @@ export const TERMS: Term[] = [
     more: {
       href: "/guias/seguridad-en-defi#firmas",
       label: "Por qué importa entender lo que firmas",
+    },
+  },
+  {
+    id: "hyperliquid",
+    name: "Hyperliquid",
+    definition:
+      "Blockchain de capa 1 centrada en un exchange descentralizado, con libros de órdenes de perpetuos y de spot totalmente en cadena y un token propio, HYPE. Su estado se divide en HyperCore, donde viven los libros, el margen y las liquidaciones, y HyperEVM, un entorno de contratos inteligentes compatible con Ethereum.",
+    guides: [
+      "hip-3-de-hyperliquid-creacion-de",
+      "tier-list-de-perp-dexs-donde-farmeo",
+    ],
+    more: {
+      href: "/guias/que-es-hyperliquid",
+      label: "Guía completa: qué es Hyperliquid y cómo funciona",
+    },
+  },
+  {
+    id: "hype",
+    name: "HYPE (token de Hyperliquid)",
+    definition:
+      "Token nativo de Hyperliquid. Se usa para pagar el gas en HyperEVM, para hacer staking y delegar en validadores, para reducir las comisiones de trading y como stake exigido a quien despliega mercados HIP-3. El 31 % de su oferta se repartió entre usuarios el 29 de noviembre de 2024.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#hype",
+      label: "Reparto, utilidad y staking de HYPE",
+    },
+  },
+  {
+    id: "hypercore-y-hyperevm",
+    name: "HyperCore y HyperEVM",
+    definition:
+      "Los dos componentes del estado de Hyperliquid, asegurados por el mismo consenso (HyperBFT). HyperCore incluye los libros de órdenes de perpetuos y de spot, el margen y las liquidaciones. HyperEVM es un entorno de contratos inteligentes de propósito general, con HYPE como token de gas, cuyos contratos pueden leer el estado de HyperCore y enviarle acciones.",
+    guides: ["como-monitorizo-mis-pools-de-hyperevm"],
+    more: {
+      href: "/guias/que-es-hyperliquid#que-es",
+      label: "Cómo está construido Hyperliquid",
+    },
+  },
+  {
+    id: "margen-cruzado-y-aislado",
+    name: "Margen cruzado y margen aislado",
+    definition:
+      "Dos modos de colateral en los mercados de perpetuos. En margen cruzado, todas tus posiciones comparten el colateral de la cuenta: aprovechas mejor el capital, pero una pérdida puede arrastrar al resto. En margen aislado, el colateral de cada posición queda limitado a ese activo y solo arriesgas ese margen.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#perps",
+      label: "Margen, funding y liquidaciones en Hyperliquid",
+    },
+  },
+  {
+    id: "auto-deleveraging",
+    name: "Auto-deleveraging (ADL)",
+    definition:
+      "Último recurso de un exchange de derivados para seguir siendo solvente. En Hyperliquid, si el valor de una cuenta (o de una posición aislada) se vuelve negativo, se cierran posiciones con beneficio del lado contrario, al precio mark anterior, ordenadas por beneficio no realizado y apalancamiento. Por eso una posición ganadora puede cerrarse sin que tú lo hayas decidido.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#perps",
+      label: "Cómo se liquida una posición en Hyperliquid",
+    },
+  },
+  {
+    id: "hlp",
+    name: "HLP (Hyperliquidity Provider)",
+    definition:
+      "Vault comunitario de Hyperliquid al que cualquiera puede aportar liquidez para compartir sus resultados. Hace market making con varias estrategias, ejecuta liquidaciones y recibe parte de las comisiones de trading; los depósitos se bloquean 4 días desde el último depósito. Comparte ganancias y pérdidas, así que no es un rendimiento garantizado.",
+    guides: [],
+    more: {
+      href: "/guias/que-es-hyperliquid#ecosistema",
+      label: "Qué es el HLP dentro de Hyperliquid",
     },
   },
 ];
