@@ -61,6 +61,20 @@ export const Privacity = () => {
             contrato (art. 6.1.b RGPD).
           </li>
           <li>
+            <span className="font-semibold">
+              Suscripción a La Agenda de SecretoDefi.
+            </span>{" "}
+            Datos: tu dirección de correo electrónico y los datos que Substack
+            registra al suscribirte (fecha, página desde la que te suscribes y
+            aperturas y clics de los correos). Finalidad: gestionar tu
+            suscripción y enviarte por correo las publicaciones de La Agenda de
+            SecretoDefi y comunicaciones sobre la propia publicación, como su
+            edición de pago. Base legal: tu consentimiento (art. 6.1.a RGPD y
+            art. 21 de la Ley 34/2002). Al enviar el formulario de esta web, tu
+            correo se transmite directamente a Substack: esta web no lo recibe
+            ni lo guarda.
+          </li>
+          <li>
             <span className="font-semibold">Correo electrónico.</span> Si nos
             escribes, usaremos tu dirección y el contenido del mensaje solo
             para responderte. Base legal: tu consentimiento (art. 6.1.a RGPD).
@@ -83,16 +97,28 @@ export const Privacity = () => {
         <p className="font-light">
           No cedemos tus datos a terceros, salvo obligación legal. Para prestar
           el servicio recurrimos a proveedores que actúan como encargados del
-          tratamiento: el servicio de formularios (Formspree) y el alojamiento
-          y estadísticas de la web (Vercel). Estos proveedores pueden tratar
-          datos fuera del Espacio Económico Europeo, por ejemplo en Estados
-          Unidos, con las garantías que prevé el RGPD para las transferencias
-          internacionales.
+          tratamiento: el servicio de formularios (Formspree), el alojamiento y
+          las estadísticas de la web (Vercel) y, para la newsletter, Substack.
+          Estos proveedores pueden tratar datos fuera del Espacio Económico
+          Europeo, por ejemplo en Estados Unidos, con las garantías que prevé
+          el RGPD para las transferencias internacionales.
         </p>
         <p className="font-light">
-          Si te suscribes a La Agenda de SecretoDefi, la suscripción se
-          gestiona en Substack, que trata tus datos conforme a su propia
-          política de privacidad.
+          Substack Inc. gestiona la lista de suscriptores y los envíos de La
+          Agenda de SecretoDefi por cuenta del responsable y, para sus propios
+          fines (por ejemplo, la cuenta de lector), trata datos como
+          responsable conforme a su{" "}
+          <a
+            className="link link-primary"
+            href="https://substack.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            política de privacidad
+          </a>
+          . Substack indica que ofrece cláusulas contractuales tipo en su
+          acuerdo con los editores y que está certificada en el Marco de
+          Privacidad de Datos UE-EE. UU.
         </p>
       </Section>
 
@@ -103,6 +129,14 @@ export const Privacity = () => {
           conservaremos mientras dure la relación y después, bloqueados, durante
           los plazos exigidos por la normativa fiscal, mercantil y contable.
           Puedes pedir que se supriman antes en cualquier momento.
+        </p>
+        <p className="font-light">
+          Los datos de tu suscripción a La Agenda de SecretoDefi se conservan
+          mientras mantengas la suscripción. Puedes darte de baja cuando
+          quieras desde el enlace que incluye cada correo; después solo
+          conservaremos lo imprescindible (por ejemplo, la constancia de tu
+          baja) durante los plazos de prescripción de posibles
+          responsabilidades.
         </p>
       </Section>
 
@@ -136,7 +170,9 @@ export const Privacity = () => {
           Esta web no utiliza cookies propias ni de terceros con fines
           publicitarios o de seguimiento. Contiene enlaces a X, Telegram,
           Substack, YouTube e Instagram, que son sitios de terceros con sus
-          propias políticas de privacidad y cookies.
+          propias políticas de privacidad y cookies. Al enviar el formulario de
+          suscripción se abre una página de Substack, que aplica su propia
+          política de cookies.
         </p>
       </Section>
 
@@ -149,7 +185,7 @@ export const Privacity = () => {
       </Section>
 
       <p className="font-light">
-        Última actualización: octubre de 2026. Copyright © Secreto Defi |
+        Última actualización: noviembre de 2026. Copyright © Secreto Defi |
         RESERVADOS TODOS LOS DERECHOS
       </p>
     </div>
