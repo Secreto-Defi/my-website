@@ -10,6 +10,8 @@ import {
   IL_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
+  SECURITY_GUIDE_PUBLISHED,
+  SECURITY_GUIDE_UPDATED,
   YIELD_GUIDE_PUBLISHED,
   YIELD_GUIDE_UPDATED,
 } from "../lib/updated";
@@ -30,6 +32,14 @@ export const PILLARS: Pillar[] = [
       "Qué es un airdrop, qué tipos hay, cómo farmearlo paso a paso y cómo evitar las estafas más comunes.",
     published: AIRDROP_GUIDE_PUBLISHED,
     updated: AIRDROP_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/seguridad-en-defi",
+    name: "Seguridad en DeFi: aprobaciones y estafas",
+    description:
+      "Qué son las aprobaciones y las firmas Permit, cómo revocarlas, qué estafas son las más comunes y qué hacer si te vacían la wallet.",
+    published: SECURITY_GUIDE_PUBLISHED,
+    updated: SECURITY_GUIDE_UPDATED,
   },
   {
     href: "/guias/perp-dex-y-farmeo-de-puntos",

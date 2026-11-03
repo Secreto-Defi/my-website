@@ -243,8 +243,8 @@ export const TERMS: Term[] = [
       "Aplicación o dispositivo donde guardas tus claves privadas y desde el que firmas las transacciones. En autocustodia eres tú quien controla los fondos, sin intermediarios, y por eso proteger la frase semilla es crítico: quien la tenga controla la cartera.",
     guides: [],
     more: {
-      href: "/guias/que-es-un-airdrop#seguridad",
-      label: "Normas básicas de seguridad al farmear airdrops",
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
     },
   },
   {
@@ -292,6 +292,105 @@ export const TERMS: Term[] = [
     more: {
       href: "/guias/que-es-un-airdrop#como-farmear",
       label: "Cómo farmear un airdrop, paso a paso",
+    },
+  },
+  {
+    id: "aprobacion-de-tokens",
+    name: "Aprobación de tokens (allowance)",
+    definition:
+      "Permiso que das a un contrato inteligente para que gaste, en tu nombre, una cantidad de uno de tus tokens. Hace falta para operar en muchos protocolos DeFi, no caduca por sí solo y desconectar la wallet de la web no lo elimina: hay que revocarlo. Una aprobación ilimitada expone todo el saldo de ese token, también el que deposites después.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#aprobaciones",
+      label: "Qué son las aprobaciones y cómo revocarlas",
+    },
+  },
+  {
+    id: "permit-y-permit2",
+    name: "Permit y Permit2",
+    definition:
+      "Formas de conceder una aprobación de tokens con una firma que no cuesta gas, en lugar de con una transacción. Permit (EIP-2612) solo lo soportan algunos tokens; Permit2, creado por Uniswap, funciona con cualquiera y añade subaprobaciones con caducidad. Son cómodos, pero algunas wallets no los avisan como una aprobación y los estafadores los usan para vaciar wallets.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Cómo funcionan las firmas Permit y cómo cortarlas",
+    },
+  },
+  {
+    id: "eip-7702",
+    name: "EIP-7702 (delegación de cuenta)",
+    definition:
+      "Mejora de Ethereum, activada con la actualización Pectra, que permite a una cuenta normal delegar su ejecución en un contrato, por ejemplo para agrupar varias operaciones en una sola transacción. Una delegación a un contrato malicioso es una vía nueva de robo: conviene revisar las delegaciones activas y revocarlas desde la propia wallet.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Permit, Permit2 y EIP-7702: las firmas que dan permisos",
+    },
+  },
+  {
+    id: "drainer",
+    name: "Drainer (wallet drainer)",
+    definition:
+      "Kit de phishing que usa una web falsa, a menudo un falso reclamo de airdrop o de mint, para que conectes tu wallet y firmes una aprobación, una firma Permit o una delegación. Con esa firma, un script mueve tus activos sin necesitar tu frase semilla. Se combate leyendo lo que firmas y revisando tus permisos con regularidad.",
+    guides: ["10-herramientas-necesaria-para-tu"],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Las estafas más comunes y cómo reconocerlas",
+    },
+  },
+  {
+    id: "phishing",
+    name: "Phishing (en cripto)",
+    definition:
+      "Engaño para que entregues tu frase semilla o firmes algo malicioso haciéndose pasar por una web, un soporte o una cuenta legítimos: enlaces en mensajes o anuncios, falsos reclamos de airdrop, cuentas de redes sociales hackeadas. Ningún servicio legítimo te pide la frase semilla. Entra siempre desde los enlaces oficiales y verifica el dominio.",
+    guides: ["10-herramientas-necesaria-para-tu"],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Las estafas más comunes y cómo reconocerlas",
+    },
+  },
+  {
+    id: "address-poisoning",
+    name: "Address poisoning (envenenamiento de direcciones)",
+    definition:
+      "Estafa en la que el atacante te envía una transacción de valor insignificante, a menudo de cero tokens, desde una dirección que empieza y termina igual que otra con la que has operado, para que aparezca en tu historial. Si la copias de ahí por error, le envías los fondos. Verifica siempre la dirección completa y guarda las habituales en tus contactos.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#estafas",
+      label: "Cómo funciona el address poisoning y cómo evitarlo",
+    },
+  },
+  {
+    id: "frase-semilla",
+    name: "Frase semilla (seed phrase)",
+    definition:
+      "Lista de palabras, normalmente 12 o 24, con la que se recupera una wallet y todas sus claves. Quien la tenga controla los fondos, y ningún servicio legítimo te la pedirá. No la compartas, no la escribas en ninguna web y no le hagas capturas de pantalla; guárdala sin conexión.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
+    },
+  },
+  {
+    id: "hardware-wallet",
+    name: "Hardware wallet (cartera física)",
+    definition:
+      "Dispositivo que guarda tus claves privadas y firma las transacciones sin que la clave salga de él, así que te protege aunque tu ordenador esté comprometido. Te permite confirmar en su pantalla lo que firmas, pero no evita que firmes tú una aprobación maliciosa.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#habitos",
+      label: "Hábitos de seguridad para proteger tu wallet",
+    },
+  },
+  {
+    id: "firma-a-ciegas",
+    name: "Firma a ciegas (blind signing) y Clear Signing",
+    definition:
+      "Firmar una transacción o un mensaje que la wallet muestra en datos técnicos que una persona no puede interpretar, sin saber qué autorizas. Clear Signing, basado en el estándar ERC-7730 y presentado en mayo de 2026, busca que las wallets describan en lenguaje claro lo que hará cada operación; depende de que cada wallet lo integre.",
+    guides: [],
+    more: {
+      href: "/guias/seguridad-en-defi#firmas",
+      label: "Por qué importa entender lo que firmas",
     },
   },
 ];

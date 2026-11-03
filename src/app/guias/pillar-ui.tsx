@@ -28,6 +28,11 @@ export const B = ({ children }: { children: ReactNode }) => (
   <strong className="font-bold">{children}</strong>
 );
 
+// Nombre de una función o de un estándar técnico dentro del texto.
+export const Code = ({ children }: { children: ReactNode }) => (
+  <code className="font-mono text-base bg-base-100 px-1.5 py-0.5">{children}</code>
+);
+
 export const H3 = ({ children }: { children: ReactNode }) => (
   <h3 className="text-xl font-bold">{children}</h3>
 );

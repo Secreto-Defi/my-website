@@ -303,6 +303,12 @@ export const GUIDE_GROUPS: GuideGroup[] = [
   },
   {
     id: "herramientas-y-riesgo",
+    featured: [
+      {
+        href: "/guias/seguridad-en-defi",
+        label: "Empieza por aquí: seguridad en DeFi, aprobaciones y estafas",
+      },
+    ],
     title: "Herramientas y gestión del riesgo",
     description:
       "Herramientas para investigar y protegerte, y cómo reconocer las trampas más comunes antes de pagar o firmar nada.",
