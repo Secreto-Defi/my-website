@@ -303,7 +303,7 @@ export const TERMS: Term[] = [
     name: "Aprobación de tokens (allowance)",
     definition:
       "Permiso que das a un contrato inteligente para que gaste, en tu nombre, una cantidad de uno de tus tokens. Hace falta para operar en muchos protocolos DeFi, no caduca por sí solo y desconectar la wallet de la web no lo elimina: hay que revocarlo. Una aprobación ilimitada expone todo el saldo de ese token, también el que deposites después.",
-    guides: [],
+    guides: ["como-evitar-que-te-vacien-la-wallet"],
     more: {
       href: "/guias/seguridad-en-defi#aprobaciones",
       label: "Qué son las aprobaciones y cómo revocarlas",
@@ -336,7 +336,10 @@ export const TERMS: Term[] = [
     name: "Drainer (wallet drainer)",
     definition:
       "Kit de phishing que usa una web falsa, a menudo un falso reclamo de airdrop o de mint, para que conectes tu wallet y firmes una aprobación, una firma Permit o una delegación. Con esa firma, un script mueve tus activos sin necesitar tu frase semilla. Se combate leyendo lo que firmas y revisando tus permisos con regularidad.",
-    guides: ["10-herramientas-necesaria-para-tu"],
+    guides: [
+      "como-evitar-que-te-vacien-la-wallet",
+      "10-herramientas-necesaria-para-tu",
+    ],
     more: {
       href: "/guias/seguridad-en-defi#estafas",
       label: "Las estafas más comunes y cómo reconocerlas",
@@ -358,7 +361,7 @@ export const TERMS: Term[] = [
     name: "Address poisoning (envenenamiento de direcciones)",
     definition:
       "Estafa en la que el atacante te envía una transacción de valor insignificante, a menudo de cero tokens, desde una dirección que empieza y termina igual que otra con la que has operado, para que aparezca en tu historial. Si la copias de ahí por error, le envías los fondos. Verifica siempre la dirección completa y guarda las habituales en tus contactos.",
-    guides: [],
+    guides: ["como-evitar-que-te-vacien-la-wallet"],
     more: {
       href: "/guias/seguridad-en-defi#estafas",
       label: "Cómo funciona el address poisoning y cómo evitarlo",
