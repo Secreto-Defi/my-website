@@ -321,10 +321,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     heading: "Herramientas y gestión del riesgo en DeFi",
     seoTitle: "Herramientas DeFi y gestión del riesgo | Secreto Defi",
     seoDescription:
-      "Herramientas y hábitos para investigar y protegerte en DeFi: seguimiento de airdrops, análisis onchain con InsightX, prop firms y tarjeta Visa con cripto.",
+      "Herramientas y hábitos para protegerte en DeFi: guía anti-drenaje de wallets, análisis onchain con InsightX, prop firms y tarjeta Visa con cripto.",
     intro: [
       "Antes de buscar rendimiento conviene tener las herramientas para investigar un token, comprobar un contrato o un enlace y mover fondos entre redes sin cometer errores caros.",
-      "Aquí hay diez herramientas y hábitos para el día a día, cómo usar InsightX para ver cómo se reparte un token entre sus holders y detectar wallets proxy, cómo funciona de verdad una cuenta de fondeo (prop firm) y una guía sobre una tarjeta Visa prepago que se recarga con cripto.",
+      "Aquí hay diez herramientas y hábitos para el día a día, una guía anti-drenaje para detectar y revocar aprobaciones peligrosas, cómo usar InsightX para ver cómo se reparte un token entre sus holders y detectar wallets proxy, cómo funciona de verdad una cuenta de fondeo (prop firm) y una guía sobre una tarjeta Visa prepago que se recarga con cripto.",
       "La seguridad empieza por no fiarse: verifica siempre direcciones, contratos y enlaces antes de firmar o pagar nada.",
     ],
     guides: [
@@ -356,6 +356,13 @@ export const GUIDE_GROUPS: GuideGroup[] = [
           "Cómo funciona de verdad una cuenta de fondeo, qué exige la evaluación, por qué solo una minoría llega a cobrar y un checklist de señales de alerta antes de pagar.",
         date: "2026-10-11",
         subscribersOnly: true,
+      },
+      {
+        title: "Cómo evitar que te vacíen la wallet (la guía anti-drenaje que necesitas)",
+        slug: "como-evitar-que-te-vacien-la-wallet",
+        description:
+          "Cómo te vacían la wallet sin robarte la seed: aprobaciones y firmas peligrosas, address poisoning y 4 hábitos con Revoke y Rabby para evitarlo.",
+        date: "2026-11-04",
       },
     ],
   },

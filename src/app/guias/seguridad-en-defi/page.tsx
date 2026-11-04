@@ -61,6 +61,13 @@ export default function SeguridadEnDefiPage() {
             enero de 2026 descubrí que mi wallet había acumulado más de 1.000
             aprobaciones de contratos tras cinco años de uso.
           </P>
+          <P>
+            En La Agenda tienes también una versión corta:{" "}
+            <G slug="como-evitar-que-te-vacien-la-wallet">
+              cómo evitar que te vacíen la wallet
+            </G>
+            , con cuatro hábitos básicos para blindarte.
+          </P>
         </>
       }
       summary={[
@@ -758,6 +765,7 @@ export default function SeguridadEnDefiPage() {
         },
       ]}
       relatedSlugs={[
+        "como-evitar-que-te-vacien-la-wallet",
         "10-herramientas-necesaria-para-tu",
         "se-un-detective-onchain",
         "cuentas-de-fondeo-en-cripto-como",
