@@ -497,7 +497,8 @@ export default function QueEsMeteoraPage() {
             <>
               <P>
                 MET es el token de Meteora. Esto es lo que indican su página de
-                tokenomics, su libro blanco MiCAR, sus anuncios y la prensa a 5
+                tokenomics, su libro blanco MiCAR, su informe del primer semestre
+                de 2026, su página de relaciones con inversores y la prensa a 5
                 de noviembre de 2026:
               </P>
               <Ul>
@@ -512,12 +513,17 @@ export default function QueEsMeteoraPage() {
                   equipo y un 34 % de la reserva de Meteora, no se desbloqueó en
                   el lanzamiento: tiene un mes de cliff y 72 meses de
                   liberación, con el primer desbloqueo el 23 de noviembre de 2025
-                  y el último el 23 de octubre de 2031. El libro blanco MiCAR
-                  (versión 1.1, de octubre de 2025) da otras cifras: 470
-                  millones de MET en circulación (el 47 %), un 18 % para el
-                  equipo, un 35 % de reserva y, para el 53 % que no circulaba, un
-                  cliff de 12 meses con 60 meses de liberación lineal. Si vas a
-                  tomar una decisión, contrasta ambas fuentes.
+                  y el último el 23 de octubre de 2031. El informe del primer
+                  semestre de 2026 (11 de agosto de 2026) encaja con ese
+                  calendario: recoge desbloqueos mensuales de 7.222.222 MET (el
+                  0,72 % del suministro total; 2,5 millones del equipo y 4,72
+                  millones de la reserva) y, a 30 de junio, 20,0 millones
+                  desbloqueados del equipo y 37,8 millones de la reserva. El
+                  libro blanco MiCAR (versión 1.1, de octubre de 2025) da otras
+                  cifras: 470 millones de MET en circulación (el 47 %), un 18 %
+                  para el equipo, un 35 % de reserva y, para el 53 % que no
+                  circulaba, un cliff de 12 meses con 60 meses de liberación
+                  lineal.
                 </Li>
               </Ul>
               <DataTable
@@ -569,14 +575,17 @@ export default function QueEsMeteoraPage() {
               <Ul>
                 <Li>
                   <B>Staking de MET con comisiones del DLMM:</B> el 21 de julio de
-                  2026 Meteora lanzó el programa Referral Staking, que funciona
-                  por ciclos de un mes (del 21 de un mes al 21 del siguiente).
-                  Según su web, quien hace staking de MET y aporta liquidez se
-                  reparte el 10 % de las comisiones de protocolo del DLMM en
-                  función de su MET en staking, ponderado por tiempo; los
-                  referidores cobran
-                  el 8 % de las comisiones de protocolo de sus referidos y estos,
-                  un 2 % de las suyas.
+                  2026 Meteora lanzó el programa Referral Staking, que su
+                  informe del primer semestre presenta como el primer
+                  experimento de utilidad del token. Funciona por ciclos de un
+                  mes (del 21 de un mes al 21 del siguiente) y, según el
+                  informe, se financia con el 10 % de las comisiones de
+                  protocolo del DLMM para el staking y otro 10 % para los
+                  referidos. Según su web, quien hace staking de MET y aporta
+                  liquidez se reparte ese 10 % en función de su MET en staking,
+                  ponderado por tiempo; los referidores cobran el 8 % de las
+                  comisiones de protocolo de sus referidos y estos, un 2 % de las
+                  suyas.
                 </Li>
                 <Li>
                   <B>Reglas del staking:</B> el mínimo es de 200 MET y, desde el
@@ -588,8 +597,11 @@ export default function QueEsMeteoraPage() {
                   inmediata cuesta una penalización del 10 % de los MET.
                 </Li>
                 <Li>
-                  <B>Resultados del staking:</B> según Solana Compass, el ciclo 1
-                  (hasta el 21 de agosto) repartió unos 336.000 USDC con 76
+                  <B>Resultados del staking:</B> el informe del primer semestre
+                  recoge 70,0 millones de MET en staking (el 7,0 % del
+                  suministro total) en 2.442 carteras a principios de agosto.
+                  Según Solana Compass, el ciclo 1 (hasta el 21 de agosto)
+                  repartió unos 336.000 USDC con 76
                   millones de MET en staking y el ciclo 2 (hasta el 21 de
                   septiembre), más de 700.000 USDC con más de 89 millones; los
                   pagos de esos dos ciclos se podían reclamar hasta el 31 de
@@ -598,16 +610,20 @@ export default function QueEsMeteoraPage() {
                   staking.
                 </Li>
                 <Li>
-                  <B>Recompras:</B> el 10 de diciembre de 2025, en una
-                  publicación en X recogida por ChainCatcher, Meteora informó de
-                  que había gastado 10 millones de USDC en recomprar alrededor
-                  del 2,3 % de los MET durante el cuarto trimestre y de que las
-                  recompras seguirían. Según su informe del primer trimestre de
-                  2026, que recoge KuCoin, son discrecionales y se financian con
-                  los ingresos del protocolo, y el acumulado era de 13,7 millones
-                  de dólares por 39,6 millones de MET (el 3,97 % del suministro
-                  total), con 1 millón de dólares en ese trimestre. Las fuentes
-                  consultadas no recogen cifras posteriores.
+                  <B>Recompras:</B> Meteora las empezó en octubre de 2025 y no
+                  son constantes. Según su informe del primer semestre de 2026,
+                  en ese semestre solo hubo compras en el primer trimestre (1
+                  millón de USDC por 7.007.042 MET) y ninguna en el segundo;
+                  desde octubre de 2025 se habían comprado 36,0 millones de MET,
+                  y la cartera de recompras, que cuenta también los MET que
+                  acumulan sus posiciones de liquidez, tenía 38,8 millones (el
+                  3,9 % del suministro total) a 30 de junio. A 5 de noviembre de
+                  2026, su página de relaciones con inversores mostraba 13,67
+                  millones de USDC gastados y 36,22 millones de MET recomprados
+                  (el 3,63 % del suministro total). En diciembre de 2025, según
+                  ChainCatcher, Meteora había dicho en X que llevaba gastados 10
+                  millones de USDC en recomprar cerca del 2,3 % de los MET
+                  durante el cuarto trimestre y que seguiría.
                 </Li>
                 <Li>
                   <B>Comet Points:</B> en diciembre de 2025 Meteora presentó un
@@ -619,7 +635,8 @@ export default function QueEsMeteoraPage() {
                   a beneficios, y el staking con pagos y las recompras son
                   programas de Meteora, no derechos del token, así que pueden
                   cambiar o terminar. De hecho, el programa de staking ya cambió
-                  sus reglas en el ciclo 4.
+                  sus reglas en el ciclo 4 y no hubo recompras en el segundo
+                  trimestre de 2026.
                 </Li>
               </Ul>
               <Note>
@@ -876,7 +893,7 @@ export default function QueEsMeteoraPage() {
         {
           question: "¿Para qué sirve el token MET?",
           answer:
-            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un programa de staking en el que quienes hacen staking de MET y aportan liquidez se reparten el 10 % de las comisiones de protocolo del DLMM (desde el 21 de julio de 2026, por ciclos mensuales y con reglas que ya han cambiado) y ha informado de recompras de MET por unos 13,7 millones de dólares hasta el primer trimestre de 2026. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
+            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un programa de staking en el que quienes hacen staking de MET y aportan liquidez se reparten el 10 % de las comisiones de protocolo del DLMM (desde el 21 de julio de 2026, por ciclos mensuales y con reglas que ya han cambiado) y ha hecho recompras de MET: 13,67 millones de USDC gastados desde octubre de 2025 según su página de relaciones con inversores, aunque su informe del primer semestre de 2026 indica que no hubo ninguna en el segundo trimestre. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
         },
         {
           question: "¿Sigue abierto el airdrop de Meteora?",
@@ -953,6 +970,14 @@ export default function QueEsMeteoraPage() {
           href: "https://static.meteora.ag/whitepaper/mica.pdf",
         },
         {
+          label: "Meteora: informe del primer semestre de 2026 para los titulares de MET (PDF)",
+          href: "https://ir.meteora.ag/assets/Meteora_H1_2026_Token_Holder_Report.pdf",
+        },
+        {
+          label: "Meteora: relaciones con inversores (recompras y staking de MET)",
+          href: "https://ir.meteora.ag/",
+        },
+        {
           label: "Meteora: condiciones del airdrop de la temporada 2",
           href: "https://docs.meteora.ag/protocol/met/s2-airdrop-terms",
         },
@@ -971,10 +996,6 @@ export default function QueEsMeteoraPage() {
         {
           label: "ChainCatcher: recompra de MET y Comet Points",
           href: "https://www.chaincatcher.com/en/article/2228361",
-        },
-        {
-          label: "KuCoin: informe de Meteora del primer trimestre de 2026 (recompras de MET)",
-          href: "https://www.kucoin.com/blog/bd-met-2026-q1-project-update",
         },
         {
           label: "Crypto Briefing: tramo de 6 millones de MET para colaboradores",
@@ -1009,7 +1030,7 @@ export default function QueEsMeteoraPage() {
           href: "https://news.bitcoin.com/regulation-and-legal/us-judge-dismisses-libra-crypto-class-action-against-kelsier/",
         },
         {
-          label: "The Block: Ben Chow dimite como cofundador de Meteora",
+          label: "The Block: la salida de Ben Chow de la dirección de Meteora (febrero de 2025)",
           href: "https://www.theblock.co/news/web3/2025-02-18-meteora-co-founder-ben-chow-resigns-amid-libra-scandal-341412",
         },
       ]}
