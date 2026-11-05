@@ -223,7 +223,11 @@ export default function YieldFarmingPage() {
                 <Li>
                   <B>Rendimiento tokenizado.</B> Pendle separa un activo en PT
                   (principal) y YT (rendimiento) para fijar un rendimiento o
-                  especular con él. Tienes la definición de{" "}
+                  especular con él. Tienes la explicación completa en la guía de{" "}
+                  <InternalLink href="/guias/que-es-pendle">
+                    qué es Pendle
+                  </InternalLink>{" "}
+                  y la definición de{" "}
                   <GlossaryLink id="pt-y-yt">PT y YT</GlossaryLink> en el
                   glosario.
                 </Li>

@@ -176,10 +176,50 @@ export const TERMS: Term[] = [
     guides: ["como-funcionan-los-dex-ve33-y-por"],
   },
   {
+    id: "pendle",
+    name: "Pendle",
+    more: {
+      href: "/guias/que-es-pendle",
+      label: "Guía completa: qué es Pendle, cómo funcionan PT y YT y qué riesgos tiene",
+    },
+    definition:
+      "Protocolo de DeFi que separa un activo que genera rendimiento en dos tokens negociables, el PT (principal) y el YT (rendimiento), con una fecha de vencimiento. Permite fijar un rendimiento, apostar por que suba o aportar liquidez a esos mercados. Tiene además Boros, para operar tipos de financiación con margen, y PendleLoop, para hacer looping.",
+    guides: [
+      "ptyt-el-rendimiento-tokenizado",
+      "pt-looping-en-pendle-de-donde-sale",
+    ],
+  },
+  {
     id: "pt-y-yt",
     name: "PT y YT (Pendle)",
+    more: {
+      href: "/guias/que-es-pendle#tokenizacion",
+      label: "Cómo se divide un activo en SY, PT y YT",
+    },
     definition:
       "En Pendle, un activo que genera rendimiento se divide en dos tokens. El PT (Principal Token) se canjea 1:1 por el activo al vencimiento y se compra con descuento, lo que equivale a un rendimiento fijo implícito. El YT (Yield Token) da derecho al rendimiento variable que genere el activo hasta el vencimiento.",
+    guides: ["ptyt-el-rendimiento-tokenizado"],
+  },
+  {
+    id: "sy-standardized-yield",
+    name: "SY (Standardized Yield)",
+    more: {
+      href: "/guias/que-es-pendle#tokenizacion",
+      label: "Cómo se divide un activo en SY, PT y YT",
+    },
+    definition:
+      "Estándar de Pendle para envolver un token que genera rendimiento. Pendle crea los PT y los YT a partir del SY, y su AMM negocia PT contra SY. En la mayoría de los casos 1 SY equivale a 1 unidad del activo, pero no siempre, y la app suele hacer la conversión por ti.",
+    guides: ["ptyt-el-rendimiento-tokenizado"],
+  },
+  {
+    id: "apy-implicito",
+    name: "APY implícito (Pendle)",
+    more: {
+      href: "/guias/que-es-pendle#pt",
+      label: "Cómo se calcula el rendimiento fijo de un PT",
+    },
+    definition:
+      "En Pendle, el rendimiento anual que descuenta el mercado para un activo hasta el vencimiento, calculado a partir del precio del PT y del YT. Coincide con el APY fijo de quien compra el PT y lo mantiene hasta el vencimiento, y se compara con el APY subyacente, el rendimiento real reciente del activo.",
     guides: ["ptyt-el-rendimiento-tokenizado"],
   },
   {
