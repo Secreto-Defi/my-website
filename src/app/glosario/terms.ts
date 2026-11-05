@@ -71,8 +71,8 @@ export const TERMS: Term[] = [
     id: "dlmm",
     name: "DLMM (Dynamic Liquidity Market Maker)",
     more: {
-      href: "/guias/yield-farming-y-liquidez-concentrada#liquidez-concentrada",
-      label: "Liquidez concentrada, bins y estrategias Spot, Curve y Bid-Ask",
+      href: "/guias/que-es-meteora#bins",
+      label: "Cómo funciona el DLMM: bins, bin step y estrategias de Meteora",
     },
     definition:
       "Modelo de liquidez concentrada de Meteora, en Solana. Divide el rango de precios en «bins» discretos, cada uno con un precio fijo, y permite elegir cómo distribuir la liquidez entre ellos. Las comisiones se ajustan de forma dinámica con la volatilidad.",
@@ -80,6 +80,64 @@ export const TERMS: Term[] = [
       "masterclass-amms-vs-clmms-vs-dlmms",
       "guia-definitiva-para-usar-meteora",
     ],
+  },
+  {
+    id: "meteora",
+    name: "Meteora",
+    more: {
+      href: "/guias/que-es-meteora",
+      label: "Guía completa: qué es Meteora y cómo funciona el DLMM",
+    },
+    definition:
+      "Conjunto de productos de liquidez de Solana. Los principales son el DLMM (liquidez concentrada por bins), el DAMM v2 (un AMM configurable) y la Dynamic Bonding Curve (lanzamiento de tokens). Su token es MET.",
+    guides: ["actualizaciones-importantes-en-meteora"],
+  },
+  {
+    id: "bin",
+    name: "Bin (DLMM)",
+    more: {
+      href: "/guias/que-es-meteora#bins",
+      label: "Cómo funcionan los bins, con la fórmula del precio",
+    },
+    definition:
+      "Cada uno de los puntos de precio en los que el DLMM de Meteora reparte la liquidez. Cada bin tiene un precio fijo y solo uno está activo a la vez: el que contiene el precio de mercado, donde se ejecutan los swaps. Dentro del bin activo no hay slippage mientras quede liquidez en él.",
+    guides: ["guia-definitiva-para-usar-meteora"],
+  },
+  {
+    id: "bin-step",
+    name: "Bin step",
+    more: {
+      href: "/guias/que-es-meteora#bins",
+      label: "Qué rango cubre una posición según el bin step",
+    },
+    definition:
+      "Distancia de precio entre dos bins vecinos del DLMM, medida en puntos básicos (un punto básico es un 0,01 %). El máximo es de 400 puntos básicos, un 4 % entre bins. Un bin step pequeño suele usarse en pares estables y uno grande, en pares volátiles.",
+    guides: ["guia-definitiva-para-usar-meteora-370"],
+  },
+  {
+    id: "spot-curve-bid-ask",
+    name: "Spot, Curve y Bid-Ask (Meteora)",
+    more: {
+      href: "/guias/que-es-meteora#estrategias",
+      label: "Las tres formas de repartir la liquidez, comparadas",
+    },
+    definition:
+      "Las tres formas de repartir la liquidez entre los bins del DLMM. Spot la reparte de forma uniforme; Curve la concentra en el centro del rango; Bid-Ask hace lo contrario, con más liquidez en los bordes, y se usa en mercados volátiles o para entrar y salir de forma escalonada.",
+    guides: [
+      "la-guia-definitiva-para-usar-meteora",
+      "estrategia-anti-sawtooth-en-meteora",
+    ],
+  },
+  {
+    id: "freeze-authority",
+    name: "Freeze Authority",
+    more: {
+      href: "/guias/que-es-meteora#riesgos",
+      label: "Cómo detectar tokens con trampas antes de aportar liquidez",
+    },
+    definition:
+      "Permiso que algunos tokens de Solana conservan y que permite a su creador congelar compras, ventas o transferencias. En un token nuevo es una señal de riesgo: Meteora y herramientas como JupShield muestran un aviso cuando está activo.",
+    guides: ["actualizaciones-importantes-en-meteora-69e"],
   },
   {
     id: "impermanent-loss",

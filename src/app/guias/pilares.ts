@@ -10,6 +10,8 @@ import {
   HYPERLIQUID_GUIDE_UPDATED,
   IL_GUIDE_PUBLISHED,
   IL_GUIDE_UPDATED,
+  METEORA_GUIDE_PUBLISHED,
+  METEORA_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
   SECURITY_GUIDE_PUBLISHED,
@@ -74,6 +76,14 @@ export const PILLARS: Pillar[] = [
       "Por qué ocurre, cómo se calcula con un ejemplo, cuándo la compensan las comisiones y cómo reducirla.",
     published: IL_GUIDE_PUBLISHED,
     updated: IL_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-meteora",
+    name: "Qué es Meteora y cómo funciona el DLMM",
+    description:
+      "Qué es Meteora en Solana, cómo funcionan los bins, las estrategias Spot, Curve y Bid-Ask, las comisiones, el token MET y los riesgos.",
+    published: METEORA_GUIDE_PUBLISHED,
+    updated: METEORA_GUIDE_UPDATED,
   },
 ];
 
