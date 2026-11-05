@@ -12,6 +12,8 @@ import {
   IL_GUIDE_UPDATED,
   METEORA_GUIDE_PUBLISHED,
   METEORA_GUIDE_UPDATED,
+  PENDLE_GUIDE_PUBLISHED,
+  PENDLE_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
   SECURITY_GUIDE_PUBLISHED,
@@ -84,6 +86,14 @@ export const PILLARS: Pillar[] = [
       "Qué es Meteora en Solana, cómo funcionan los bins, las estrategias Spot, Curve y Bid-Ask, las comisiones, el token MET y los riesgos.",
     published: METEORA_GUIDE_PUBLISHED,
     updated: METEORA_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-pendle",
+    name: "Qué es Pendle: PT, YT y rendimiento fijo",
+    description:
+      "Qué es Pendle, cómo funcionan los tokens PT y YT, cómo se fija un rendimiento o se apuesta por él, las comisiones, sPENDLE y los riesgos.",
+    published: PENDLE_GUIDE_PUBLISHED,
+    updated: PENDLE_GUIDE_UPDATED,
   },
 ];
 

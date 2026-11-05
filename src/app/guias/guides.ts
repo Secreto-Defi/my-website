@@ -127,6 +127,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-meteora",
         label: "Para usar Meteora: qué es, cómo funciona el DLMM y qué riesgos tiene",
       },
+      {
+        href: "/guias/que-es-pendle",
+        label: "Para fijar o apostar por un rendimiento: qué es Pendle, cómo funcionan PT y YT y qué riesgos tiene",
+      },
     ],
     title: "Liquidez y yield",
     description:

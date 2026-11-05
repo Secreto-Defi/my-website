@@ -16,4 +16,6 @@ export const IL_GUIDE_PUBLISHED = "2026-11-02";
 export const IL_GUIDE_UPDATED = "2026-11-02";
 export const METEORA_GUIDE_PUBLISHED = "2026-11-05";
 export const METEORA_GUIDE_UPDATED = "2026-11-05";
+export const PENDLE_GUIDE_PUBLISHED = "2026-11-05";
+export const PENDLE_GUIDE_UPDATED = "2026-11-05";
 export const GLOSSARY_UPDATED = "2026-11-05";
