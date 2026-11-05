@@ -211,9 +211,10 @@ export default function QueEsMeteoraPage() {
                 unas 33 veces el precio inicial.
               </Note>
               <P>
-                Una posición empieza con un diseño de 70 bins, y las posiciones
-                dinámicas pueden crecer hasta 1.400 bins sin cerrarse, algo útil
-                si el precio se mueve mucho. Un detalle práctico: en el DLMM no
+                Según la documentación, una posición parte de unos 70 bins (la
+                guía de uso habla de 69 antes de pagar la renta de extensión), y
+                las posiciones dinámicas pueden crecer hasta 1.400 bins sin
+                cerrarse, algo útil si el precio se mueve mucho. Un detalle práctico: en el DLMM no
                 recibes un token de LP ni un NFT. Tu posición es una cuenta que
                 registra cuánta liquidez tienes en cada bin y qué comisiones y
                 recompensas puedes reclamar.
@@ -255,7 +256,7 @@ export default function QueEsMeteoraPage() {
                   [
                     "Spot",
                     "De forma uniforme: la misma liquidez en cada bin del rango.",
-                    "Una exposición equilibrada a un rango. La interfaz ofrece tres presets: Concentrated (entre 1 y 3 bins), Spread (entre 20 y 30) y Wide (unos 50).",
+                    "Una exposición equilibrada a un rango. La documentación nombra tres presets de interfaz: Concentrated (entre 1 y 3 bins), Spread (entre 20 y 30) y Wide (unos 50).",
                     "Concentrated se sale del rango con facilidad y exige vigilarlo de cerca; Wide cobra menos comisiones por dólar.",
                   ],
                   [
@@ -429,16 +430,22 @@ export default function QueEsMeteoraPage() {
                   <B>Costes de apertura.</B> Abrir una posición tiene costes en
                   SOL, y la interfaz distingue entre los reembolsables y los que
                   no (en febrero de 2025 los etiquetaba como refundable y non
-                  refundable). Comprueba lo que te muestra antes de confirmar.
+                  refundable). Según la documentación actual, la renta de la
+                  posición es de unos 0,059 SOL y se devuelve al cerrarla, la
+                  ampliación del rango más allá de 69 bins también es
+                  reembolsable, y si eres el primero en crear unos bins nuevos
+                  pagas además unos 0,075 SOL por cada binArray, que no se
+                  recupera. Comprueba lo que te muestra la interfaz antes de
+                  confirmar.
                 </Li>
                 <Li>
                   <B>Reclamar y cerrar.</B> Según la documentación, una posición
                   solo se puede cerrar cuando no queda liquidez, comisiones ni
                   recompensas pendientes. En febrero de 2025, el botón Withdraw
                   &amp; Close All cerraba todas las posiciones de una vez y, según
-                  mi guía de entonces, permitía recuperar 0,05 SOL de la
-                  comisión de apertura reembolsable; la cantidad puede haber
-                  cambiado.
+                  mi guía de entonces, permitía recuperar 0,05 SOL de la renta
+                  reembolsable; hoy la documentación cifra esa renta en unos
+                  0,059 SOL y los botones pueden haber cambiado de nombre.
                 </Li>
                 <Li>
                   <B>Recolocar el rango.</B> Si el precio se sale, puedes esperar,
@@ -561,49 +568,70 @@ export default function QueEsMeteoraPage() {
               <H3>Después del libro blanco: staking y recompras</H3>
               <Ul>
                 <Li>
-                  <B>Staking con pagos en USDC:</B> el 20 de julio de 2026
-                  Meteora lanzó, como piloto de tres meses, un programa de
-                  Referral Staking que reparte en USDC una parte de las
-                  comisiones de trading del DLMM entre quienes hacen staking de
-                  MET y quienes traen a otros proveedores de liquidez. Funciona
-                  por ciclos de aproximadamente un mes, con un tope de 0,1 USDC
-                  por MET y ciclo, y quien retira el staking antes de que acabe
-                  el ciclo pierde lo acumulado en él.
+                  <B>Staking de MET con comisiones del DLMM:</B> el 21 de julio de
+                  2026 Meteora lanzó el programa Referral Staking, que funciona
+                  por ciclos de un mes (del 21 de un mes al 21 del siguiente).
+                  Según su web, quien hace staking de MET y aporta liquidez se
+                  reparte el 10 % de las comisiones de protocolo del DLMM en
+                  función de su MET en staking, ponderado por tiempo; los
+                  referidores cobran
+                  el 8 % de las comisiones de protocolo de sus referidos y estos,
+                  un 2 % de las suyas.
                 </Li>
                 <Li>
-                  <B>Resultados del staking:</B> según Solana Compass, el ciclo 2
-                  terminó el 21 de septiembre de 2026 con más de 89 millones de
-                  MET en staking y más de 700.000 USDC repartidos, y los pagos de
-                  los dos primeros ciclos se pueden reclamar hasta el 31 de marzo
-                  de 2027. Las fuentes consultadas no confirman si el programa
-                  continúa después del piloto.
+                  <B>Reglas del staking:</B> el mínimo es de 200 MET y, desde el
+                  ciclo 4, para cobrar como staker hay que generar al menos 10
+                  dólares en comisiones por ciclo aportando liquidez en pools
+                  elegibles del DLMM. Retirar el staking antes de que acabe el
+                  ciclo hace perder las recompensas pendientes de ese ciclo y
+                  obliga a esperar 7 días para recuperar los MET; la salida
+                  inmediata cuesta una penalización del 10 % de los MET.
                 </Li>
                 <Li>
-                  <B>Recompra y puntos:</B> el 10 de diciembre de 2025, en una
+                  <B>Resultados del staking:</B> según Solana Compass, el ciclo 1
+                  (hasta el 21 de agosto) repartió unos 336.000 USDC con 76
+                  millones de MET en staking y el ciclo 2 (hasta el 21 de
+                  septiembre), más de 700.000 USDC con más de 89 millones; los
+                  pagos de esos dos ciclos se podían reclamar hasta el 31 de
+                  marzo de 2027. A 5 de noviembre de 2026, la web del programa
+                  mostraba el ciclo 4 en curso, con unos 119,6 millones de MET en
+                  staking.
+                </Li>
+                <Li>
+                  <B>Recompras:</B> el 10 de diciembre de 2025, en una
                   publicación en X recogida por ChainCatcher, Meteora informó de
                   que había gastado 10 millones de USDC en recomprar alrededor
                   del 2,3 % de los MET durante el cuarto trimestre y de que las
-                  recompras seguirían por la misma dirección. Presentó además
-                  los Comet Points, un sistema de puntos que se consigue
-                  haciendo staking de MET o usando sus productos.
+                  recompras seguirían. Según su informe del primer trimestre de
+                  2026, que recoge KuCoin, son discrecionales y se financian con
+                  los ingresos del protocolo, y el acumulado era de 13,7 millones
+                  de dólares por 39,6 millones de MET (el 3,97 % del suministro
+                  total), con 1 millón de dólares en ese trimestre. Las fuentes
+                  consultadas no recogen cifras posteriores.
+                </Li>
+                <Li>
+                  <B>Comet Points:</B> en diciembre de 2025 Meteora presentó un
+                  sistema de puntos que se consigue haciendo staking de MET o
+                  usando sus productos.
                 </Li>
                 <Li>
                   <B>Cómo leerlo:</B> el libro blanco dice que MET no da derecho
                   a beneficios, y el staking con pagos y las recompras son
                   programas de Meteora, no derechos del token, así que pueden
-                  cambiar o terminar.
+                  cambiar o terminar. De hecho, el programa de staking ya cambió
+                  sus reglas en el ciclo 4.
                 </Li>
               </Ul>
               <Note>
                 La página de tokenomics lista una sola quema hecha por el equipo
                 de Meteora: 2.261.990 MET, el 25 de octubre de 2025. Aquí no doy
                 precios ni valoraciones: cambian cada minuto y esta guía no
-                recomienda comprar ni hacer staking de ningún token. Un reparto
-                así es un ejemplo de{" "}
+                recomienda comprar ni hacer staking de ningún token. El airdrop
+                de MET es un ejemplo de{" "}
                 <InternalLink href="/guias/que-es-un-airdrop">
                   airdrop por usar un protocolo
                 </InternalLink>
-                , que nunca está garantizado de antemano.
+                , un tipo de reparto que nunca está garantizado de antemano.
               </Note>
             </>
           ),
@@ -666,10 +694,12 @@ export default function QueEsMeteoraPage() {
                 <Li>
                   <B>Riesgo operativo y de equipo.</B> Según DefiLlama, el 17 de
                   enero de 2026 Meteora perdió 1,5 millones de dólares cuando su
-                  equipo transfirió fondos a una contraparte OTC fraudulenta que
-                  se hacía pasar por un comprador legítimo de tokens; DefiLlama
-                  lo clasifica como ingeniería social (suplantación). Es un
-                  recordatorio de que el riesgo de un protocolo incluye a las
+                  equipo transfirió fondos a una contraparte OTC fraudulenta, y
+                  lo clasifica como ingeniería social (suplantación). Según
+                  CapWolf, que cita el informe del primer trimestre de Meteora,
+                  ocurrió al intentar comprar MET fuera de mercado para las
+                  recompras, y no lo describe como un fallo de los contratos. Es
+                  un recordatorio de que el riesgo de un protocolo incluye a las
                   personas que lo gestionan.
                 </Li>
                 <Li>
@@ -699,17 +729,23 @@ export default function QueEsMeteoraPage() {
                 Solana y promocionado en redes por el presidente argentino Javier
                 Milei), Meteora y su cofundador Ben Chow se vieron envueltos en
                 la polémica. Chow sostuvo que la implicación de Meteora se limitó
-                al apoyo técnico, y dimitió como cofundador pocos días después.
-                Inversores presentaron una demanda colectiva en Nueva York contra
-                los organizadores del token, Meteora y Chow, y a finales de
-                septiembre de 2026 la jueza Jennifer L. Rochon, del tribunal
-                federal del Distrito Sur de Nueva York, la desestimó: no se
-                acreditó que Meteora pudiera ser demandada como asociación o
-                sociedad ni la intención fraudulenta de Chow, y denegó el permiso
-                para presentar una segunda versión. Fue una decisión sobre los
-                requisitos legales de la demanda, no sobre si los hechos
-                alegados eran ciertos. Lo cuento porque es parte del contexto de
-                cualquier protocolo en el que vayas a depositar capital.
+                al apoyo técnico, y dejó su puesto de dirección pocos días
+                después. Inversores presentaron una demanda colectiva en Nueva
+                York contra los organizadores del token, Meteora y Chow, y a
+                finales de septiembre de 2026 la jueza Jennifer L. Rochon, del
+                tribunal federal del Distrito Sur de Nueva York, la desestimó
+                «with prejudice», es decir, de forma que los demandantes no
+                pueden volver a presentar esas reclamaciones: consideró que no
+                habían expuesto
+                hechos suficientes para sostener que Meteora pudiera ser
+                demandada como asociación o sociedad ni la intención fraudulenta
+                de Chow, y denegó el permiso para presentar una segunda versión.
+                Fue una decisión sobre los requisitos legales de la demanda, no
+                sobre si los hechos alegados eran ciertos. Según crypto.news, el
+                caso en Estados Unidos terminó, mientras que otros procesos sobre
+                LIBRA continúan en Argentina. Lo cuento porque es parte del
+                contexto de cualquier protocolo en el que vayas a depositar
+                capital.
               </Callout>
             </>
           ),
@@ -840,7 +876,7 @@ export default function QueEsMeteoraPage() {
         {
           question: "¿Para qué sirve el token MET?",
           answer:
-            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un piloto de staking que reparte en USDC parte de las comisiones del DLMM (desde el 20 de julio de 2026) y anunció que había recomprado MET por 10 millones de dólares en el cuarto trimestre de 2025. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
+            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un programa de staking en el que quienes hacen staking de MET y aportan liquidez se reparten el 10 % de las comisiones de protocolo del DLMM (desde el 21 de julio de 2026, por ciclos mensuales y con reglas que ya han cambiado) y ha informado de recompras de MET por unos 13,7 millones de dólares hasta el primer trimestre de 2026. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
         },
         {
           question: "¿Sigue abierto el airdrop de Meteora?",
@@ -929,8 +965,16 @@ export default function QueEsMeteoraPage() {
           href: "https://solanacompass.com/news/meteora-referral-staking-cycle-2-distributes-over-700k-in-usdc-more-than-double-cycle-1",
         },
         {
+          label: "Meteora: programa de Referral Staking (estado y preguntas frecuentes)",
+          href: "https://www.meteora.ag/referral",
+        },
+        {
           label: "ChainCatcher: recompra de MET y Comet Points",
           href: "https://www.chaincatcher.com/en/article/2228361",
+        },
+        {
+          label: "KuCoin: informe de Meteora del primer trimestre de 2026 (recompras de MET)",
+          href: "https://www.kucoin.com/blog/bd-met-2026-q1-project-update",
         },
         {
           label: "Crypto Briefing: tramo de 6 millones de MET para colaboradores",
@@ -951,6 +995,10 @@ export default function QueEsMeteoraPage() {
         {
           label: "DefiLlama: Meteora (registro de incidentes)",
           href: "https://defillama.com/protocol/meteora",
+        },
+        {
+          label: "CapWolf: Meteora revela una pérdida de 1,5 millones de dólares en una estafa OTC",
+          href: "https://capwolf.com/meteora-reveals-1-5-million-otc-scam-loss-in-q1-report/",
         },
         {
           label: "crypto.news: la demanda por LIBRA contra Meteora y Chow, desestimada",
