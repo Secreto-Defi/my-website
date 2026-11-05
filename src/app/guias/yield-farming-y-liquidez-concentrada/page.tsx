@@ -323,7 +323,12 @@ export default function YieldFarmingPage() {
                 para capturar volatilidad), según la documentación de Meteora.
               </P>
               <P>
-                Lo desarrollo en mi serie sobre Meteora, que empieza en{" "}
+                Cómo funcionan los bins, las comisiones, las órdenes límite y
+                los riesgos del DLMM lo tienes en la guía{" "}
+                <InternalLink href="/guias/que-es-meteora">
+                  qué es Meteora y cómo funciona el DLMM
+                </InternalLink>
+                . Lo desarrollo en mi serie sobre Meteora, que empieza en{" "}
                 <G slug="guia-definitiva-para-usar-meteora">
                   la guía definitiva para usar Meteora
                 </G>
@@ -540,7 +545,7 @@ export default function YieldFarmingPage() {
         },
         {
           label: "Meteora: qué es un DLMM (documentación oficial)",
-          href: "https://docs.meteora.ag/dlmm/dlmm-overview/what-is-dlmm",
+          href: "https://docs.meteora.ag/core-products/dlmm/what-is-dlmm",
         },
       ]}
       relatedSlugs={[

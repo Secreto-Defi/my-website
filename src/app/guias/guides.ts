@@ -123,6 +123,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-la-perdida-impermanente",
         label: "Entiende el riesgo principal: qué es la pérdida impermanente y cómo se calcula",
       },
+      {
+        href: "/guias/que-es-meteora",
+        label: "Para usar Meteora: qué es, cómo funciona el DLMM y qué riesgos tiene",
+      },
     ],
     title: "Liquidez y yield",
     description:
@@ -183,6 +187,23 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         description:
           "Cómo usar Hawksight, un agregador de liquidez para Solana, con un ejemplo práctico: rebalanceo automático de rangos, reinversión de fees, stop loss y take profit. Escrita con el producto en beta: comprueba sus condiciones actuales.",
         date: "2024-09-09",
+        subscribersOnly: true,
+      },
+      {
+        title:
+          "Guía definitiva Meteora terminada pero ahora exprímelo a fondo con esta herramienta",
+        slug: "guia-definitiva-meteora-terminada",
+        description:
+          "Cómo usar Metlex, un tracker para Meteora: fees generadas por wallet, PNL de posiciones cerradas, buscador de pools con el Fee/TVL de 24 horas, alertas de tokens y filtros del DLMM para descartar pools sin volumen. Escrita en 2024: comprueba que la herramienta sigue operativa.",
+        date: "2024-09-12",
+        subscribersOnly: true,
+      },
+      {
+        title: "Monitoriza tus posiciones de Meteora y no dejes escapar ningún detalle",
+        slug: "monitoriza-tus-posiciones-de-meteora",
+        description:
+          "Cómo seguir en tiempo real una posición abierta con DLMM live data: liquidez, volumen y fees de 24 horas, ajustes de la pool (bin step, comisión base y máxima) y analítica de la posición con valor actual, beneficio neto y ROI. Escrita en 2024: comprueba que la herramienta sigue operativa.",
+        date: "2024-09-21",
         subscribersOnly: true,
       },
       {
