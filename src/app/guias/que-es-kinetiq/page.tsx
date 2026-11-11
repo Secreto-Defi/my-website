@@ -83,8 +83,12 @@ export default function KinetiqPage() {
                 hace dentro de HyperCore. Según la documentación de Hyperliquid,
                 cada delegación a un validador queda bloqueada 1 día y sacar el
                 HYPE de la cuenta de staking a la cuenta spot tiene una cola de 7
-                días. Mientras está en staking, ese HYPE no se puede usar como
-                garantía ni aportar a una pool.
+                días.
+              </P>
+              <P>
+                En la práctica, mientras está en staking ese HYPE queda
+                inmovilizado: no puedes usarlo como garantía ni aportarlo a una
+                pool.
               </P>
               <P>
                 El staking líquido resuelve esa inmovilización. Kinetiq recibe tu
@@ -132,8 +136,8 @@ export default function KinetiqPage() {
               />
               <P>
                 Kinetiq se lanzó en mainnet el 15 de julio de 2025. Según The
-                Defiant, en su primer día reunió 460 millones de dólares en
-                depósitos. Desde entonces ha añadido otros productos, que verás
+                Defiant, alcanzó unos 460 millones de dólares de TVL en su primer
+                día. Desde entonces ha añadido otros productos, que verás
                 más abajo, pero kHYPE sigue siendo el principal.
               </P>
             </>
@@ -199,7 +203,8 @@ export default function KinetiqPage() {
                 delegación de Kinetiq. Según su documentación, puntúa a los
                 validadores en cinco categorías (fiabilidad, seguridad, economía,
                 gobernanza y antigüedad), delega solo en los que superan un
-                umbral, reequilibra de forma continua y evita concentrar
+                umbral, puntúa de forma continua, reequilibra cuando las
+                puntuaciones cambian de forma significativa y evita concentrar
                 demasiado stake en uno solo. La documentación no publica el peso
                 de cada categoría ni el umbral; los datos de cada validador se
                 pueden consultar en la web de Kinetiq.
@@ -234,7 +239,7 @@ export default function KinetiqPage() {
                   ],
                   [
                     "Coste",
-                    "El gas. Revisa en la pantalla de retiro si se aplica alguna comisión antes de confirmar.",
+                    "El gas y, si la hay, la comisión de retiro: la documentación no indica ninguna, así que compruébalo en la pantalla de retiro antes de confirmar.",
                     "Slippage y, si kHYPE cotiza con descuento, ese descuento.",
                   ],
                   [
@@ -323,8 +328,10 @@ export default function KinetiqPage() {
                 Earn es una vault construida con Veda en la que depositas kHYPE o
                 HYPE y recibes vkHYPE. La vault reparte ese capital entre
                 protocolos de HyperEVM para buscar un rendimiento adicional al
-                del staking. Según la documentación, cobra una comisión del 20 %
-                sobre el beneficio y ninguna de gestión, entrada o salida. El 11
+                del staking. Según la documentación, con datos a 18 de agosto de
+                2025, cobra una comisión del 20 % sobre el beneficio y ninguna
+                de gestión, entrada o salida; la web seguía mostrando ese 20 %
+                el 11 de noviembre de 2026. El 11
                 de noviembre de 2026 la web mostraba un APY del 2,2 % y casi el
                 73 % del capital asignado a un solo protocolo de préstamos,
                 Hyperlend. La propia web indica que Earn no está disponible para
@@ -387,9 +394,9 @@ export default function KinetiqPage() {
                 capa 2 pensada para Hyperliquid. Según el anuncio oficial, está
                 construida con Arbitrum Orbit, la opera Conduit, liquida en
                 HyperEVM y usa HYPE como token de gas, que se mueve 1:1 entre
-                HyperEVM y Elysium. Apunta a bloques de 100 milisegundos y está
-                orientada a trading spot, lanzamiento de tokens y aplicaciones
-                DeFi.
+                HyperEVM y Elysium. Produce bloques cada 100 milisegundos y está
+                orientada a aplicaciones de trading y DeFi, como exchanges spot,
+                préstamos y derivados.
               </P>
               <P>
                 Para quien tiene kHYPE o KNTQ, lo relevante es el reparto de los
@@ -419,8 +426,9 @@ export default function KinetiqPage() {
                 <Li>
                   <B>No tiene token propio.</B> Las comisiones se pagan en HYPE.
                   Cualquier «token de Elysium» o enlace para reclamarlo es, hoy,
-                  una señal de estafa. El mismo artículo recoge que ya circulaban
-                  puentes falsos antes del lanzamiento.
+                  una señal de estafa. El mismo artículo cuenta que MetaMask
+                  marcó un puente comunitario como phishing antes del lanzamiento
+                  y advierte de que aparecerán puentes falsos.
                 </Li>
               </Ul>
               <P>
@@ -483,20 +491,22 @@ export default function KinetiqPage() {
                 Las asignaciones de contribuyentes principales e inversores, el
                 31 % de la oferta entre las dos, tienen un calendario de tres
                 años: un año de bloqueo total y dos de liberación lineal mensual.
-                Con el token generado el 27 de noviembre de 2025, esa liberación
-                empieza a finales de noviembre de 2026, a razón de unos 12,9
-                millones de KNTQ al mes. Es presión vendedora potencial que
-                conviene conocer antes de comprar el token.
+                Si el calendario cuenta desde la generación del token, el 27 de
+                noviembre de 2025, esa liberación empezaría a finales de
+                noviembre de 2026, a razón de unos 12,9 millones de KNTQ al mes
+                (cálculo propio: 310 millones entre 24 meses). Es presión
+                vendedora potencial que conviene conocer antes de comprar el
+                token.
               </P>
               <P>
                 El programa de puntos, los kPoints, ha terminado. Según el blog
                 de Kinetiq, duró 46 semanas y repartió 36,8 millones de kPoints.
-                En lugar de un segundo airdrop gratuito, el 1 de octubre de 2026
-                se abrió una ventana de 10 días para que sus titulares compraran
-                hasta 50 millones de KNTQ a un precio fijo de 0,26 dólares. Hoy
-                no hay ningún programa de puntos activo ni airdrop pendiente de
-                Kinetiq: cualquier mensaje que te ofrezca reclamar uno debe
-                hacerte sospechar.
+                El 1 de octubre de 2026 Kinetiq anunció una ventana de 10 días
+                para que sus titulares compraran, a un precio fijo de 0,26
+                dólares, los 50 millones de KNTQ asignados al programa: no fue un
+                reparto gratuito. Kinetiq no ha anunciado ningún otro programa de
+                puntos ni airdrop, así que cualquier mensaje que te ofrezca
+                reclamar uno debe hacerte sospechar.
               </P>
               <Note>
                 Nada de esto es una recomendación de compra. Las recompras
@@ -730,7 +740,7 @@ export default function KinetiqPage() {
         {
           question: "¿Hay un airdrop de Kinetiq?",
           answer:
-            "El airdrop de KNTQ se repartió con la generación del token en noviembre de 2025 y el programa de kPoints ya ha terminado, según la documentación. Hoy no hay ninguno anunciado. Trata cualquier web o mensaje que te ofrezca reclamar un airdrop de Kinetiq o de Elysium como un posible intento de phishing.",
+            "El 25 % de la oferta de KNTQ se asignó a un airdrop anunciado en octubre de 2025 (24 % a titulares de kPoints y 1 % a titulares de Hypurr), el token se generó el 27 de noviembre de 2025 y, según la documentación, el reparto de kPoints ha terminado. Kinetiq no ha anunciado ningún otro. Trata cualquier web o mensaje que te ofrezca reclamar un airdrop de Kinetiq o de Elysium como un posible intento de phishing.",
         },
       ]}
       sources={[
