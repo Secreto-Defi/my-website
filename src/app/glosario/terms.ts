@@ -311,6 +311,39 @@ export const TERMS: Term[] = [
     guides: [],
   },
   {
+    id: "staking-liquido",
+    name: "Staking líquido (liquid staking)",
+    more: {
+      href: "/guias/que-es-kinetiq#que-es",
+      label: "Staking nativo frente a staking líquido, con el ejemplo de HYPE",
+    },
+    definition:
+      "Forma de hacer staking en la que depositas tus tokens en un protocolo, este los delega en validadores y te entrega a cambio un token que representa tu depósito (LST). Ese token acumula las recompensas y se puede vender o usar en DeFi sin esperar el plazo de retiro, a cambio de asumir el riesgo de los contratos del protocolo y el de que el token cotice por debajo de su valor.",
+    guides: [],
+  },
+  {
+    id: "kinetiq",
+    name: "Kinetiq",
+    more: {
+      href: "/guias/que-es-kinetiq",
+      label: "Guía completa: qué es Kinetiq, cómo funciona kHYPE y qué riesgos tiene",
+    },
+    definition:
+      "Protocolo de staking líquido de Hyperliquid. Recibe HYPE, lo delega en validadores con su sistema StakeHub y entrega kHYPE. Tiene además una vault de estrategias (Earn), mercados de perpetuos HIP-3 (Markets), un servicio para lanzar exchanges HIP-3 (Launch), la capa 2 Elysium y el token de gobernanza KNTQ.",
+    guides: [],
+  },
+  {
+    id: "khype",
+    name: "kHYPE",
+    more: {
+      href: "/guias/que-es-kinetiq#khype",
+      label: "Cómo funciona kHYPE: tipo de cambio, recompensas y comisión",
+    },
+    definition:
+      "Token de staking líquido de Kinetiq en HyperEVM. Representa HYPE en staking y no aumenta en cantidad: lo que sube con las recompensas es su tipo de cambio frente a HYPE. Se puede retirar por HYPE en un plazo de 8 o 9 días o vender en un mercado al instante.",
+    guides: [],
+  },
+  {
     id: "restaking",
     name: "Restaking",
     definition:

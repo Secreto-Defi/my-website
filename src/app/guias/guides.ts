@@ -286,6 +286,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-hyperliquid",
         label: "Empieza por aquí: qué es Hyperliquid, HYPE y HIP-3",
       },
+      {
+        href: "/guias/que-es-kinetiq",
+        label: "Para hacer staking líquido de HYPE: qué es Kinetiq, cómo funciona kHYPE y qué riesgos tiene",
+      },
     ],
     title: "Mercados y narrativas",
     description:
