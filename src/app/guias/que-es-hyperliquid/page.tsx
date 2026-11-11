@@ -339,6 +339,15 @@ export default function HyperliquidPage() {
                 demostrables. Y el consenso necesita que más de dos tercios del
                 stake sea honesto, así que conviene elegir bien a quién delegas.
               </P>
+              <P>
+                Si quieres seguir usando ese HYPE en DeFi mientras está en
+                staking, la alternativa es el staking líquido: lo explico en la
+                guía de{" "}
+                <InternalLink href="/guias/que-es-kinetiq">
+                  qué es Kinetiq y cómo funciona kHYPE
+                </InternalLink>
+                .
+              </P>
               <H3>De dónde sale el valor de HYPE</H3>
               <P>
                 Según CoinDesk (9 de agosto de 2026), el Assistance Fund recibe

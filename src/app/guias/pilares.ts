@@ -10,6 +10,8 @@ import {
   HYPERLIQUID_GUIDE_UPDATED,
   IL_GUIDE_PUBLISHED,
   IL_GUIDE_UPDATED,
+  KINETIQ_GUIDE_PUBLISHED,
+  KINETIQ_GUIDE_UPDATED,
   METEORA_GUIDE_PUBLISHED,
   METEORA_GUIDE_UPDATED,
   PENDLE_GUIDE_PUBLISHED,
@@ -94,6 +96,14 @@ export const PILLARS: Pillar[] = [
       "Qué es Pendle, cómo funcionan los tokens PT y YT, cómo se fija un rendimiento o se apuesta por él, las comisiones, sPENDLE y los riesgos.",
     published: PENDLE_GUIDE_PUBLISHED,
     updated: PENDLE_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-kinetiq",
+    name: "Qué es Kinetiq: kHYPE y staking líquido de HYPE",
+    description:
+      "Qué es Kinetiq, cómo funciona kHYPE, cuánto cuesta y cómo se sale, qué son KNTQ y Elysium y qué riesgos tiene el staking líquido de HYPE.",
+    published: KINETIQ_GUIDE_PUBLISHED,
+    updated: KINETIQ_GUIDE_UPDATED,
   },
 ];
 
