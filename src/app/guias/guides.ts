@@ -300,10 +300,18 @@ export const GUIDE_GROUPS: GuideGroup[] = [
       "Análisis en español de RWA onchain, TxFlow, Polymarket y HIP-3 de Hyperliquid: cómo funcionan, qué hay detrás y los riesgos de posicionarte.",
     intro: [
       "Una narrativa es la historia que concentra la atención y el capital del sector durante un tiempo. Estos análisis intentan separar la tesis de lo que hay de verdad detrás: cómo funciona cada pieza, quién participa y qué puede fallar.",
-      "Encontrarás cómo se operan oro, acciones y petróleo en cadena (RWA, con tokens o con perpetuos), la tesis de TxFlow y su liquidez compartida, cómo funciona Polymarket y los escenarios de un posible token, y cómo permite HIP-3 crear mercados perpetuos en Hyperliquid sin permiso.",
+      "Encontrarás cómo se operan oro, acciones y petróleo en cadena (RWA, con tokens o con perpetuos), la tesis de TxFlow y su liquidez compartida, cómo funciona Polymarket y los escenarios de un posible token, cómo permite HIP-3 crear mercados perpetuos en Hyperliquid sin permiso y qué es Elysium, la capa 2 de Kinetiq sobre Hyperliquid.",
       "Algunos análisis son de 2025 y llevan su fecha en la tarjeta: compruébala antes de tomar cualquier decisión, porque el mercado cambia rápido.",
     ],
     guides: [
+      {
+        title:
+          "Elysium ya está en mainnet, la L2 de Kinetiq que recompra $KNTQ y $HYPE",
+        slug: "que-es-elysium-la-l2-de-kinetiq",
+        description:
+          "Qué es Elysium, la capa 2 de Kinetiq sobre Hyperliquid, cómo encajan kHYPE y KNTQ y los riesgos de entrar en una red recién lanzada.",
+        date: "2026-11-11",
+      },
       {
         title:
           "RWA onchain: cómo se trada oro, acciones y petróleo en cripto (y por qué es LA narrativa de 2026)",

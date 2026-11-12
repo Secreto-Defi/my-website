@@ -330,7 +330,7 @@ export const TERMS: Term[] = [
     },
     definition:
       "Protocolo de staking líquido de Hyperliquid. Recibe HYPE, lo delega en validadores con su sistema StakeHub y entrega kHYPE. Tiene además una vault de estrategias (Earn), mercados de perpetuos HIP-3 (Markets), un servicio para lanzar exchanges HIP-3 (Launch), la capa 2 Elysium y el token de gobernanza KNTQ.",
-    guides: [],
+    guides: ["que-es-elysium-la-l2-de-kinetiq"],
   },
   {
     id: "khype",
