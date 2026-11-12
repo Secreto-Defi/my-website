@@ -7,6 +7,7 @@ import {
   ExternalLink,
   Formula,
   GlossaryLink,
+  GuideLink,
   H3,
   InternalLink,
   Li,
@@ -437,6 +438,17 @@ export default function KinetiqPage() {
                 la web oficial de Kinetiq y prueba primero con una cantidad
                 pequeña.
               </P>
+              <P>
+                En La Agenda tienes la versión resumida, centrada en qué mirar
+                antes de entrar:{" "}
+                <GuideLink
+                  slug="que-es-elysium-la-l2-de-kinetiq"
+                  campaign={CAMPAIGN}
+                >
+                  Elysium ya está en mainnet
+                </GuideLink>
+                .
+              </P>
             </>
           ),
         },
@@ -804,6 +816,7 @@ export default function KinetiqPage() {
         },
       ]}
       relatedSlugs={[
+        "que-es-elysium-la-l2-de-kinetiq",
         "hip-3-de-hyperliquid-creacion-de",
         "ptyt-el-rendimiento-tokenizado",
         "pt-looping-en-pendle-de-donde-sale",
