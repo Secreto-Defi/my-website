@@ -99,7 +99,7 @@ export default function RobinhoodChainPage() {
                   ["En mainnet desde", "1 de julio de 2026."],
                   ["Token de gas", "ETH."],
                   ["Token propio", "No tiene."],
-                  ["Quién la opera", "Robinhood, con un único secuenciador."],
+                  ["Quién la opera", "Robinhood, con un único secuenciador centralizado."],
                   ["Chain ID", "4663."],
                   ["Para qué está pensada", "Acciones y ETF tokenizados, y DeFi alrededor de ellos."],
                 ]}
@@ -137,10 +137,14 @@ export default function RobinhoodChainPage() {
                 Ethereum está congestionado. Tu wallet los muestra sumados.
               </P>
               <P>
-                Durante los primeros 90 días Robinhood cubrió el gas de las
-                operaciones hechas desde Robinhood Wallet. Esa subvención
-                terminó a finales de septiembre de 2026, según crypto.news y
-                CryptoTicker. Quien usaba otra wallet siempre pagó su gas.
+                Robinhood cubre el gas de los swaps de criptomonedas y de Stock
+                Tokens hechos dentro de Robinhood Wallet, siempre que superen
+                los 0,50 dólares. La promoción se anunció para 90 días, se
+                amplió y, según sus condiciones, dura hasta el 31 de diciembre
+                de 2026, aunque Robinhood puede cambiar las fechas. No cubre
+                transferencias entre wallets, puentes de salida ni operaciones
+                desde el navegador de aplicaciones, y quien usa otra wallet paga
+                su gas.
               </P>
               <H3>El puente y el plazo de 7 días</H3>
               <DataTable
@@ -189,8 +193,7 @@ export default function RobinhoodChainPage() {
               </P>
               <P>
                 Por usar la tecnología de Arbitrum, la red entrega el 10 % de
-                sus ingresos netos al ecosistema de Arbitrum, según la ficha
-                publicada por la Arbitrum Foundation.
+                sus ingresos netos al ecosistema de Arbitrum, según la ficha publicada en el foro de gobierno de Arbitrum.
               </P>
             </>
           ),
@@ -214,9 +217,9 @@ export default function RobinhoodChainPage() {
                 Robinhood Assets (Jersey) Limited. Dan exposición económica al
                 activo subyacente, pero ningún derecho legal ni de propiedad
                 sobre él ni frente a la empresa que lo emite. No votas en la
-                junta ni eres accionista. La propia web del emisor indica que
-                este no está regulado y advierte de que puedes perder parte o
-                toda la inversión.
+                junta ni eres accionista. La web del emisor indica que este no está regulado, y la
+                documentación de los Stock Tokens advierte de que puedes perder
+                parte o toda la inversión.
               </P>
               <Ul>
                 <Li>
@@ -231,11 +234,11 @@ export default function RobinhoodChainPage() {
                   no varía.
                 </Li>
                 <Li>
-                  <B>Se negocian en cadena a cualquier hora,</B> pero los
-                  creadores de mercado solo pueden emitir y quemar tokens de
-                  lunes a sábado de madrugada (hora central europea). Fuera de
-                  esa ventana, y sobre todo el fin de semana, el precio en
-                  cadena puede alejarse del de la acción real.
+                  <B>Se negocian en cadena a cualquier hora,</B> pero los creadores de mercado solo pueden emitir y quemar tokens
+                  de forma continua desde el lunes a las 02:00 hasta el sábado a
+                  las 02:00 (hora central europea). Fuera de esa ventana, es
+                  decir, el fin de semana, el precio en cadena puede alejarse
+                  del de la acción real.
                 </Li>
                 <Li>
                   <B>No los compras al emisor.</B> Solo los participantes
@@ -323,7 +326,7 @@ export default function RobinhoodChainPage() {
                   [
                     "Classic Stock Tokens",
                     "Siguen disponibles en la app de Robinhood Europe.",
-                    "Depende de que la app esté disponible para ti.",
+                    "Se lanzaron para clientes de la UE y el EEE; comprueba la disponibilidad en la app.",
                   ],
                   [
                     "Perpetuos de Lighter en Robinhood Wallet",
@@ -380,8 +383,7 @@ export default function RobinhoodChainPage() {
                 </Li>
                 <Li>
                   <B>Morpho</B> es la base de los préstamos, y según ese resumen
-                  ya admite acciones tokenizadas como garantía para pedir
-                  stablecoins.
+                  ya permite a usuarios cualificados usar acciones tokenizadas como garantía para pedir stablecoins.
                 </Li>
                 <Li>
                   <B>USDG</B>, la stablecoin emitida por Paxos, es la moneda de
@@ -402,13 +404,13 @@ export default function RobinhoodChainPage() {
               <P>
                 La red se presentó para acciones tokenizadas, pero buena parte
                 de su actividad ha venido de la especulación con memecoins.
-                Según un análisis de TechTimes de julio de 2026, citado por
-                Datawallet, más del 80 % de los primeros 9.000 millones de
-                dólares de actividad vino de ahí. CryptoTicker contaba a finales
+                Según un análisis que recoge Datawallet, más del 80 % de los
+                primeros 9.000 millones de dólares de actividad vino de ahí. CryptoTicker contaba a finales
                 de septiembre unos 646.000 tokens creados en el launchpad Pons
-                desde julio, y crypto.news situaba el volumen de acciones
-                tokenizadas en Uniswap en torno al 3 % del volumen total de los
-                DEX en las primeras seis semanas.
+                desde julio, y crypto.news calculaba a principios de septiembre que las
+                acciones tokenizadas habían movido unos 1.500 millones de
+                dólares en seis semanas en Uniswap, alrededor del 3 % de la
+                actividad.
               </P>
               <P>
                 Esto importa por dos motivos: las cifras de volumen y de
@@ -436,9 +438,9 @@ export default function RobinhoodChainPage() {
               <Ul>
                 <Li>
                   <B>Margen en USDG.</B> Se deposita desde la wallet, en
-                  Robinhood Chain, en el contrato de Lighter. Desde julio de
-                  2026 Lighter acepta también Stock Tokens como garantía, según
-                  The Defiant.
+                  Robinhood Chain, en el contrato de Lighter. Desde julio de 2026 Lighter acepta también Stock Tokens como
+                  garantía, según The Defiant, aunque la página de ayuda de
+                  Robinhood Wallet solo describe el margen en USDG.
                 </Li>
                 <Li>
                   <B>Costes.</B> Los pagos de{" "}
@@ -455,19 +457,20 @@ export default function RobinhoodChainPage() {
               </Ul>
               <H3>El programa de puntos</H3>
               <P>
-                Con el lanzamiento, Lighter reservó tokens LIT para la comunidad
-                de Robinhood: The Block lo cifró en unos 11 millones de dólares.
-                Según el comunicado de Robinhood, operar perpetuos desde
+                Con el lanzamiento, Lighter reservó 11 millones de tokens LIT para
+                la comunidad de Robinhood, según el comunicado de Robinhood (The
+                Block habló de 11 millones de dólares en LIT, una cifra
+                distinta). Según ese mismo comunicado, operar perpetuos desde
                 Robinhood Wallet da el doble de puntos que hacerlo desde la web
                 de Lighter, y esos puntos se convierten en LIT con las
                 condiciones que fije Lighter.
               </P>
               <P>
                 La página de ayuda de Robinhood lo deja claro: el programa es de
-                Lighter, no de Robinhood, y Lighter puede cambiar los criterios,
-                el valor de los puntos o cerrar el programa en cualquier
-                momento. No hay publicada una fecha de fin ni una tasa de
-                conversión.
+                Lighter, no de Robinhood, y Lighter decide qué actividad cuenta, cómo se calculan los puntos
+                y cuándo se abonan, y puede cambiar, limitar o cerrar el
+                programa en cualquier momento. A 13 de noviembre de 2026,
+                Robinhood no publica una fecha de fin ni una tasa de conversión.
               </P>
               <P>
                 Farmear puntos operando perpetuos tiene un coste real en
@@ -527,11 +530,12 @@ export default function RobinhoodChainPage() {
               <P>
                 Un dato para poner el volumen en contexto: CryptoTicker midió en
                 DefiLlama unos 55.280 millones de dólares de volumen en DEX en
-                los 30 días anteriores al 28 de septiembre de 2026, justo antes
-                de que terminara la subvención del gas. El 13 de noviembre esa
-                misma métrica rondaba los 20.760 millones, cerca de un 62 %
-                menos. Mientras tanto, el TVL se ha mantenido en torno a los
-                1.000 millones.
+                los 30 días anteriores al 28 de septiembre de 2026. El 13 de
+                noviembre esa misma métrica rondaba los 20.760 millones, cerca
+                de un 62 % menos. crypto.news ya recogía en octubre una caída
+                del 42 % en las transacciones diarias respecto a mediados de
+                septiembre, ligada al enfriamiento del trading. Mientras tanto,
+                el TVL se ha mantenido en torno a los 1.000 millones.
               </P>
             </>
           ),
@@ -546,8 +550,8 @@ export default function RobinhoodChainPage() {
                   <B>Centralización.</B> L2BEAT indica que la red todavía no
                   alcanza su nivel mínimo de madurez (Stage 0), porque el
                   requisito de software de nodo disponible está en revisión.
-                  Hay un único secuenciador operado por Robinhood y solo dos
-                  actores autorizados pueden impugnar un estado incorrecto.
+                  El secuenciador es único y centralizado, y solo dos actores
+                  autorizados pueden impugnar un estado incorrecto.
                 </Li>
                 <Li>
                   <B>Filtro de transacciones.</B> Según L2BEAT, la red incluye
@@ -555,14 +559,18 @@ export default function RobinhoodChainPage() {
                   transacciones para que fallen, incluso si se fuerzan desde
                   Ethereum. La consecuencia, en palabras de ese análisis, es que
                   la inclusión forzada no es una vía de escape fiable frente a
-                  la censura. A mediados de noviembre de 2026 la lista superaba
-                  las 6.200 entradas.
+                  la censura. A 6 de noviembre de 2026 se habían registrado más de 6.200 transacciones en ese filtro.
                 </Li>
                 <Li>
-                  <B>Actualizaciones sin espera.</B> L2BEAT señala que los
-                  contratos pueden actualizarse de inmediato con siete de las
-                  ocho firmas, sin plazo para que los usuarios salgan antes de
-                  un cambio que no quieran.
+                  <B>Actualizaciones sin espera.</B> L2BEAT señala que los contratos
+                  pueden actualizarse de inmediato con siete de las ocho firmas,
+                  sin plazo para que los usuarios salgan antes de un cambio que
+                  no quieran. Es la misma vía que Robinhood describe como «de
+                  emergencia»: técnicamente no está limitada a emergencias.
+                  Los datos en cadena que recoge L2BEAT difieren además
+                  ligeramente de la documentación, por ejemplo un periodo de
+                  impugnación de 6 días y 8 horas frente a los 7 días que indica
+                  Robinhood.
                 </Li>
                 <Li>
                   <B>Los Stock Tokens no son acciones.</B> Dependes de la
@@ -571,9 +579,9 @@ export default function RobinhoodChainPage() {
                   advierte de que puedes perder toda la inversión.
                 </Li>
                 <Li>
-                  <B>Precio fuera de horario.</B> Con el mercado cerrado no se
-                  emiten ni se queman tokens, así que el precio en cadena puede
-                  desviarse y la liquidez es menor.
+                  <B>Precio en fin de semana.</B> Entre el sábado y el lunes de
+                  madrugada no se emiten ni se queman tokens, así que el precio
+                  en cadena puede desviarse y la liquidez es menor.
                 </Li>
                 <Li>
                   <B>Salida lenta.</B> Retirar a Ethereum por el puente oficial
@@ -581,14 +589,19 @@ export default function RobinhoodChainPage() {
                   la seguridad de un tercero.
                 </Li>
                 <Li>
-                  <B>Memecoins y estafas.</B> Se crean miles de tokens al día
-                  sin auditoría. Aplica lo de siempre: desconfía de lo que
+                  <B>Memecoins y estafas.</B> En septiembre de 2026 se creaban miles de tokens al día sin auditoría. Aplica lo de siempre: desconfía de lo que
                   llegue con prisa, lee lo que firmas y revisa tus permisos. Lo
                   explico en la guía de{" "}
                   <InternalLink href="/guias/seguridad-en-defi#estafas">
                     seguridad en DeFi
                   </InternalLink>
                   .
+                </Li>
+                <Li>
+                  <B>Lighter también es joven.</B> L2BEAT analiza por separado la
+                  instancia de Lighter en Robinhood Chain y tampoco le reconoce
+                  el nivel mínimo de madurez: sus contratos se pueden actualizar
+                  de inmediato.
                 </Li>
                 <Li>
                   <B>Perpetuos.</B> Operar con{" "}
@@ -654,8 +667,9 @@ export default function RobinhoodChainPage() {
                   web oficial.
                 </Li>
                 <Li>
-                  <B>Deja ETH para el gas.</B> Ya no hay subvención: cada
-                  operación paga su comisión.
+                  <B>Deja ETH para el gas.</B> La promoción de Robinhood solo cubre
+                  los swaps hechos en su propia wallet: con cualquier otra,
+                  cada operación paga su comisión.
                 </Li>
                 <Li>
                   <B>Empieza por lo conocido.</B> Un intercambio pequeño en
@@ -776,7 +790,7 @@ export default function RobinhoodChainPage() {
           href: "https://blog.arbitrum.io/robinhood-chain-mainnet/",
         },
         {
-          label: "Arbitrum Foundation: ficha del lanzamiento de Robinhood Chain",
+          label: "Foro de gobierno de Arbitrum: ficha del lanzamiento de Robinhood Chain",
           href: "https://forum.arbitrum.foundation/t/arbitrumdao-factsheet-robinhood-chain-mainnet-launch/31041",
         },
         {
@@ -796,11 +810,23 @@ export default function RobinhoodChainPage() {
           href: "https://thedefiant.io/news/defi/lighter-makes-stock-tokens-eligible-collateral-on-robinhood-chain",
         },
         {
-          label: "crypto.news: fin de la subvención del gas (4 de septiembre de 2026)",
+          label: "Robinhood: condiciones de la promoción de comisiones de red en Robinhood Wallet",
+          href: "https://robinhood.com/us/en/support/articles/covered-robinhood-chain-network-fees-robinhood-wallet-promo/",
+        },
+        {
+          label: "crypto.news: caída de las transacciones y ampliación de la promoción del gas (11 de octubre de 2026)",
+          href: "https://crypto.news/robinhood-chain-transactions-drop-42-whats-next/",
+        },
+        {
+          label: "L2BEAT: Lighter en Robinhood Chain",
+          href: "https://l2beat.com/scaling/projects/lighter-robinhood",
+        },
+        {
+          label: "crypto.news: ingresos de la red y acciones tokenizadas (4 de septiembre de 2026)",
           href: "https://crypto.news/robinhood-chain-flipped-solana-revenue-gas-subsidy-expires/",
         },
         {
-          label: "CryptoTicker: ecosistema y fin del gas gratis (28 de septiembre de 2026)",
+          label: "CryptoTicker: ecosistema y comisiones de Robinhood Chain (28 de septiembre de 2026)",
           href: "https://cryptoticker.io/es/robinhood-chain-ecosistema-fin-del-gas-gratis/",
         },
         {
