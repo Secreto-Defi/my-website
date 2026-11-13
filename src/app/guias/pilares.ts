@@ -16,6 +16,8 @@ import {
   METEORA_GUIDE_UPDATED,
   PENDLE_GUIDE_PUBLISHED,
   PENDLE_GUIDE_UPDATED,
+  ROBINHOOD_CHAIN_GUIDE_PUBLISHED,
+  ROBINHOOD_CHAIN_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
   SECURITY_GUIDE_PUBLISHED,
@@ -104,6 +106,14 @@ export const PILLARS: Pillar[] = [
       "Qué es Kinetiq, cómo funciona kHYPE, cuánto cuesta y cómo se sale, qué son KNTQ y Elysium y qué riesgos tiene el staking líquido de HYPE.",
     published: KINETIQ_GUIDE_PUBLISHED,
     updated: KINETIQ_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-robinhood-chain",
+    name: "Qué es Robinhood Chain: Stock Tokens y cómo funciona",
+    description:
+      "Qué es Robinhood Chain, qué son los Stock Tokens y qué derechos dan, qué puedes hacer desde España, cómo añadir la red y puentear, y qué riesgos tiene.",
+    published: ROBINHOOD_CHAIN_GUIDE_PUBLISHED,
+    updated: ROBINHOOD_CHAIN_GUIDE_UPDATED,
   },
 ];
 

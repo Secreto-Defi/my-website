@@ -251,6 +251,39 @@ export const TERMS: Term[] = [
     guides: ["rwa-onchain-como-se-trada-oro-acciones"],
   },
   {
+    id: "stock-tokens",
+    name: "Stock Tokens (acciones tokenizadas de Robinhood)",
+    more: {
+      href: "/guias/que-es-robinhood-chain#stock-tokens",
+      label: "Qué son los Stock Tokens y en qué se diferencian de una acción",
+    },
+    definition:
+      "Tokens de Robinhood Chain que siguen el precio de una acción o un ETF de Estados Unidos. No son acciones: según su documentación son títulos de deuda tokenizados emitidos por Robinhood Assets (Jersey) Limited, que dan exposición económica pero ningún derecho sobre la acción ni frente a la empresa. Los dividendos se reflejan con un multiplicador, no en efectivo.",
+    guides: ["rwa-onchain-como-se-trada-oro-acciones"],
+  },
+  {
+    id: "robinhood-chain",
+    name: "Robinhood Chain",
+    more: {
+      href: "/guias/que-es-robinhood-chain",
+      label: "Guía completa: qué es Robinhood Chain, cómo funciona y qué riesgos tiene",
+    },
+    definition:
+      "Capa 2 de Ethereum creada y operada por Robinhood con la tecnología de Arbitrum, en mainnet desde el 1 de julio de 2026. Usa ETH para el gas, no tiene token propio y está pensada para acciones y ETF tokenizados y para las aplicaciones DeFi que se construyan alrededor.",
+    guides: ["primeros-pasos-en-robinhood-chain", "robinhood-te-paga-lit-por-operar"],
+  },
+  {
+    id: "capa-2",
+    name: "Capa 2 (L2, rollup)",
+    more: {
+      href: "/guias/que-es-robinhood-chain#como-funciona",
+      label: "Cómo funciona una capa 2 por dentro, con el ejemplo de Robinhood Chain",
+    },
+    definition:
+      "Red construida sobre otra blockchain, normalmente Ethereum, que ejecuta las transacciones por su cuenta y publica los datos o las pruebas en la red principal para heredar parte de su seguridad. Suele ser más barata y rápida, a cambio de depender de quien opera el secuenciador y de plazos de retirada que pueden ser de varios días.",
+    guides: [],
+  },
+  {
     id: "hip-3",
     name: "HIP-3 (Hyperliquid)",
     definition:
