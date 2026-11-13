@@ -41,6 +41,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/perp-dex-y-farmeo-de-puntos",
         label: "Siguiente paso: perp DEX y farmeo de puntos, con un caso real",
       },
+      {
+        href: "/guias/que-es-robinhood-chain",
+        label: "Antes de entrar en Robinhood Chain: qué es, qué son los Stock Tokens y qué riesgos tiene",
+      },
     ],
     title: "Airdrops y farming",
     description:
@@ -289,6 +293,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
       {
         href: "/guias/que-es-kinetiq",
         label: "Para hacer staking líquido de HYPE: qué es Kinetiq, cómo funciona kHYPE y qué riesgos tiene",
+      },
+      {
+        href: "/guias/que-es-robinhood-chain",
+        label: "Acciones tokenizadas: qué es Robinhood Chain y qué son los Stock Tokens",
       },
     ],
     title: "Mercados y narrativas",
