@@ -433,7 +433,15 @@ export default function KinetiqPage() {
                 </Li>
               </Ul>
               <P>
-                Mover fondos a Elysium supone usar un{" "}
+                Las aplicaciones de Elysium también pueden sumar recompras por
+                su cuenta. El 7 de noviembre de 2026, según Coinranking, que
+                cita el anuncio de Kinetiq en X, la plataforma de trading Oku
+                se comprometió a destinar el 40 % de sus comisiones netas en
+                Elysium a comprar KNTQ en el mercado y quemarlo. No hay un
+                importe fijo: depende del volumen que consiga Oku.
+              </P>
+              <P>
+                Mover fondos a Elysium supone usar un 
                 <GlossaryLink id="bridge">puente</GlossaryLink>. Entra solo desde
                 la web oficial de Kinetiq y prueba primero con una cantidad
                 pequeña.
@@ -809,6 +817,10 @@ export default function KinetiqPage() {
         {
           label: "Blocmates: la Kinetiq Foundation anuncia el token KNTQ (23 de octubre de 2025)",
           href: "https://blocmates.com/news-posts/kinetiq-foundation-announces-kntq-token-launch-allocating-24-to-kpoints-holders",
+        },
+        {
+          label: "Coinranking: Oku destinará el 40 % de sus comisiones en Elysium a recomprar KNTQ (8 de noviembre de 2026)",
+          href: "https://coinranking.com/news/oku-pledges-40-elysium-trading-fees-kinetiq-kntq-buybacks",
         },
         {
           label: "AirdropAlert: qué se lanzó el día del estreno de Elysium (9 de noviembre de 2026)",

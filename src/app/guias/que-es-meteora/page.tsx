@@ -617,10 +617,10 @@ export default function QueEsMeteoraPage() {
                   desde octubre de 2025 se habían comprado 36,0 millones de MET,
                   y la cartera de recompras, que cuenta también los MET que
                   acumulan sus posiciones de liquidez, tenía 38,8 millones (el
-                  3,9 % del suministro total) a 30 de junio. A 5 de noviembre de
+                  3,9 % del suministro total) a 30 de junio. A 17 de noviembre de
                   2026, su página de relaciones con inversores mostraba 13,67
-                  millones de USDC gastados y 36,22 millones de MET recomprados
-                  (el 3,63 % del suministro total). En diciembre de 2025, según
+                  millones de USDC gastados y 36,49 millones de MET recomprados
+                  (el 3,66 % del suministro total). En diciembre de 2025, según
                   ChainCatcher, Meteora había dicho en X que llevaba gastados 10
                   millones de USDC en recomprar cerca del 2,3 % de los MET
                   durante el cuarto trimestre y que seguiría.
