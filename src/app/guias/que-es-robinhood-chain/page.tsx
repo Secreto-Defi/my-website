@@ -613,7 +613,16 @@ export default function RobinhoodChainPage() {
                 <Li>
                   <B>Contratos de terceros.</B> Robinhood indica en su
                   documentación que listar un protocolo no supone respaldarlo ni
-                  garantizarlo.
+                  garantizarlo. Un ejemplo reciente: el 9 de noviembre de 2026,
+                  según el informe de incidente de Arcus, un fallo de
+                  contabilidad en las transferencias entre subcuentas permitió a
+                  una cuenta recién creada retirar 2.234.391 USDG. Otros 3 M$
+                  en retiradas quedaron retenidos por el límite del puente y se
+                  revirtieron. Arcus Labs cubrió el agujero con su tesorería y
+                  afirma que ningún otro usuario se vio afectado, pero esa
+                  cobertura fue una decisión de la empresa, no una garantía. La
+                  red siguió funcionando con normalidad: el fallo estaba en la
+                  aplicación.
                 </Li>
                 <Li>
                   <B>Regulación.</B> Las acciones tokenizadas son un producto
@@ -800,6 +809,10 @@ export default function RobinhoodChainPage() {
         {
           label: "DefiLlama: Robinhood Chain",
           href: "https://defillama.com/chain/robinhood-chain",
+        },
+        {
+          label: "Arcus: informe del incidente del 9 de noviembre de 2026",
+          href: "https://arcus.xyz/blog/arcus-incident-report-november-9-2026",
         },
         {
           label: "The Block: Robinhood Chain llega a mainnet (1 de julio de 2026)",
