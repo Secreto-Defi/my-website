@@ -314,6 +314,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     guides: [
       {
         title:
+          "Robinhood Chain, 4 meses después: lo que queda cuando se enfría el hype",
+        slug: "robinhood-chain-que-es-y-que-queda-tras-el-hype",
+        description:
+          "Qué queda en Robinhood Chain tras el hype: volumen y TVL, por qué los Stock Tokens no son acciones, quién controla la red y qué puedes hacer desde España.",
+        date: "2026-11-17",
+      },
+      {
+        title:
           "Elysium ya está en mainnet, la L2 de Kinetiq que recompra $KNTQ y $HYPE",
         slug: "que-es-elysium-la-l2-de-kinetiq",
         description:

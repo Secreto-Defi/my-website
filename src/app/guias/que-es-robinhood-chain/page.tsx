@@ -852,6 +852,7 @@ export default function RobinhoodChainPage() {
         },
       ]}
       relatedSlugs={[
+        "robinhood-chain-que-es-y-que-queda-tras-el-hype",
         "primeros-pasos-en-robinhood-chain",
         "robinhood-te-paga-lit-por-operar",
         "rwa-onchain-como-se-trada-oro-acciones",
