@@ -60,7 +60,7 @@ export default function LighterPage() {
       }
       summary={[
         "Lighter es un exchange descentralizado de perpetuos construido como una capa 2 de Ethereum específica para trading. Los fondos se depositan en contratos de Ethereum y cada lote de operaciones se valida allí con una prueba criptográfica.",
-        "Las cuentas Standard no pagan comisión de maker ni de taker, a cambio de 300 ms de latencia en las órdenes que cruzan el libro. Quien paga son las cuentas Premium y Plus, pensadas para operativa de alta frecuencia, y de ahí salen los ingresos.",
+        "Las cuentas Standard no pagan comisión de maker ni de taker, a cambio de 300 ms de latencia en las órdenes taker y en las cancelaciones o modificaciones. Quien paga son las cuentas Premium y Plus, pensadas para operativa de alta frecuencia, y de ahí salen los ingresos.",
         "LIT es el token de la plataforma: 1.000 millones de oferta máxima, la mitad para el ecosistema. Hacer staking da acceso al fondo de liquidez LLP, un 6 % anual fijo y descuentos en las cuentas Premium, y el protocolo recompra LIT con sus ingresos.",
         "El 16 de noviembre de 2026 un atacante retiró unos 10,4 millones de USDC con las claves API de un trader. Según Lighter, el fallo estuvo en un software de firma ajeno a sus SDK oficiales y ni el protocolo ni los contratos se vieron afectados.",
         "L2BEAT la clasifica en Stage 0: hay un único operador, los contratos pueden actualizarse sin plazo de espera y el operador debe reportar los precios de los oráculos con honestidad. Operar con apalancamiento añade el riesgo de liquidación.",
@@ -91,7 +91,7 @@ export default function LighterPage() {
                 cotizar el 30 de diciembre de 2025.
               </P>
               <DataTable
-                caption="Ficha de Lighter (documentación de Lighter, L2BEAT, Fortune y The Block, consultados el 18 de noviembre de 2026)."
+                caption="Ficha de Lighter (documentación de Lighter, L2BEAT, DefiLlama, Fortune y The Block, consultados el 18 de noviembre de 2026)."
                 head={["", "Lighter"]}
                 rows={[
                   ["Qué es", "Exchange descentralizado de perpetuos con libro de órdenes."],
@@ -126,8 +126,7 @@ export default function LighterPage() {
           children: (
             <>
               <P>
-                La documentación describe Lighter Core con cuatro piezas. Lo
-                importante es qué hace cada una y en cuál tienes que confiar.
+                Simplificando lo que describe la documentación, Lighter Core tiene cuatro piezas que importan. Lo relevante es qué hace cada una y en cuál tienes que confiar.
               </P>
               <Ul>
                 <Li>
@@ -285,9 +284,7 @@ export default function LighterPage() {
               <P>
                 La tabla de especificaciones de la documentación recoge cerca de
                 200 mercados de perpetuos. El apalancamiento máximo depende del
-                activo: 50x en BTC, ETH, las principales divisas y el S&amp;P
-                500; 20x en la mayoría de acciones estadounidenses; y entre 3x y
-                10x en los tokens con menos liquidez.
+                activo: 50x en BTC, ETH, los tres grandes pares de divisas (EUR/USD, GBP/USD y USD/JPY) y el S&amp;P 500; 20x en las mayores tecnológicas estadounidenses, como NVDA, AAPL o TSLA, y 10x en la mayoría del resto de acciones; y entre 3x y 10x en los tokens con menos liquidez.
               </P>
               <H3>El LLP: fondo de liquidez y fondo de seguro a la vez</H3>
               <P>
@@ -336,9 +333,7 @@ export default function LighterPage() {
               <Callout title="Ojo con el calendario de desbloqueos">
                 Si el año de bloqueo cuenta desde el lanzamiento del token, los
                 tokens del equipo y de los inversores (el 50 % de la oferta)
-                empezarían a liberarse a finales de diciembre de 2026. Es un
-                cálculo mío a partir de las condiciones publicadas, no una fecha
-                confirmada por Lighter: compruébala antes de tomar decisiones.
+                empezarían a liberarse a finales de diciembre de 2026. Es un cálculo mío a partir de las condiciones publicadas, no una fecha confirmada por Lighter. El rastreador Tokenomist sitúa el fin del bloqueo en torno al 27 de diciembre de 2026: compruébalo antes de tomar decisiones.
               </Callout>
               <H3>Para qué sirve hacer staking de LIT</H3>
               <Ul>
@@ -347,8 +342,7 @@ export default function LighterPage() {
                   depositar en el LLP, a razón de hasta 10 USDC por cada LIT.
                 </Li>
                 <Li>
-                  <B>Rendimiento fijo.</B> El staking paga un 6 % anual fijo en
-                  LIT, que según la documentación se compra en el mercado.
+                  <B>Rendimiento fijo.</B> El staking paga un 6 % anual fijo. Según la documentación, el LIT de esas recompensas se compra desde una dirección que la propia documentación identifica.
                 </Li>
                 <Li>
                   <B>Descuentos en Premium.</B> De un 2,5 % con 1.000 LIT a un
@@ -402,7 +396,7 @@ export default function LighterPage() {
                 caption="Diferencias entre las dos instancias (documentación de Lighter, consultada el 18 de noviembre de 2026)."
                 head={["", "Lighter Core", "Lighter en Robinhood Chain"]}
                 rows={[
-                  ["Red de depósito", "Ethereum.", "Robinhood Chain."],
+                  ["Red de depósito", "Ethereum y otras redes a través de puente.", "Robinhood Chain."],
                   ["Garantía principal", "USDC.", "USDG."],
                   ["Otras garantías", "ETH, weETH y XAUT.", "Acciones y ETF tokenizados, como SPY, QQQ, NVDA o AAPL."],
                   ["Cuenta Standard", "0 % / 0 %.", "0 % / 0 %."],
@@ -446,9 +440,10 @@ export default function LighterPage() {
                 comunicado de Robinhood sí habla de 11 millones de tokens LIT
                 reservados para su comunidad. Lighter puede retirar o revertir
                 puntos en cualquier momento, también después de cerrar el
-                programa, y prohíbe expresamente las cuentas{" "}
-                <GlossaryLink id="sybil">sybil</GlossaryLink> y la participación
-                automatizada o artificial.
+                programa, y prohíbe expresamente el wash trading, las cuentas{" "}
+                <GlossaryLink id="sybil">sybil</GlossaryLink>, el abuso de
+                referidos y el uso de bots o scripts para manipular las métricas
+                del programa.
               </P>
               <P>
                 Cómo activar el multiplicador de Robinhood Wallet lo cuento paso
@@ -476,15 +471,14 @@ export default function LighterPage() {
                   ["Valor depositado (TVL)", "Unos 667 M$."],
                   ["TVL por red", "Ethereum 484 M$, Robinhood Chain 102 M$ y zkLighter 83 M$."],
                   ["Volumen de perpetuos (30 días)", "Unos 82.070 M$."],
-                  ["Interés abierto", "Unos 577 M$."],
+                  ["Interés abierto", "Unos 577 M$, sumando Lighter Core y Robinhood Chain."],
                   ["Comisiones (30 días)", "Unos 6,95 M$."],
                   ["Ingresos del protocolo (30 días)", "Unos 5,68 M$."],
                 ]}
               />
               <P>
                 Para ponerlo en contexto, la clasificación de interés abierto de
-                DefiLlama daba ese mismo día unos 5.540 M$ a Hyperliquid y unos
-                1.170 M$ a Aster. Lighter mueve mucho volumen para el interés
+                DefiLlama daba ese mismo día unos 5.540 M$ a Hyperliquid, sin contar los mercados HIP-3 que lista aparte, y unos 1.170 M$ a Aster. Lighter mueve mucho volumen para el interés
                 abierto que mantiene, algo habitual en plataformas con
                 comisiones cero y programas de incentivos: el volumen dice
                 cuánto se opera, y el interés abierto, cuánto capital hay
@@ -492,9 +486,7 @@ export default function LighterPage() {
               </P>
               <P>
                 L2BEAT, que mide el valor asegurado por la capa 2 con su propio
-                criterio, lo situaba en unos 887 M$ el 16 de noviembre de 2026,
-                tras una caída del 17,6 % en un día, y recogía un máximo de
-                2.120 M$ en los últimos doce meses.
+                criterio, lo situaba en unos 887 M$ a 18 de noviembre de 2026, con una caída reciente del 17,6 % según su panel, y recogía un máximo de 2.120 M$ en los últimos doce meses.
               </P>
             </>
           ),
@@ -505,9 +497,7 @@ export default function LighterPage() {
           children: (
             <>
               <P>
-                Es el episodio de seguridad más serio de Lighter hasta la fecha
-                y conviene entenderlo bien, porque no fue un fallo de los
-                contratos y aun así salieron millones.
+                Es el mayor incidente con salida de fondos que he encontrado documentado en Lighter, y conviene entenderlo bien, porque según la empresa no fue un fallo de los contratos y aun así salieron millones.
               </P>
               <Ol>
                 <Li>
@@ -519,9 +509,7 @@ export default function LighterPage() {
                   hasta 15,5 millones que Lighter no ha confirmado.
                 </Li>
                 <Li>
-                  <B>Cómo reaccionó Lighter.</B> A las 11:02 UTC suspendió las
-                  retiradas y la creación de pools, y activó el modo Guardian de
-                  su contrato. Ese mismo día, a las 18:21 UTC, comunicó que
+                  <B>Cómo reaccionó Lighter.</B> A las 11:02 UTC comunicó que había suspendido las retiradas y la creación de pools, y a las 12:49 UTC explicó que se había activado el modo Guardian de su contrato. Ese mismo día, a las 18:21 UTC, comunicó que
                   depósitos y retiradas volvían a la normalidad.
                 </Li>
                 <Li>
@@ -535,8 +523,7 @@ export default function LighterPage() {
                 </Li>
                 <Li>
                   <B>Qué se recuperó.</B> Según Lighter, la pausa del Guardian
-                  permitió que su consejo de seguridad devolviera unos 5
-                  millones de USDC al trader afectado.
+                  permitió que su consejo de seguridad devolviera unos 5 millones de USDC al trader afectado. Lighter no ha publicado la pérdida total ni ha comunicado que se recuperaran los 10,39 millones que salieron del contrato.
                 </Li>
                 <Li>
                   <B>Qué ha cambiado.</B> Las firmas de las claves API han
@@ -546,8 +533,7 @@ export default function LighterPage() {
                 </Li>
               </Ol>
               <Callout title="Qué significa para ti">
-                Si operas a mano desde la web, este fallo no te afectaba: el
-                problema estaba en un software de firma de terceros. Si usas
+                Según Lighter, el problema estaba en un código de firma ajeno a sus SDK oficiales, que no se vieron afectados. De ahí se deduce que quien opera a mano desde la web oficial no estaba expuesto a este fallo. Si usas
                 bots o agentes, la lección es directa: firma solo con los SDK
                 oficiales, limita lo que puede hacer cada clave API y rótala si
                 tienes dudas. Y quédate con la otra mitad de la historia: el
@@ -585,8 +571,13 @@ export default function LighterPage() {
                 <Li>
                   <B>Pausas.</B> Los guardianes del contrato pueden detener el
                   procesamiento de lotes y las retiradas hasta 24 o 72 horas,
-                  según L2BEAT. Ocurrió el 16 de noviembre de 2026. Además, el
-                  10 de octubre de 2025 la plataforma estuvo caída 4,5 horas.
+                  según L2BEAT. Ocurrió durante el incidente de noviembre de 2026, y L2BEAT anota además una pausa de prueba el 17 de octubre de 2026. El 10 de octubre de 2025 la plataforma estuvo caída 4,5 horas.
+                </Li>
+                <Li>
+                  <B>La instancia de Robinhood Chain, por detrás.</B> Tiene ficha
+                  propia en L2BEAT, que ni siquiera la considera Stage 0 porque
+                  no hay software público para reconstruir el estado a partir de
+                  los datos publicados.
                 </Li>
                 <Li>
                   <B>Salida de emergencia poco probada.</B> El modo de escape
@@ -659,7 +650,7 @@ export default function LighterPage() {
                   ],
                   [
                     "Lighter en Robinhood Chain (puntos y perpetuos)",
-                    "Los anteriores salvo que la lista añade Singapur, Suiza, Emiratos Árabes Unidos y Sudán del Sur.",
+                    "Los mismos catorce países y, además, Singapur, Suiza, Emiratos Árabes Unidos y Sudán del Sur.",
                     "No figura.",
                   ],
                 ]}
@@ -752,7 +743,7 @@ export default function LighterPage() {
         {
           question: "¿Qué pasó en el hackeo de Lighter de noviembre de 2026?",
           answer:
-            "El 16 de noviembre de 2026 un atacante usó las claves API de un trader para retirar unos 10,4 millones de USDC, según los análisis en cadena. Lighter atribuye la filtración a un software de firma ajeno a sus SDK oficiales que reutilizaba valores aleatorios, afirma que el protocolo y los contratos no se vieron afectados, pausó las retiradas unas horas y devolvió unos 5 millones al trader afectado.",
+            "El 16 de noviembre de 2026 un atacante usó las claves API de un trader para retirar unos 10,4 millones de USDC, según los análisis en cadena. Lighter atribuye la filtración a un software de firma ajeno a sus SDK oficiales que reutilizaba valores aleatorios, afirma que el protocolo y los contratos no se vieron afectados, pausó las retiradas unas horas y devolvió unos 5 millones al trader afectado, sin publicar la pérdida total.",
         },
         {
           question: "¿Es seguro Lighter?",
@@ -767,7 +758,7 @@ export default function LighterPage() {
         {
           question: "¿En qué se diferencia Lighter de Hyperliquid?",
           answer:
-            "Hyperliquid es una cadena propia con sus validadores. Lighter es una capa 2 que publica sus datos y sus pruebas de validez en Ethereum y no cobra comisiones a las cuentas normales. A 18 de noviembre de 2026, Hyperliquid tenía casi diez veces más interés abierto según DefiLlama.",
+            "Hyperliquid es una cadena propia con sus validadores. Lighter es una capa 2 que publica sus datos y sus pruebas de validez en Ethereum y no cobra comisiones a las cuentas normales. A 18 de noviembre de 2026, Hyperliquid tenía casi diez veces más interés abierto según DefiLlama, sin contar sus mercados HIP-3.",
         },
         {
           question: "¿Hay airdrop o puntos en Lighter ahora?",
@@ -854,6 +845,18 @@ export default function LighterPage() {
         },
         { label: "L2BEAT: Lighter", href: "https://l2beat.com/scaling/projects/lighter" },
         { label: "DefiLlama: Lighter", href: "https://defillama.com/protocol/lighter" },
+        {
+          label: "L2BEAT: Lighter en Robinhood Chain",
+          href: "https://l2beat.com/scaling/projects/lighter-robinhood",
+        },
+        {
+          label: "Tokenomist: tokenomics de LIT y desbloqueo de diciembre de 2026",
+          href: "https://www.tokenomist.ai/research/lighter-lit-tokenomics-robinhood-hype-a-real-burn-and-the-december-2026-cliff-2",
+        },
+        {
+          label: "The Block: Lighter reabre las retiradas y devuelve unos 5 millones en USDC (17 de noviembre de 2026)",
+          href: "https://www.theblock.co/news/defi/2026-11-17-lighter-reopens-withdrawals-after-traders-api-key-leak-returns-about-5-million-in-usdc-442113",
+        },
         {
           label: "The Block: Lighter lanza el token LIT (30 de diciembre de 2025)",
           href: "https://www.theblock.co/post/383940/lighter-native-token-lit",
