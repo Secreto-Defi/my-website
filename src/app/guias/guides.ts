@@ -45,6 +45,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-robinhood-chain",
         label: "Antes de entrar en Robinhood Chain: qué es, qué son los Stock Tokens y qué riesgos tiene",
       },
+      {
+        href: "/guias/que-es-lighter",
+        label: "Qué es Lighter: el perp DEX sin comisiones, el token LIT y sus riesgos",
+      },
     ],
     title: "Airdrops y farming",
     description:

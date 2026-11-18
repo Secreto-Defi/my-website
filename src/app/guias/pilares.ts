@@ -12,6 +12,8 @@ import {
   IL_GUIDE_UPDATED,
   KINETIQ_GUIDE_PUBLISHED,
   KINETIQ_GUIDE_UPDATED,
+  LIGHTER_GUIDE_PUBLISHED,
+  LIGHTER_GUIDE_UPDATED,
   METEORA_GUIDE_PUBLISHED,
   METEORA_GUIDE_UPDATED,
   PENDLE_GUIDE_PUBLISHED,
@@ -114,6 +116,14 @@ export const PILLARS: Pillar[] = [
       "Qué es Robinhood Chain, qué son los Stock Tokens y qué derechos dan, qué puedes hacer desde España, cómo añadir la red y puentear, y qué riesgos tiene.",
     published: ROBINHOOD_CHAIN_GUIDE_PUBLISHED,
     updated: ROBINHOOD_CHAIN_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-lighter",
+    name: "Qué es Lighter: perp DEX sin comisiones y token LIT",
+    description:
+      "Qué es Lighter, cómo funciona su exchange de perpetuos sin comisiones, para qué sirve LIT, qué pasó en el incidente de noviembre de 2026 y qué riesgos tiene.",
+    published: LIGHTER_GUIDE_PUBLISHED,
+    updated: LIGHTER_GUIDE_UPDATED,
   },
 ];
 
