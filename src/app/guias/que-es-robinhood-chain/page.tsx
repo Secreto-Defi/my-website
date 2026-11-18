@@ -433,7 +433,12 @@ export default function RobinhoodChainPage() {
                 la página de ayuda de Robinhood, quien opera es Lighter:
                 Robinhood actúa solo como proveedor de tecnología, las
                 operaciones son sin custodia y no puede intervenir ni revertir
-                una liquidación.
+                una liquidación. Cómo funciona Lighter por dentro, su token y
+                sus riesgos están en la guía{" "}
+                <InternalLink href="/guias/que-es-lighter">
+                  Qué es Lighter
+                </InternalLink>
+                .
               </P>
               <Ul>
                 <Li>

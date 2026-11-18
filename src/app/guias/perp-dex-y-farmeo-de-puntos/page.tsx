@@ -158,8 +158,13 @@ export default function PerpDexPage() {
                 de HYPE entre usuarios de la comunidad. Lighter hizo varias
                 temporadas de puntos y, al lanzar su token LIT el 30 de diciembre
                 de 2025, repartió el 25 % de la oferta entre quienes habían
-                participado en las dos primeras temporadas de 2025, y en julio de
-                2026 seguía con una tercera temporada de puntos. Pero cada
+                participado en las dos primeras temporadas de 2025, y en 2026 abrió
+                un programa de puntos en su instancia de Robinhood Chain (el
+                detalle está en la guía{" "}
+                <InternalLink href="/guias/que-es-lighter">
+                  Qué es Lighter
+                </InternalLink>
+                ). Pero cada
                 programa pone sus reglas: que esos casos salieran así no
                 significa que el siguiente vaya a hacerlo. Es el mismo modelo que
                 describo en la guía de{" "}

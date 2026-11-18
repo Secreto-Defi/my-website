@@ -273,6 +273,17 @@ export const TERMS: Term[] = [
     guides: ["primeros-pasos-en-robinhood-chain", "robinhood-te-paga-lit-por-operar"],
   },
   {
+    id: "lighter",
+    name: "Lighter (LIT)",
+    more: {
+      href: "/guias/que-es-lighter",
+      label: "Guía completa: qué es Lighter, cómo funciona y qué riesgos tiene",
+    },
+    definition:
+      "Exchange descentralizado de perpetuos construido como una capa 2 de Ethereum específica para trading, con una instancia separada en Robinhood Chain. Las cuentas Standard no pagan comisiones de trading y su token es LIT, que se usa en staking y que el protocolo recompra con sus ingresos.",
+    guides: ["robinhood-te-paga-lit-por-operar", "tier-list-de-perp-dexs-donde-farmeo"],
+  },
+  {
     id: "capa-2",
     name: "Capa 2 (L2, rollup)",
     more: {
