@@ -49,6 +49,10 @@ export const GUIDE_GROUPS: GuideGroup[] = [
         href: "/guias/que-es-lighter",
         label: "Qué es Lighter: el perp DEX sin comisiones, el token LIT y sus riesgos",
       },
+      {
+        href: "/guias/que-es-risex",
+        label: "Qué es RiseX: el perp DEX de RISE Chain, los puntos de Ignite y sus riesgos",
+      },
     ],
     title: "Airdrops y farming",
     description:

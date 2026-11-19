@@ -284,6 +284,17 @@ export const TERMS: Term[] = [
     guides: ["robinhood-te-paga-lit-por-operar", "tier-list-de-perp-dexs-donde-farmeo"],
   },
   {
+    id: "risex",
+    name: "RiseX (RISEx)",
+    more: {
+      href: "/guias/que-es-risex",
+      label: "Guía completa: qué es RiseX, cómo funcionan sus puntos y qué riesgos tiene",
+    },
+    definition:
+      "Exchange descentralizado de perpetuos con libro de órdenes en cadena, construido sobre RISE Chain, una capa 2 de Ethereum. No tiene token: desde julio de 2026 reparte puntos semanales con el programa Ignite, sin fórmula publicada ni valor fijado.",
+    guides: ["genere-16m-de-volumen-en-risex-para", "como-genere-14-millones-de-dolares"],
+  },
+  {
     id: "capa-2",
     name: "Capa 2 (L2, rollup)",
     more: {
