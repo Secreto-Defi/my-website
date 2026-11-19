@@ -178,8 +178,9 @@ export default function PerpDexPage() {
                 fórmula exacta para que no se pueda explotar. Lo habitual es
                 combinar volumen, comisiones pagadas, interés abierto (el tamaño
                 de las posiciones que mantienes abiertas), tiempo en posición,
-                liquidez aportada, referidos y misiones. RiseX, por ejemplo, dice
-                que su programa Ignite puntúa cinco cosas: la actividad de orden
+                liquidez aportada, referidos y misiones.{" "}
+                <InternalLink href="/guias/que-es-risex">RiseX</InternalLink>,
+                por ejemplo, dice que su programa Ignite puntúa cinco cosas: la actividad de orden
                 superior, los costes totales asumidos (comisiones, slippage y{" "}
                 <em>negative markouts</em>), el volumen, el interés abierto junto
                 con el tiempo de posición y la contribución general a la salud
