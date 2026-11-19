@@ -72,9 +72,7 @@ export default function RisexPage() {
               <P>
                 Su documentación lo define como un exchange de futuros
                 perpetuos totalmente en cadena y compatible con la máquina
-                virtual de Ethereum. A diferencia de la mayoría de sus
-                competidores, no mantiene el libro de órdenes en un servidor
-                aparte: las órdenes, el cruce, el margen y la liquidación son
+                virtual de Ethereum. Según esa documentación, no usa un motor de cruce fuera de la cadena: las órdenes, el cruce, el margen y la liquidación son
                 contratos que se ejecutan en RISE Chain.
               </P>
               <P>
@@ -92,17 +90,17 @@ export default function RisexPage() {
                 rows={[
                   ["Qué es", "Exchange descentralizado de perpetuos con libro de órdenes en cadena."],
                   ["Dónde funciona", "RISE Chain, una capa 2 de Ethereum construida con OP Stack."],
-                  ["Garantía", "USDC."],
+                  ["Garantía", "USDC, por ahora."],
                   ["Comisiones base", "0,03 % taker y 0,01 % maker."],
                   ["Token", "No tiene. Reparte puntos con el programa Ignite."],
                   ["Acceso", "Con código de un usuario activo, según la documentación."],
-                  ["Empresa", "RiseX Global SA (RISE Labs)."],
+                  ["Empresa", "RiseX Global SA firma los términos; el desarrollo es de RISE Labs."],
                 ]}
               />
               <P>
                 Un detalle práctico: la documentación indica que RiseX sigue en
                 una fase de acceso restringido y que para entrar hace falta el
-                código de alguien que ya opere en la plataforma. El contexto
+                código de alguien que ya opere en la plataforma. Otras fuentes hablan ya de entrada con un simple enlace de invitación, así que compruébalo al registrarte. El contexto
                 general de este tipo de exchanges está en la guía de{" "}
                 <InternalLink href="/guias/perp-dex-y-farmeo-de-puntos">
                   perp DEX y farmeo de puntos
@@ -118,8 +116,7 @@ export default function RisexPage() {
           children: (
             <>
               <P>
-                La documentación destaca tres piezas que se ejecutan en cadena y
-                que, por tanto, cualquiera puede verificar.
+                La documentación destaca tres piezas que se ejecutan en cadena, como contratos de RISE Chain.
               </P>
               <Ul>
                 <Li>
@@ -140,8 +137,7 @@ export default function RisexPage() {
                 Todo eso es posible por la cadena sobre la que corre. Según su
                 documentación, RISE Chain es un rollup optimista construido con
                 OP Stack, que publica sus datos en EigenDA, liquida en Ethereum
-                y usa pruebas de fraude basadas en conocimiento cero. Anuncia
-                bloques en torno a un milisegundo y una latencia de extremo a
+                y usa pruebas de fraude basadas en conocimiento cero. Anuncia una ejecución de bloques en torno a un milisegundo y una latencia de extremo a
                 extremo de unos 3 milisegundos por orden.
               </P>
               <H3>En qué se diferencia de Hyperliquid y de Lighter</H3>
@@ -160,8 +156,7 @@ export default function RisexPage() {
               </P>
               <Callout title="En cadena no significa descentralizado">
                 Que las órdenes se crucen en contratos verificables no quita que
-                la cadena tenga un único secuenciador, operado por el equipo, y
-                que sus contratos puedan actualizarse al instante. Lo detallo en
+                la cadena tenga un único operador centralizado y que sus contratos puedan actualizarse al instante. Lo detallo en
                 la sección de riesgos.
               </Callout>
             </>
@@ -199,9 +194,7 @@ export default function RisexPage() {
                   <B>
                     <GlossaryLink id="funding-rate">Funding</GlossaryLink>.
                   </B>{" "}
-                  Se paga cada hora entre posiciones largas y cortas, sin que el
-                  exchange se quede nada. La documentación fija un tope por
-                  defecto del 4 %.
+                  Se paga cada hora directamente entre posiciones largas y cortas; la documentación lo describe como un pago entre usuarios y limita por defecto la tasa a ±4 % por hora.
                 </Li>
                 <Li>
                   <B>Liquidación.</B> Si te liquidan, RiseX puede quedarse hasta
@@ -238,14 +231,14 @@ export default function RisexPage() {
                 rows={[
                   ["Criptomonedas grandes", "BTC y ETH.", "50x."],
                   ["Otras criptomonedas", "BNB, SOL y HYPE.", "20x."],
-                  ["Altcoins", "XRP, ENA, MON, WLD o XMR.", "10x, y 5x en las más pequeñas."],
-                  ["Materias primas", "Oro (XAU).", "25x."],
-                  ["Acciones y ETF", "NVDA, TSLA, META o GOOGL.", "20x en las grandes y 10x en el resto."],
+                  ["Altcoins", "XRP, ENA, MON, WLD o XMR.", "10x; 5x en las más pequeñas y 3x en AERO."],
+                  ["Materias primas", "Oro, plata y petróleo.", "25x en el oro y 20x en el resto."],
+                  ["Acciones y ETF", "QQQ, SPY, NVDA, TSLA, META o GOOGL.", "25x en los ETF de índices, 20x en las acciones grandes y 10x o 5x en el resto."],
                 ]}
               />
               <Ul>
                 <Li>
-                  <B>Garantía.</B> Solo USDC. La documentación prevé aceptar
+                  <B>Garantía.</B> USDC, por ahora. La documentación prevé aceptar
                   otros tokens con un sistema de margen de cartera que todavía
                   es una propuesta en borrador.
                 </Li>
@@ -316,15 +309,13 @@ export default function RisexPage() {
               </Ul>
               <P>
                 Existe además el Impact Pool, un sorteo semanal de puntos entre
-                quienes hacen operaciones de 50.000 dólares o más que cruzan el
-                libro, proporcional al deslizamiento que pagaron.
+                quienes hacen operaciones de 50.000 dólares o más que cruzan el libro: cada participante tiene un 50 % de opciones y el premio es proporcional al deslizamiento pagado.
               </P>
               <H3>Lo que he aprendido farmeándolo</H3>
               <P>
                 Empecé generando volumen con un bot de creación de mercado. En
                 el primer reparto, 1,65 millones de dólares de volumen bruto se
-                quedaron en unos 675.000 de volumen ponderado y en 195 puntos, a
-                unos 2,3 dólares por punto. La explicación estaba en los propios
+                quedaron en unos 675.000 de volumen ponderado y en 195 puntos. Estimé el coste de aquella semana en unos 2,3 dólares por punto. La explicación estaba en los propios
                 criterios: órdenes maker, sin deslizamiento y sin posiciones
                 abiertas apenas suman.
               </P>
@@ -349,10 +340,9 @@ export default function RisexPage() {
                 RiseX no ha publicado ticker, oferta, fecha ni tasa de
                 conversión. Su documentación habla de «un equipo y un token»
                 para RISE y RiseX, y el comunicado de Ignite menciona una futura
-                distribución, pero nada de eso es un compromiso con cifras. Lo
+                distribución. CryptoRank recoge además una ronda comunitaria de unos 2 millones de dólares en agosto de 2025 a cuenta de ese futuro token. Pero nada de eso es un compromiso con cifras para quien acumula puntos. Lo
                 que gastes en comisiones y deslizamiento sí es dinero real. Y
-                ojo: los términos de uso prohíben el wash trading, y el
-                programa dice penalizar el flujo artificial.
+                ojo: los términos de uso prohíben el wash trading, y el programa dice puntuar menos el flujo mecánico o de tipo wash trading.
               </Callout>
             </>
           ),
@@ -396,7 +386,7 @@ export default function RisexPage() {
                 DefiLlama, un error de configuración en la estrategia de activos
                 reales del vault, presente desde su despliegue el 13 de julio,
                 permitió a una dirección no autorizada retirar 673.011,56 USDC.
-                El equipo afirma que lo corrigió en minutos, que no encontró
+                El equipo afirma que lo detectó en minutos y lo corrigió en menos de una hora, que no encontró
                 fallos similares y que compensó por completo a los depositantes
                 de XLP con parte de las comisiones de julio.
               </P>
@@ -408,8 +398,7 @@ export default function RisexPage() {
                 detallado que el equipo prometió.
               </P>
               <P>
-                La lectura es doble. La cantidad fue pequeña y la asumió el
-                protocolo, no los usuarios. Pero el fallo llegó a producción en
+                La lectura es doble. La cantidad fue pequeña y, según el equipo, la asumió el protocolo y no los usuarios. Pero el fallo llegó a producción en
                 un contrato nuevo, tres semanas después de desplegarlo.
               </P>
             </>
@@ -426,7 +415,7 @@ export default function RisexPage() {
                 rows={[
                   ["Valor depositado (TVL)", "Unos 21,8 M$, cerca de su máximo (22,1 M$ el 7 de noviembre)."],
                   ["Volumen de perpetuos (30 días)", "Unos 4.100 M$."],
-                  ["Interés abierto", "Unos 37 M$."],
+                  ["Interés abierto", "Entre 36 y 37 M$."],
                 ]}
               />
               <P>
@@ -434,9 +423,7 @@ export default function RisexPage() {
                 mismos días los 667 M$ de valor depositado y los 82.000 M$ de
                 volumen mensual. Y fíjate en la proporción dentro del propio
                 RiseX: el volumen de un mes es unas 190 veces el capital
-                depositado y más de 100 veces el interés abierto. Es el patrón
-                de una plataforma donde buena parte de la actividad busca
-                puntos.
+                depositado y más de 100 veces el interés abierto. Es un patrón habitual en plataformas donde buena parte de la actividad busca puntos.
               </P>
             </>
           ),
@@ -621,7 +608,7 @@ export default function RisexPage() {
         {
           question: "¿Han hackeado RiseX?",
           answer:
-            "El 3 de agosto de 2026 un error de configuración en una estrategia del vault XLP permitió a una dirección no autorizada retirar 673.011,56 USDC. Según RiseX, lo corrigió en minutos y compensó a los depositantes con parte de las comisiones de julio. No he encontrado confirmación de que los fondos se recuperaran.",
+            "El 3 de agosto de 2026 un error de configuración en una estrategia del vault XLP permitió a una dirección no autorizada retirar 673.011,56 USDC. Según RiseX, lo corrigió en menos de una hora y compensó a los depositantes con parte de las comisiones de julio. No he encontrado confirmación de que los fondos se recuperaran.",
         },
         {
           question: "¿Es seguro RiseX?",
@@ -677,6 +664,7 @@ export default function RisexPage() {
         { label: "RiseX: términos de uso", href: "https://www.rise.trade/en/terms" },
         { label: "L2BEAT: RISE", href: "https://l2beat.com/scaling/projects/rise" },
         { label: "DefiLlama: RISEx", href: "https://defillama.com/protocol/risex" },
+        { label: "CryptoRank: RISE Chain", href: "https://cryptorank.io/ico/rise-chain" },
         {
           label: "Decrypt (comunicado): RISEx lanza Ignite (24 de julio de 2026)",
           href: "https://decrypt.co/374238/risex-launches-ignite-season-1-points-program-following-3b-in-volume-during-the-early-access-phase",
