@@ -20,6 +20,8 @@ import {
   PENDLE_GUIDE_UPDATED,
   ROBINHOOD_CHAIN_GUIDE_PUBLISHED,
   ROBINHOOD_CHAIN_GUIDE_UPDATED,
+  RISEX_GUIDE_PUBLISHED,
+  RISEX_GUIDE_UPDATED,
   PERP_GUIDE_PUBLISHED,
   PERP_GUIDE_UPDATED,
   SECURITY_GUIDE_PUBLISHED,
@@ -124,6 +126,14 @@ export const PILLARS: Pillar[] = [
       "Qué es Lighter, cómo funciona su exchange de perpetuos sin comisiones, para qué sirve LIT, qué pasó en el incidente de noviembre de 2026 y qué riesgos tiene.",
     published: LIGHTER_GUIDE_PUBLISHED,
     updated: LIGHTER_GUIDE_UPDATED,
+  },
+  {
+    href: "/guias/que-es-risex",
+    name: "Qué es RiseX: perp DEX de RISE Chain y puntos de Ignite",
+    description:
+      "Qué es RiseX, cómo funciona, cuánto cuesta operar, cómo se reparten los puntos de Ignite, qué pasó con el vault XLP y qué riesgos tiene.",
+    published: RISEX_GUIDE_PUBLISHED,
+    updated: RISEX_GUIDE_UPDATED,
   },
 ];
 
