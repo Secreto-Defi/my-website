@@ -318,6 +318,14 @@ export const GUIDE_GROUPS: GuideGroup[] = [
     guides: [
       {
         title:
+          "El desbloqueo de $LIT empieza en diciembre: 14 millones de tokens al mes durante tres años",
+        slug: "desbloqueo-lit-lighter-diciembre-2026",
+        description:
+          "El bloqueo del 50 % de LIT termina a finales de diciembre de 2026: cuántos tokens se liberan al mes, cómo se compara con las recompras y qué vigilar.",
+        date: "2026-11-22",
+      },
+      {
+        title:
           "Robinhood Chain, 4 meses después: lo que queda cuando se enfría el hype",
         slug: "robinhood-chain-que-es-y-que-queda-tras-el-hype",
         description:

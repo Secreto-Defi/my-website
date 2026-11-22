@@ -333,7 +333,15 @@ export default function LighterPage() {
               <Callout title="Ojo con el calendario de desbloqueos">
                 Si el año de bloqueo cuenta desde el lanzamiento del token, los
                 tokens del equipo y de los inversores (el 50 % de la oferta)
-                empezarían a liberarse a finales de diciembre de 2026. Es un cálculo mío a partir de las condiciones publicadas, no una fecha confirmada por Lighter. El rastreador Tokenomist sitúa el fin del bloqueo en torno al 27 de diciembre de 2026: compruébalo antes de tomar decisiones.
+                empezarían a liberarse a finales de diciembre de 2026. Es un cálculo mío a partir de las condiciones publicadas, no una fecha confirmada por Lighter. El rastreador Tokenomist sitúa el fin del bloqueo en torno al 27 de diciembre de 2026: compruébalo antes de tomar decisiones. Los números del
+                desbloqueo, mes a mes, están en{" "}
+                <GuideLink
+                  slug="desbloqueo-lit-lighter-diciembre-2026"
+                  campaign={CAMPAIGN}
+                >
+                  El desbloqueo de $LIT empieza en diciembre
+                </GuideLink>
+                .
               </Callout>
               <H3>Para qué sirve hacer staking de LIT</H3>
               <Ul>
@@ -875,6 +883,7 @@ export default function LighterPage() {
         },
       ]}
       relatedSlugs={[
+        "desbloqueo-lit-lighter-diciembre-2026",
         "robinhood-te-paga-lit-por-operar",
         "tier-list-de-perp-dexs-donde-farmeo",
         "robinhood-chain-que-es-y-que-queda-tras-el-hype",
