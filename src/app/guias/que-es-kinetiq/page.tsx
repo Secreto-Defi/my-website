@@ -511,10 +511,12 @@ export default function KinetiqPage() {
                 Las asignaciones de contribuyentes principales e inversores, el
                 31 % de la oferta entre las dos, tienen un calendario de tres
                 años: un año de bloqueo total y dos de liberación lineal mensual.
-                Si el calendario cuenta desde la generación del token, el 27 de
-                noviembre de 2025, esa liberación empezaría a finales de
-                noviembre de 2026, a razón de unos 12,9 millones de KNTQ al mes
-                (cálculo propio: 310 millones entre 24 meses). Es presión
+                Kinetiq no publica la fecha de inicio. Si el calendario cuenta
+                desde la generación del token, el 27 de noviembre de 2025, el
+                año de bloqueo termina a finales de noviembre de 2026, y el
+                rastreador Tokenomist sitúa el primer desbloqueo de ese grupo el
+                27 de diciembre de 2026. El ritmo sería de unos 12,9 millones de
+                KNTQ al mes (cálculo propio: 310 millones entre 24 meses). Es presión
                 vendedora potencial que conviene conocer antes de comprar el
                 token.
               </P>
@@ -810,6 +812,7 @@ export default function KinetiqPage() {
           label: "DefiLlama: Kinetiq",
           href: "https://defillama.com/protocol/kinetiq",
         },
+        { label: "Tokenomist: desbloqueos de KNTQ", href: "https://tokenomist.ai/kinetiq" },
         {
           label: "The Defiant: Kinetiq reúne 460 millones de dólares en su primer día (16 de julio de 2025)",
           href: "https://thedefiant.io/kinetiq-liquid-staking-rakes-in-usd460-million-on-opening-day",
@@ -819,7 +822,7 @@ export default function KinetiqPage() {
           href: "https://blocmates.com/news-posts/kinetiq-foundation-announces-kntq-token-launch-allocating-24-to-kpoints-holders",
         },
         {
-          label: "Coinranking: Oku destinará el 40 % de sus comisiones en Elysium a recomprar KNTQ (8 de noviembre de 2026)",
+          label: "Coinranking: Oku destinará el 40 % de sus comisiones en Elysium a recomprar KNTQ (8 de noviembre de 2026)",
           href: "https://coinranking.com/news/oku-pledges-40-elysium-trading-fees-kinetiq-kntq-buybacks",
         },
         {

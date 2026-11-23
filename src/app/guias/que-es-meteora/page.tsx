@@ -120,10 +120,11 @@ export default function QueEsMeteoraPage() {
               <P>
                 El DLMM es el producto con el que un proveedor de liquidez
                 individual decide dónde y cómo coloca su capital. Según
-                DefiLlama, el DLMM tenía unos 148 millones de dólares de{" "}
-                <GlossaryLink id="tvl">TVL</GlossaryLink> el 5 de noviembre de
-                2026 y había movido unos 3.360 millones en volumen de
-                operaciones en los 30 días anteriores. Son cifras que cambian a
+                DefiLlama, el DLMM tenía unos 114 millones de dólares de{" "}
+                <GlossaryLink id="tvl">TVL</GlossaryLink> el 23 de noviembre de
+                2026, frente a unos 148 millones a principios de mes, y había
+                movido unos 3.750 millones en volumen de operaciones en los 30
+                días anteriores. Son cifras que cambian a
                 diario y solo indican tamaño, no seguridad ni rendimiento.
               </P>
               <P>
@@ -169,8 +170,8 @@ export default function QueEsMeteoraPage() {
                 <Li>
                   <B>El bin step marca la distancia entre bins.</B> Es la
                   separación de precio entre dos bins vecinos, medida en puntos
-                  básicos (un punto básico es un 0,01 %), con un máximo de 400
-                  puntos básicos, es decir, un 4 % entre bins. Con un{" "}
+                  básicos (un punto básico es un 0,01 %), con un máximo de 400
+                  puntos básicos, es decir, un 4 % entre bins. Con un{" "}
                   <GlossaryLink id="bin-step">bin step</GlossaryLink> pequeño la
                   escalera de precios es más fina y suele usarse en pares
                   estables o muy líquidos; con uno grande, cubres más rango con
@@ -183,7 +184,7 @@ export default function QueEsMeteoraPage() {
               </P>
               <Formula>Precio del bin i = (1 + bin step / 10.000) ^ i</Formula>
               <P>
-                Con un bin step de 25, cada bin es un 0,25 % más caro que el
+                Con un bin step de 25, cada bin es un 0,25 % más caro que el
                 anterior: la documentación pone como ejemplo SOL a 20 dólares,
                 cuyos siguientes bins estarían en unos 20,05 y 20,10 dólares. El
                 bin step, junto con el número de bins, decide cuánto precio cubre
@@ -314,8 +315,8 @@ export default function QueEsMeteoraPage() {
                 <G slug="estrategia-anti-sawtooth-en-meteora">
                   Estrategia Anti-Sawtooth
                 </G>{" "}
-                explico cómo rellenarlo con una posición Curve: destino el 80 %
-                de la liquidez a las dos Bid-Ask y el 20 % restante a la Curve
+                explico cómo rellenarlo con una posición Curve: destino el 80 %
+                de la liquidez a las dos Bid-Ask y el 20 % restante a la Curve
                 dentro de la segunda.
               </P>
             </>
@@ -340,7 +341,7 @@ export default function QueEsMeteoraPage() {
                   <B>Comisión variable.</B> Sube con la volatilidad, cuando las
                   operaciones cruzan más bins o llegan en rápida sucesión, y baja
                   cuando la actividad se calma. La comisión total tiene un tope
-                  del 10 % por swap, según la página de fórmulas de la
+                  del 10 % por swap, según la página de fórmulas de la
                   documentación.
                 </Li>
               </Ul>
@@ -348,7 +349,7 @@ export default function QueEsMeteoraPage() {
                 Una parte de esa comisión va al protocolo. Según la página de
                 ingresos del protocolo de Meteora, en las pools estándar es el 10
                 % (lo fija el operador o el preset de la pool) y el resto es para
-                los proveedores de liquidez; en las Launch Pool es el 20 %, y en
+                los proveedores de liquidez; en las Launch Pool es el 20 %, y en
                 las pools con órdenes límite, la parte de la comisión que
                 corresponde a las órdenes se reparte a medias entre el protocolo
                 y quien las colocó. Cuatro detalles que conviene tener claros:
@@ -505,23 +506,23 @@ export default function QueEsMeteoraPage() {
                 <Li>
                   <B>Lanzamiento (TGE):</B> el 23 de octubre de 2025, con un
                   suministro total de 1.000.000.000 MET, de los que 480.000.000
-                  (el 48 %) estaban en circulación ese día, según la página de
+                  (el 48 %) estaban en circulación ese día, según la página de
                   tokenomics.
                 </Li>
                 <Li>
-                  <B>Reparto:</B> según esa página, el 52 % restante, un 18 % del
-                  equipo y un 34 % de la reserva de Meteora, no se desbloqueó en
+                  <B>Reparto:</B> según esa página, el 52 % restante, un 18 % del
+                  equipo y un 34 % de la reserva de Meteora, no se desbloqueó en
                   el lanzamiento: tiene un mes de cliff y 72 meses de
                   liberación, con el primer desbloqueo el 23 de noviembre de 2025
                   y el último el 23 de octubre de 2031. El informe del primer
                   semestre de 2026 (11 de agosto de 2026) encaja con ese
                   calendario: recoge desbloqueos mensuales de 7.222.222 MET (el
-                  0,72 % del suministro total; 2,5 millones del equipo y 4,72
+                  0,72 % del suministro total; 2,5 millones del equipo y 4,72
                   millones de la reserva) y, a 30 de junio, 20,0 millones
                   desbloqueados del equipo y 37,8 millones de la reserva. El
                   libro blanco MiCAR (versión 1.1, de octubre de 2025) da otras
-                  cifras: 470 millones de MET en circulación (el 47 %), un 18 %
-                  para el equipo, un 35 % de reserva y, para el 53 % que no
+                  cifras: 470 millones de MET en circulación (el 47 %), un 18 %
+                  para el equipo, un 35 % de reserva y, para el 53 % que no
                   circulaba, un cliff de 12 meses con 60 meses de liberación
                   lineal.
                 </Li>
@@ -579,12 +580,12 @@ export default function QueEsMeteoraPage() {
                   informe del primer semestre presenta como el primer
                   experimento de utilidad del token. Funciona por ciclos de un
                   mes (del 21 de un mes al 21 del siguiente) y, según el
-                  informe, se financia con el 10 % de las comisiones de
-                  protocolo del DLMM para el staking y otro 10 % para los
+                  informe, se financia con el 10 % de las comisiones de
+                  protocolo del DLMM para el staking y otro 10 % para los
                   referidos. Según su web, quien hace staking de MET y aporta
-                  liquidez se reparte ese 10 % en función de su MET en staking,
-                  ponderado por tiempo; los referidores cobran el 8 % de las
-                  comisiones de protocolo de sus referidos y estos, un 2 % de las
+                  liquidez se reparte ese 10 % en función de su MET en staking,
+                  ponderado por tiempo; los referidores cobran el 8 % de las
+                  comisiones de protocolo de sus referidos y estos, un 2 % de las
                   suyas.
                 </Li>
                 <Li>
@@ -594,11 +595,11 @@ export default function QueEsMeteoraPage() {
                   elegibles del DLMM. Retirar el staking antes de que acabe el
                   ciclo hace perder las recompensas pendientes de ese ciclo y
                   obliga a esperar 7 días para recuperar los MET; la salida
-                  inmediata cuesta una penalización del 10 % de los MET.
+                  inmediata cuesta una penalización del 10 % de los MET.
                 </Li>
                 <Li>
                   <B>Resultados del staking:</B> el informe del primer semestre
-                  recoge 70,0 millones de MET en staking (el 7,0 % del
+                  recoge 70,0 millones de MET en staking (el 7,0 % del
                   suministro total) en 2.442 carteras a principios de agosto.
                   Según Solana Compass, el ciclo 1 (hasta el 21 de agosto)
                   repartió unos 336.000 USDC con 76
@@ -617,12 +618,12 @@ export default function QueEsMeteoraPage() {
                   desde octubre de 2025 se habían comprado 36,0 millones de MET,
                   y la cartera de recompras, que cuenta también los MET que
                   acumulan sus posiciones de liquidez, tenía 38,8 millones (el
-                  3,9 % del suministro total) a 30 de junio. A 17 de noviembre de
+                  3,9 % del suministro total) a 30 de junio. A 23 de noviembre de
                   2026, su página de relaciones con inversores mostraba 13,67
-                  millones de USDC gastados y 36,49 millones de MET recomprados
-                  (el 3,66 % del suministro total). En diciembre de 2025, según
+                  millones de USDC gastados y 37,10 millones de MET recomprados
+                  (el 3,72 % del suministro total). En diciembre de 2025, según
                   ChainCatcher, Meteora había dicho en X que llevaba gastados 10
-                  millones de USDC en recomprar cerca del 2,3 % de los MET
+                  millones de USDC en recomprar cerca del 2,3 % de los MET
                   durante el cuarto trimestre y que seguiría.
                 </Li>
                 <Li>
@@ -863,7 +864,7 @@ export default function QueEsMeteoraPage() {
         {
           question: "¿Qué es un bin y qué es el bin step?",
           answer:
-            "Un bin es un punto de precio donde se guarda liquidez. El bin step es la distancia de precio entre dos bins vecinos, en puntos básicos, con un máximo de 400 (un 4 %). Un bin step pequeño suele usarse en pares estables y uno grande, en pares volátiles.",
+            "Un bin es un punto de precio donde se guarda liquidez. El bin step es la distancia de precio entre dos bins vecinos, en puntos básicos, con un máximo de 400 (un 4 %). Un bin step pequeño suele usarse en pares estables y uno grande, en pares volátiles.",
         },
         {
           question: "¿Qué diferencia hay entre Spot, Curve y Bid-Ask?",
@@ -883,7 +884,7 @@ export default function QueEsMeteoraPage() {
         {
           question: "¿Cuánto se gana con Meteora?",
           answer:
-            "No hay una cifra fiable. El APR que muestra la interfaz es una estimación con las comisiones recientes y cambia a diario: en un ejemplo de febrero de 2025, el APR de 24 horas de un token era del 654 % y el de las últimas 4 horas, del 7 %. Además, puedes salir perdiendo frente a mantener los tokens.",
+            "No hay una cifra fiable. El APR que muestra la interfaz es una estimación con las comisiones recientes y cambia a diario: en un ejemplo de febrero de 2025, el APR de 24 horas de un token era del 654 % y el de las últimas 4 horas, del 7 %. Además, puedes salir perdiendo frente a mantener los tokens.",
         },
         {
           question: "¿Es seguro Meteora? ¿Se puede perder dinero?",
@@ -893,7 +894,7 @@ export default function QueEsMeteoraPage() {
         {
           question: "¿Para qué sirve el token MET?",
           answer:
-            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un programa de staking en el que quienes hacen staking de MET y aportan liquidez se reparten el 10 % de las comisiones de protocolo del DLMM (desde el 21 de julio de 2026, por ciclos mensuales y con reglas que ya han cambiado) y ha hecho recompras de MET: 13,67 millones de USDC gastados desde octubre de 2025 según su página de relaciones con inversores, aunque su informe del primer semestre de 2026 indica que no hubo ninguna en el segundo trimestre. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
+            "Según su libro blanco MiCAR (octubre de 2025), MET es el activo de utilidad y coordinación del ecosistema de Meteora: da acceso o prioridad en programas de liquidez y lanzamientos y, tras una activación posterior, permitirá hacer staking a cambio de puntos de participación no transferibles. El libro blanco dice que no da derechos de propiedad, gobernanza ni reparto de beneficios. Después, Meteora lanzó un programa de staking en el que quienes hacen staking de MET y aportan liquidez se reparten el 10 % de las comisiones de protocolo del DLMM (desde el 21 de julio de 2026, por ciclos mensuales y con reglas que ya han cambiado) y ha hecho recompras de MET: 13,67 millones de USDC gastados desde octubre de 2025 según su página de relaciones con inversores, aunque su informe del primer semestre de 2026 indica que no hubo ninguna en el segundo trimestre. Son programas de la empresa que pueden cambiar, no derechos del token (a 5 de noviembre de 2026).",
         },
         {
           question: "¿Sigue abierto el airdrop de Meteora?",

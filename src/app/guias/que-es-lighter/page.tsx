@@ -531,13 +531,16 @@ export default function LighterPage() {
                 </Li>
                 <Li>
                   <B>Qué se recuperó.</B> Según Lighter, la pausa del Guardian
-                  permitió que su consejo de seguridad devolviera unos 5 millones de USDC al trader afectado. Lighter no ha publicado la pérdida total ni ha comunicado que se recuperaran los 10,39 millones que salieron del contrato.
+                  permitió que su consejo de seguridad devolviera unos 5 millones de USDC al trader afectado. L2BEAT precisa que eran 5,1 millones de una retirada del atacante que seguía en cola, y que el consejo la redirigió a la víctima con una actualización instantánea de los contratos. Lighter no ha publicado la pérdida total ni ha comunicado que se recuperaran los 10,39 millones que salieron del contrato.
                 </Li>
                 <Li>
                   <B>Qué ha cambiado.</B> Las firmas de las claves API han
                   dejado de ser públicas y mover fondos a un pool público exige
                   ahora la firma de la wallet. Lighter ha anunciado además
-                  listas de IP permitidas y límites configurables por clave.
+                  listas de IP permitidas y límites configurables por clave. El
+                  18 de noviembre, según L2BEAT, una segunda actualización de
+                  emergencia añadió al contrato el bloqueo de una dirección y la
+                  redirección de las retiradas de la cuenta del atacante.
                 </Li>
               </Ol>
               <Callout title="Qué significa para ti">
@@ -579,7 +582,7 @@ export default function LighterPage() {
                 <Li>
                   <B>Pausas.</B> Los guardianes del contrato pueden detener el
                   procesamiento de lotes y las retiradas hasta 24 o 72 horas,
-                  según L2BEAT. Ocurrió durante el incidente de noviembre de 2026, y L2BEAT anota además una pausa de prueba el 17 de octubre de 2026. El 10 de octubre de 2025 la plataforma estuvo caída 4,5 horas.
+                  según L2BEAT. Ocurrió durante el incidente de noviembre de 2026, y L2BEAT anota además una pausa de prueba el 17 de octubre de 2026. El 10 de octubre de 2025 la plataforma estuvo caída 4,5 horas, y el 22 de noviembre de 2026 L2BEAT registró entre 3,5 y 4 horas sin actualizaciones de estado.
                 </Li>
                 <Li>
                   <B>La instancia de Robinhood Chain, por detrás.</B> Tiene ficha
